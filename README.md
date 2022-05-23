@@ -1,7 +1,7 @@
 # Output directory containing the formatted manuscript
 
 The [`gh-pages`](https://github.com/lubianat/fapesp_report_2/tree/gh-pages) branch hosts the contents of this directory at <https://lubianat.github.io/fapesp_report_2/>.
-The permalink for this webpage version is <https://lubianat.github.io/fapesp_report_2/v/fa634c71c2311c4d2a7ce40a453e618a08f192f5/>.
+The permalink for this webpage version is <https://lubianat.github.io/fapesp_report_2/v/d9afb7bfbe421fd1ef7aeb9b33b9165ea1930c8a/>.
 To redirect to the permalink for the latest manuscript version at anytime, use the link <https://lubianat.github.io/fapesp_report_2/v/freeze/>.
 
 ## Files
@@ -35,4 +35,4 @@ Verifying timestamps with the `ots verify` command requires running a local bitc
 ## Source
 
 The manuscripts in this directory were built from
-[`fa634c71c2311c4d2a7ce40a453e618a08f192f5`](https://github.com/lubianat/fapesp_report_2/commit/fa634c71c2311c4d2a7ce40a453e618a08f192f5).
+[`d9afb7bfbe421fd1ef7aeb9b33b9165ea1930c8a`](https://github.com/lubianat/fapesp_report_2/commit/d9afb7bfbe421fd1ef7aeb9b33b9165ea1930c8a).
