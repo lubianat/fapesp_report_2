@@ -1,3 +1,4 @@
+actualpython
 Amyotrophic
 Análises
 analytics
@@ -17,7 +18,7 @@ CIÊNCIAS
 Clatworthy
 Clínicas
 coexpression
-complexportal
+ComplexPortal
 CoV
 CSV
 curation
@@ -52,6 +53,7 @@ Menna
 mentiongs
 metascientific
 Mhlanga
+MIRACL
 monocytes
 Musa
 Muzlifah
@@ -60,7 +62,7 @@ neighbourhood
 notetaking
 OBO
 oldid
-ontologies
+Ontologies
 ontologists
 PanglaoDB
 Paulo
@@ -68,7 +70,7 @@ pdfs
 Pe’er
 phenotypes
 polymerase
-pre
+Pre
 preprint
 Preprints
 PyPi
@@ -87,10 +89,10 @@ São
 SÃO
 Scholia
 seqData
-shoutou
 SPARQL
 standar
 subclasses
+subfolder
 sucessfull
 superclass
 Tabula
@@ -110,7 +112,7 @@ wbib
 WikidataBib
 Wikidata’s
 Wikimedia
-Wisecube
+WiseCube
 workLabel
 XXXX
 XXXXXXXX

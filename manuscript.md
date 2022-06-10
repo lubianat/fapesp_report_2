@@ -5,7 +5,7 @@ keywords:
 - publishing
 - manubot
 lang: en-US
-date-meta: '2022-05-23'
+date-meta: '2022-06-10'
 author-meta:
 - John Doe
 - Jane Roe
@@ -19,8 +19,8 @@ header-includes: |-
   <meta name="citation_title" content="Manuscript Title" />
   <meta property="og:title" content="Manuscript Title" />
   <meta property="twitter:title" content="Manuscript Title" />
-  <meta name="dc.date" content="2022-05-23" />
-  <meta name="citation_publication_date" content="2022-05-23" />
+  <meta name="dc.date" content="2022-06-10" />
+  <meta name="citation_publication_date" content="2022-06-10" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -41,9 +41,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://lubianat.github.io/fapesp_report_2/" />
   <meta name="citation_pdf_url" content="https://lubianat.github.io/fapesp_report_2/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://lubianat.github.io/fapesp_report_2/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://lubianat.github.io/fapesp_report_2/v/d9afb7bfbe421fd1ef7aeb9b33b9165ea1930c8a/" />
-  <meta name="manubot_html_url_versioned" content="https://lubianat.github.io/fapesp_report_2/v/d9afb7bfbe421fd1ef7aeb9b33b9165ea1930c8a/" />
-  <meta name="manubot_pdf_url_versioned" content="https://lubianat.github.io/fapesp_report_2/v/d9afb7bfbe421fd1ef7aeb9b33b9165ea1930c8a/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://lubianat.github.io/fapesp_report_2/v/034688e430557a00325880d38add5c18e6b02e67/" />
+  <meta name="manubot_html_url_versioned" content="https://lubianat.github.io/fapesp_report_2/v/034688e430557a00325880d38add5c18e6b02e67/" />
+  <meta name="manubot_pdf_url_versioned" content="https://lubianat.github.io/fapesp_report_2/v/034688e430557a00325880d38add5c18e6b02e67/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -65,10 +65,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://lubianat.github.io/fapesp_report_2/v/d9afb7bfbe421fd1ef7aeb9b33b9165ea1930c8a/))
+([permalink](https://lubianat.github.io/fapesp_report_2/v/034688e430557a00325880d38add5c18e6b02e67/))
 was automatically generated
-from [lubianat/fapesp_report_2@d9afb7b](https://github.com/lubianat/fapesp_report_2/tree/d9afb7bfbe421fd1ef7aeb9b33b9165ea1930c8a)
-on May 23, 2022.
+from [lubianat/fapesp_report_2@034688e](https://github.com/lubianat/fapesp_report_2/tree/034688e430557a00325880d38add5c18e6b02e67)
+on June 10, 2022.
 </em></small>
 
 ## Authors
@@ -110,9 +110,9 @@ Departamento de Análises Clínicas e Toxicológicas
 
 
 Doctorate Project - Report 2
-FAPESP process number: 
-Project term: 
-Period of Scientific report:
+FAPESP process number: #2019/26284-1
+Project term: 01/08/2020 to 31/07/2024
+Period of Scientific report: 10/07/2021 to 10/07/2022
 
 
 Scholarship Holder: Tiago Lubiana
@@ -120,7 +120,7 @@ Scholarship Holder: Tiago Lubiana
 Responsible Researcher: Prof. Dr. Helder Takashi Imoto Nakaya
 
 São Paulo - SP
-June 2022
+July 2022
 
 
 # Project summary  {.page_break_before}
@@ -186,8 +186,6 @@ The specific goals outlined in the approved project were:
 
 # Achievements {.page_break_before}
 
-
-
 In the second year of the project, we addressed 2 different facets of the project. 
 
 The first facet was the development of guidelines for describing new cell types in published research, in partnership with the Cell Ontology. 
@@ -232,35 +230,39 @@ Finally, we demonstrate how Wikidata Bib fits an active curation environment, co
 
 ## Wikidata Bib as a reading system 
 
-The reading framework of Wikidata bib is built upon a git repository integrated with GitHub, Python 3 scripts and SPARQL queries. 
+The reading framework of Wikidata bib is built upon a git repository integrated with GitHub, Python 3 scripts and SPARQL queries. The code is packaged into a python module to facilitate usage. It also uses the Click library to implement a professional Command Line Interface for end users (https://github.com/pallets/click).
 It has a standard file structure, summarized as the following:
 
 * `docs/`
     * `index.html`
 * `downloads/`
     * `10.7554_ELIFE.52614.pdf`
-* `notes/`
-    * `Q87830400.md`
 * `src/`
-    * `get_pdf.py`
-    * `helper.py`
-    * `read_paper.py`
-    * `update_dashboard.py`
-* `index.md`
-* `toread.md`
-* `config.yaml`
-* `pop`
-* `wadd`
-* `wadd_all`
-* `wread`
-* `wlog`
+    * `data/`
+      * `config.yaml`
+      * `index.yaml`
+      * `read.csv`
+      * `read.ttl`
+      * `toread.yaml`
+    * `notes/`
+        * `Q87830400.md`
+    * `wikidata_bib/`   
+      * `get_pdf.py`
+      * `read_paper.py`
+      * `update_dashboard.py`
+      * ...
+* `LICENSE`
+* `pyproject.toml`
+* `README.md`
+* `setup.cfg`
 
 The `docs/` directory contains the live dashboard from the readings, which will be discussed in the following sessions.
 The `downloads/` directory hosts the pdfs of the articles read with the system. 
 These are not committed to the repository and are only stored locally. 
-The `notes/` directory contains markdown files, one for each article read. 
-The `src/` directory contains the python code with the system's mechanics. 
-They contain helper functions for the command line commands discussed below:
+The `src/` directory contains a `data/` subfolder with the configuration files and the local database of what is read, a `notes` subfolder with the notes on the read articles and a `wikidata_bib` directory containing the actualpython code with the system's mechanics. 
+
+After installing the package using the `pip` utility (<https://pypi.org/>), the user is able to use Wikidata Bib from the terminal as any other command line utility. 
+The following functions are available:
     - `wread` which receives a Wikidata QID for an article and outputs (1) a notes document, (2) a pdf for the paper obtained from Unpaywall [@url:https://unpaywall.org] and (3) an updated version of the dashboard HTML files in the `docs/` directory.
     - `pop`, which "pops" an article from `toread.md` and runs `wread` for it
     - `wadd`, which takes an URL for a Wikidata SPARQL query and adds new QIDs to `toread.md`
@@ -384,25 +386,24 @@ The code for integrating a Google Spreadsheet to Wikidata is available at <https
 
 ![Wikidata Bib was coupled with a biocuration framework for cell types](images/biocuration_of_cells.png){#fig:biocuration_of_cells width="85%"}
 
+<!-- UPDATE THE STATISTICS -->
 
 Wikidata contains 2940 subclasses of "cell ([Q7868](https://www.wikidata.org/wiki/Q7868))" as of 8 December 2021. 
 From those, 550 cell classes are specific for humans, and 318 are specific for mice.  
 As a comparison, as of 8 December 2021, Wikidata has more cell classes than the Cell Ontology, which lists 2577 classes. 
 It is worth noticing that classes on the Cell Ontology are added after careful consideration by ontologists and domain experts and should be considered of higher quality than the ones on Wikidata. 
 
-
 From the 2940 cell classes on Wikidata, 2812 (95.6%) have been edited somehow by User:TiagoLubiana, and 1668 (56.7%) have been created by User:TiagoLubiana. 
 Edits made to the cells were often connecting a dangling term, created automatically from an Wikipedia page to the cell subclass hierarchy, and included adding identifiers, images, markers, and other pieces of information. 
 From the 1668 entities created, approximately 63 species-neutral cell types, 188 human and 188 mouse cell types were added based on PanglaoDB entries (total of 439).
 The remaining 1229 entries were created either via Wikidata's web interface or via the curation workflow described in this chapter. 
 These statistics are a simple demonstration of how the curation system efficiently contributes to the status of cell type information on Wikidata. 
+<!-- UPDATE THE STATISTICS -->
 
-As mentioned by Aviv Regev in the Human Cell Atlas General Meeting 2021, after a shoutou to ontologies: "It's everyone's collective
+As mentioned by Aviv Regev in the Human Cell Atlas General Meeting 2021, "it's everyone's collective
 responsibility to participate in the annotation efforts, because that relies on domain expertise. To really tease apart things and give
 them names. Until we have names, people will have really a hard time working with things in biology. "[@url:"https://youtu.be/orbqAqV9mQM?list=PLkef4SGmngdZanrQtu_g9kiuAcYczzDfn&t=1959"]"
 We hope that by developing simplified curation tools we will engage more domain experts into the curation efforts. 
-
-
 
 ## Guidelines for reporting new cell types  {.page_break_before}
 
@@ -427,7 +428,7 @@ I have also collaborated with the Cellosaurus database [@wikidata:Q54370168] to 
 
 During a part of this project, I have worked part-time as a consultant for the Wisecube company, based in Seattle, United States. [@url:https://www.wisecube.ai]
 The job was approved by FAPESP and consisted mainly in writing SPARQL queries that probe Wikidata for answers to the questions posed by the BioASQ competition. [@wikidata:Q28646342]
-It also entails on-demand curation of biomedical topics on Wikidata based on requests by pharmaceutical companies as well as the development of dashboards targeted at providing insights to customers. 
+It also entailed on-demand curation of biomedical topics on Wikidata based on requests by pharmaceutical companies as well as the development of dashboards targeted at providing insights to customers. 
 
 
 ## Awards and participation in events
@@ -438,7 +439,6 @@ It also entails on-demand curation of biomedical topics on Wikidata based on req
 
 
 # Next steps  {.page_break_before}
-
 
 After this second year of work, the next steps of this PhD project will be geared towards robustifying the systems for biocuration and improving the quality of cell type information on Wikidata.
 This robustification will pave the way for the final phase of the project, where we plan to incorporate the organized information on Wikidata to standar workflows of single-cell RNA-seq data analysis.
@@ -471,10 +471,10 @@ In particular, the next part of the project includes the following steps:
 ## Pre-prints
 - Using coexpression to explore cell-type diversity with the fcoex package (https://www.biorxiv.org/content/10.1101/2021.12.07.471603v1)
 
-- Toward a minimal information reporting standard about new cell types
+- Guidelines for reporting cell types: the MIRACL standard
 https://arxiv.org/abs/2204.09673
 ## Peer-reviewed articles
-- Complex Portal 2022: new curation frontiers
+- Complex Portal 2022: new curation frontiers (https://doi.org:: 10.1093/nar/gkab991)
 -
 
 ## References {.page_break_before}
