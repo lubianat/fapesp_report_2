@@ -18,9 +18,10 @@ CIÊNCIAS
 Clatworthy
 Clínicas
 coexpression
-ComplexPortal
+complexportal
 CoV
 CSV
+CTRL
 curation
 datasets
 DCP
@@ -62,7 +63,7 @@ neighbourhood
 notetaking
 OBO
 oldid
-Ontologies
+ontologies
 ontologists
 PanglaoDB
 Paulo
@@ -70,7 +71,7 @@ pdfs
 Pe’er
 phenotypes
 polymerase
-Pre
+pre
 preprint
 Preprints
 PyPi
@@ -106,13 +107,11 @@ ttl
 Umberto
 understandability
 UNIVERSIDADE
-Unpaywall
-wadd
 wbib
 WikidataBib
 Wikidata’s
 Wikimedia
-WiseCube
+Wisecube
 workLabel
 XXXX
 XXXXXXXX

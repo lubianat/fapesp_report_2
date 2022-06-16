@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <meta name="author" content="John Doe" />
   <meta name="author" content="Jane Roe" />
-  <meta name="dcterms.date" content="2022-06-10" />
+  <meta name="dcterms.date" content="2022-06-16" />
   <meta name="keywords" content="markdown, publishing, manubot" />
   <title>Manuscript Title</title>
   <style>
@@ -111,8 +111,8 @@
   <meta name="citation_title" content="Manuscript Title" />
   <meta property="og:title" content="Manuscript Title" />
   <meta property="twitter:title" content="Manuscript Title" />
-  <meta name="dc.date" content="2022-06-10" />
-  <meta name="citation_publication_date" content="2022-06-10" />
+  <meta name="dc.date" content="2022-06-16" />
+  <meta name="citation_publication_date" content="2022-06-16" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -133,9 +133,9 @@
   <meta name="citation_fulltext_html_url" content="https://lubianat.github.io/fapesp_report_2/" />
   <meta name="citation_pdf_url" content="https://lubianat.github.io/fapesp_report_2/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://lubianat.github.io/fapesp_report_2/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://lubianat.github.io/fapesp_report_2/v/034688e430557a00325880d38add5c18e6b02e67/" />
-  <meta name="manubot_html_url_versioned" content="https://lubianat.github.io/fapesp_report_2/v/034688e430557a00325880d38add5c18e6b02e67/" />
-  <meta name="manubot_pdf_url_versioned" content="https://lubianat.github.io/fapesp_report_2/v/034688e430557a00325880d38add5c18e6b02e67/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://lubianat.github.io/fapesp_report_2/v/77e84f21ca795b243a855763c8a9a2dd336f7717/" />
+  <meta name="manubot_html_url_versioned" content="https://lubianat.github.io/fapesp_report_2/v/77e84f21ca795b243a855763c8a9a2dd336f7717/" />
+  <meta name="manubot_pdf_url_versioned" content="https://lubianat.github.io/fapesp_report_2/v/77e84f21ca795b243a855763c8a9a2dd336f7717/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -149,10 +149,10 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://lubianat.github.io/fapesp_report_2/v/034688e430557a00325880d38add5c18e6b02e67/">permalink</a>)
+(<a href="https://lubianat.github.io/fapesp_report_2/v/77e84f21ca795b243a855763c8a9a2dd336f7717/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/lubianat/fapesp_report_2/tree/034688e430557a00325880d38add5c18e6b02e67">lubianat/fapesp_report_2@034688e</a>
-on June 10, 2022.
+from <a href="https://github.com/lubianat/fapesp_report_2/tree/77e84f21ca795b243a855763c8a9a2dd336f7717">lubianat/fapesp_report_2@77e84f2</a>
+on June 16, 2022.
 </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
@@ -237,7 +237,7 @@ The specific goals outlined in the approved project were:</p>
 </ul>
 <h1 class="page_break_before" id="achievements">Achievements</h1>
 <p>In the second year of the project, we addressed 2 different facets of the project.</p>
-<p>The first facet was the development of guidelines for describing new cell types in published research, in partnership with the Cell Ontology.</p>
+<p>The first facet was the development of guidelines for describing new cell types in published research in partnership with the Cell Ontology.</p>
 <p>The second facet was the formalization of a biocuration routine to curate new cell types on Wikidata, an effort with 2 main products: the consolidation of Wikidata as a database for cell types and Wikidata Bib, a software and workflow for reading large amounts of scientific literature.</p>
 <p>Additionally, we collaborated in several different projects related to organizing biomedical knowledge on Wikidata, which are also detailed in this session.
 ## Biocuration of cell classes with Wikidata Bib {.page_break_before}
@@ -262,7 +262,7 @@ In the biomedical sciences, including a large part of bioinformatics, the object
 Thus, naturally, scientific training focuses on experimentation and data analysis’s theoretical and practical basis.
 With the boom of scientific articles, however, the scientific literature (and accompanying public datasets) already provide a strong material for sculpting scientific projects.
 Thus, developing a methodology for academic reading tailored to the digital environment is a need.</p>
-<p>This chapter concerns itself with presenting Wikidata Bib, a framework for large scale reading of scientific articles.
+<p>To address this gap, we are developing Wikidata Bib, a framework for large scale reading of scientific articles.
 It is presented in three parts, each with a technical overview alongside the theoretical foundations.
 First, Wikidata Bib is presented as a reading system for managing references and notes using a GitHub repository and plain text notes.
 Then, we present how the system ensures accountability, allowing users to get personalized analytics on their reading patterns.
@@ -311,49 +311,44 @@ The <code>downloads/</code> directory hosts the pdfs of the articles read with t
 These are not committed to the repository and are only stored locally.
 The <code>src/</code> directory contains a <code>data/</code> subfolder with the configuration files and the local database of what is read, a <code>notes</code> subfolder with the notes on the read articles and a <code>wikidata_bib</code> directory containing the actualpython code with the system’s mechanics.</p>
 <p>After installing the package using the <code>pip</code> utility (<a href="https://pypi.org/" class="uri">https://pypi.org/</a>), the user is able to use Wikidata Bib from the terminal as any other command line utility.
-The following functions are available:
-- <code>wread</code> which receives a Wikidata QID for an article and outputs (1) a notes document, (2) a pdf for the paper obtained from Unpaywall <span class="citation" data-cites="15luL9zZC">[<a href="#ref-15luL9zZC" role="doc-biblioref">25</a>]</span> and (3) an updated version of the dashboard HTML files in the <code>docs/</code> directory.
-- <code>pop</code>, which “pops” an article from <code>toread.md</code> and runs <code>wread</code> for it
-- <code>wadd</code>, which takes an URL for a Wikidata SPARQL query and adds new QIDs to <code>toread.md</code>
-- <code>wadd_all</code>, which parses <code>config.yaml</code> for recurrent SPARQL queries and runs <code>wadd</code> for each
-- <code>wlog</code>, which adds, commits and pushes recent readings and dashboard updates to GitHub</p>
-<p>All the structures described so far are commonly shared by any user of Wikidata Bib.
-To personalize the use of the system, the user edits three plain text files.
-<code>toread.md</code> hosts plain text QIDs of the articles that will be read.
-These can be added either manually or via wadd.
-While the <code>pop</code> command only sees QIDs, articles titles or other identifiers can temporarily be added to <code>toread.md</code> without breaking the system.
-<code>index.md</code> hosts a numbered list of topics of interest.
-This file plays the role of Umberto Eco’s work plan, with the topics of interest for the academic. <span class="citation" data-cites="1HBVPtZGp">[<a href="#ref-1HBVPtZGp" role="doc-biblioref">24</a>]</span>
-These are used to tag articles for retrieval in a later step.
-<code>config.yaml</code> contains shortcuts for different reading lists.
-This is better explained by example.
-In my <code>to read.md</code> file there are two reading lists, one following a <code># Cell types</code> header and another following a <code># Biocuration</code> header.
+The basic commands available are described below:
+- <code>bib read</code> receives a Wikidata QID for an article and opens the article web page on a browser and opens a personalized notes document. It also updates the static files for the analytics dashboard, stored in the <code>docs/</code> directory.
+- <code>bib pop</code>, which “pops” an article from the reading stash at <code>toread.yaml</code> and runs <code>bib read</code> for it
+- <code>bib log</code> updates the git repository and adds, commits and pushes notes and the dashboard to to GitHub</p>
+<p>To customize the system, a new user would need to update 3 <code>yaml</code> files in the <code>src/data</code> folder:
+<code>toread.yaml</code>, <code>index.yaml</code>and <code>config.yaml</code>.
+The <code>toread.yaml</code> stores in a plain text format the QIDs to be read. The file can be edited either manually or via automatic queries (not discussed in this report for conciseness).
+The <code>index.yaml</code> file holds an hierarchy of topics of interest for the researcher, to be used for indexing/tagging the notes in the way required by the topic of research. This file plays the role of Umberto Eco’s “work plan”, with the topics of interest for the academic. <span class="citation" data-cites="1HBVPtZGp">[<a href="#ref-1HBVPtZGp" role="doc-biblioref">24</a>]</span>
+Finally, the <code>config.yaml</code> contains options to customize the system for advanced use. For example, the user can configure shortcuts for different reading lists.
+For example, in my <code>to read.yaml</code> file there are two reading lists, one entitled <code>Cell types</code> header and another entitled <code>Biocuration</code>.
 My <code>config.yaml</code> contains the following snippet:</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode yaml"><code class="sourceCode yaml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">lists</span><span class="kw">:</span></span>
 <span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co"># - shortcut: Title of header in toread.md  </span></span>
 <span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">ct</span><span class="kw">:</span><span class="at"> Cell types</span></span>
 <span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">bioc</span><span class="kw">:</span><span class="at"> Biocuration</span></span></code></pre></div>
-<p>The <code>config.yaml</code> shortcuts are used as arguments by the <code>pop</code> command, where <code>$ ./pop ct</code> retrieves an article from the “Cell types” list, while <code>$ ./pop bioc</code> retrieves an article from the “Biocuration” list.</p>
+<p>The <code>config.yaml</code> shortcuts are used as arguments by the <code>bib pop</code> command, where <code>$ bib pop ct</code> retrieves an article from the “Cell types” list, while <code>$ bib pop bioc</code> retrieves an article from the “Biocuration” list.</p>
 <p>The Wikidata bib framework is coupled with a discipline of daily reading.
-The discipline is inspired by Robert Cecil Martin’s description of Test Driven Development in the book “Clean Code”, which includes not only a technical description but a <em>school of thought</em> of how software development might be approached. <span class="citation" data-cites="13HqB23xH">[<a href="#ref-13HqB23xH" role="doc-biblioref">26</a>]</span>
+The discipline is inspired by Robert Cecil Martin’s description of Test Driven Development in the book “Clean Code”, which includes not only a technical description but a <em>school of thought</em> of how software development might be approached. <span class="citation" data-cites="13HqB23xH">[<a href="#ref-13HqB23xH" role="doc-biblioref">25</a>]</span>
 Every day, I read one article of each list, using the notetaking station displayed in Figure <span class="citation" data-cites="fig">[<a href="#ref-fig" role="doc-biblioref"><strong>fig?</strong></a>]</span>: notetaking.
 The constancy of reading allows steady coverage of the relevant literature.
 While the discipline has worked for this research project, it is not required to use the Wikidata Bib system.</p>
 <p>The notetaking station of Wikidata Bib, opened in Virtual Studio Code, is depicted on Figure <span class="citation" data-cites="fig">[<a href="#ref-fig" role="doc-biblioref"><strong>fig?</strong></a>]</span>: notetaking A.
 The title and publication dates are displayed, and the reading process entails copying snippets from the text to the “Highlights” session.
-Copying the highlights into plain text makes the sections of interest searchable via command line using <code>grep</code> (https://en.wikipedia.org/w/index.php?title=Grep&amp;oldid=1039541979).
-Comments can be added either in the comment section or inline, alongside the highlights, using <code>--&gt; Comment goes here</code> to differentiate from highlights.
-Also searchable by <code>grep</code> are the tags, copied and pasted from <code>index.md</code> in the <code>## Tags</code> session or alongside the main article.</p>
-<p>The discipline also includes, whenever possible, an improvement of the metadata about the article on Wikidata.
+Copying the highlights into plain text makes the sections of interest searchable via command line using <code>grep</code> (https://en.wikipedia.org/w/wiki/Grep).
+Comments can be added either in the comment section or inline, alongside the highlights.
+Even though there is no enforcement, our recommendation is to use HTML comment syntax <code>&lt;!-- Comment goes here --&gt;</code> to differentiate from highlights.
+Visual Studio offers a default shortcut (CTRL + /) for adding comments, making the process seamless.</p>
+<p>The Wikidata Bib framework also includes, whenever possible, an improvement of the metadata about the article on Wikidata.
 In <span class="citation" data-cites="fig">[<a href="#ref-fig" role="doc-biblioref"><strong>fig?</strong></a>]</span>: notetaking B are shown the links included in the dashboard.
-A link to a Scholia <span class="citation" data-cites="hxzL9pmm">[<a href="#ref-hxzL9pmm" role="doc-biblioref">27</a>]</span> profile allows identification of related articles from a series of pre-made SPARQL queries probing bibliography data on Wikidata.
+A link to a Scholia <span class="citation" data-cites="hxzL9pmm">[<a href="#ref-hxzL9pmm" role="doc-biblioref">26</a>]</span> profile allows identification of related articles from a series of pre-made SPARQL queries probing bibliography data on Wikidata.
 While Scholia provides an overview of a given article, it does not allow direct curation of the metadata.
-For that, two links are provided, one to Wikidata and one to Author Disambiguator <span class="citation" data-cites="1A9RvszKC">[<a href="#ref-1A9RvszKC" role="doc-biblioref">28</a>]</span>.
+For that, two links are provided, one to Wikidata and one to Author Disambiguator <span class="citation" data-cites="1A9RvszKC">[<a href="#ref-1A9RvszKC" role="doc-biblioref">27</a>]</span>.
 By accessing the Wikidata page for the entity, one can add new triples, for example, curating authors and topics of the article, which are then used by Scholia and by Wikidata Bib’s dashboard.
 Author Disambiguator is a wrapper of an Wikimedia API that facilitates disambiguating author names to unique identifiers on Wikidata, thus feeding the public knowledge graph of publication and authors.<br />
 Finally, a link to the article’s DOI or full-text URL is provided and serves as a fallback when the automatic download fails.
 Of note, while the metadata curation has a technical benefit to Wikidata and the dashboard, it also plays a theoretical role.
-By curating metadata on authors, the user of Wikidata Bib can better understand the people they read, and expand their metascientific perspective on their domain of interest.</p>
+By curating metadata on authors, the user of Wikidata Bib can better understand the people they read, and expand their metascientific perspective on their domain of interest.
+Furthermore, by embedding the metascientific curation in the reading process WikidataBib directs the user to get acquainted with the people producing the science they read, thus contributing to a more complete perspective of the research process.</p>
 <div id="fig:notetaking" class="fignos">
 <figure>
 <img src="images/note_taking_station_annotated_with_links.png" alt="Figure 1: Wikidata Bib’s platform for note taking" /><figcaption aria-hidden="true"><span>Figure 1:</span> Wikidata Bib’s platform for note taking</figcaption>
@@ -371,12 +366,12 @@ The .ttl file, on the other hand, is processed by the <code>update_dashboard.py<
 - <code>last_day.html</code>
 - <code>past_week.html</code>
 - <code>past_month.html</code>
-All files are displayed in a GitHub pages.
+All files are displayed in a GitHub pages static website.
 In the case of this work, they are displayed at <a href="https://lubianat.github.io/wikidata_bib/" class="uri">https://lubianat.github.io/wikidata_bib/</a>.</p>
-<p>To organize the code for rendering the dashboard, we created a python package, wbib, and deposited it in PyPi, making it available via <code>pip</code>. <span class="citation" data-cites="6chnW6cc">[<a href="#ref-6chnW6cc" role="doc-biblioref">29</a>]</span>.
+<p>To organize the code for rendering the dashboard, we created a python package, wbib, and deposited it in PyPi, making it available via <code>pip</code>. <span class="citation" data-cites="6chnW6cc">[<a href="#ref-6chnW6cc" role="doc-biblioref">28</a>]</span>.
 The package implements the logic for rendering complex Wikidata-based academic dashboards and is available in GitHub at <a href="https://github.com/lubianat/wbib" class="uri">https://github.com/lubianat/wbib</a>.
 It allows the user to build dashboards based on Wikidata records of information such as gender of authors, the region of author’s institutions, topics of articles and similar metascientific information.
-The dashboard is composed of SPARQL queries written for the Wikidata Query Service <span class="citation" data-cites="2wDsXBwd">[<a href="#ref-2wDsXBwd" role="doc-biblioref">30</a>]</span>
+The dashboard is composed of SPARQL queries written for the Wikidata Query Service <span class="citation" data-cites="2wDsXBwd">[<a href="#ref-2wDsXBwd" role="doc-biblioref">29</a>]</span>
 It also allows users to feed an arbitrary list of articles and obtain a custom dashboard.
 Wikidata Bib obtains the HTML dashboards after feeding wbib the lists of articles read in total (<code>index.html</code>) or in pre-determined time spans (<code>last_day.html</code>, <code>past_week.html</code> and <code>past_month.html</code> )</p>
 <div id="fig:dashboard" class="fignos">
@@ -389,9 +384,9 @@ It also displays an interactive map of the institutions of articles read, permit
 An example of queries is shown in <a href="#fig:dashboard">2</a>.
 As the queries are rendered live, they evolve in quality with the growth of Wikidata.
 Finally, the clean 5-star-open data format enables users to adapt the queries to include different aspects of Wikidata.
-For example, table <a href="#tbl:articles_read_hca">1</a> showcases 10 articles that (1) I have read in the past year and (2) were authored by a speaker of the 1st Human Cell Atlas Latin America Single Cell RNA-seqData Analysis Workshop <span class="citation" data-cites="1hag8XE6">[<a href="#ref-1hag8XE6" role="doc-biblioref">31</a>]</span>.
+For example, table <a href="#tbl:articles_read_hca">1</a> showcases 10 articles that (1) I have read in the past year and (2) were authored by a speaker of the 1st Human Cell Atlas Latin America Single Cell RNA-seqData Analysis Workshop <span class="citation" data-cites="1hag8XE6">[<a href="#ref-1hag8XE6" role="doc-biblioref">30</a>]</span>.
 One practical application that the dashboard enables, thus, is to identify people in an event, institution or location that the user has read before, therefore catalyzing the possibility of collaborations.
-Anecdotally, this strategy was tested successfully at Biohackathon Europe 2021 <span class="citation" data-cites="kHL3NVxk">[<a href="#ref-kHL3NVxk" role="doc-biblioref">32</a>]</span>, where I used the system both to identify possible collaborators and as a conversation starter.</p>
+Anecdotally, this strategy was tested successfully at Biohackathon Europe 2021 <span class="citation" data-cites="kHL3NVxk">[<a href="#ref-kHL3NVxk" role="doc-biblioref">31</a>]</span>, where we used the system both to identify possible collaborators and as a conversation starter.</p>
 <div id="tbl:articles_read_hca" class="tablenos">
 <table id="tbl:articles_read_hca">
 <caption><span>Table 1:</span> Articles read by Tiago Lubiana before 8 December 2021 in which an author was a speaker at HCA Latin America
@@ -460,7 +455,7 @@ When a mention of such a class appears in an article, I first verify Wikidata fo
 If it is absent from the platform, I enter a class name, alongside a superclass, and a QID in a Google Spreadsheet, as shown in Figure <a href="#fig:biocuration_of_cells">3</a>.</p>
 <p>The information from the spreadsheet is pulled by a python script and processed locally with a series of dictionaries that match common terms to Wikidata IDs.
 In the example shown in Figure <a href="#fig:biocuration_of_cells">3</a>, the string “endothelial cell” was matched against a manually curated dictionary to the Wikidata entry <a href="https://www.wikidata.org/wiki/Q11394395">Q11394395</a>, the representation of that concept on Wikidata.
-After reconciling the data, the script uses the Wikidata Integrator python package <span class="citation" data-cites="qDI8I4IJ">[<a href="#ref-qDI8I4IJ" role="doc-biblioref">33</a>]</span> to insert the new entries on the Wikidata database.
+After reconciling the data, the script uses the Wikidata Integrator python package <span class="citation" data-cites="qDI8I4IJ">[<a href="#ref-qDI8I4IJ" role="doc-biblioref">32</a>]</span> to insert the new entries on the Wikidata database.
 The code for integrating a Google Spreadsheet to Wikidata is available at <a href="https://github.com/lubianat/wikidata_cell_curation" class="uri">https://github.com/lubianat/wikidata_cell_curation</a>.</p>
 <div id="fig:biocuration_of_cells" class="fignos">
 <figure>
@@ -486,23 +481,23 @@ We hope that by developing simplified curation tools we will engage more domain 
 <h1 class="page_break_before" id="additional-work">Additional Work</h1>
 <h2 id="collaborations-and-manuscripts">Collaborations and manuscripts</h2>
 <h3 id="fcoex">fcoex</h3>
-<p>During the initial course of this PhD work, we also completed the development and reporting of <em>fcoex</em>, an R package for investigating cellular phenotypes using co-expression networks. <span class="citation" data-cites="MxIeSJYt">[<a href="#ref-MxIeSJYt" role="doc-biblioref">34</a>]</span> The software was maintained to withstand new releases of dependencies and new R version and was published as a preprint on biorxiv. <span class="citation" data-cites="doi:10.1101/2021.12.07.471603v1">[<a href="#ref-doi:10.1101/2021.12.07.471603v1" role="doc-biblioref"><strong>doi:10.1101/2021.12.07.471603v1?</strong></a>]</span></p>
+<p>During the initial course of this PhD work, we also completed the development and reporting of <em>fcoex</em>, an R package for investigating cellular phenotypes using co-expression networks. <span class="citation" data-cites="MxIeSJYt">[<a href="#ref-MxIeSJYt" role="doc-biblioref">33</a>]</span> The software was maintained to withstand new releases of dependencies and new R version and was published as a preprint on biorxiv. <span class="citation" data-cites="doi:10.1101/2021.12.07.471603v1">[<a href="#ref-doi:10.1101/2021.12.07.471603v1" role="doc-biblioref"><strong>doi:10.1101/2021.12.07.471603v1?</strong></a>]</span></p>
 <h3 id="wikidata-bots">Wikidata Bots</h3>
 <p>Alongside the editing of cell-type information on Wikidata, I have joined different efforts to improve biological information on Wikidata.
-I have collaborated with the ComplexPortal curators as part of the Virtual Elixir BioHackathon 2020 (https://github.com/virtual-biohackathons/covid-19-bh20/wiki) and for the following year, to build a Wikidata Bot to integrate information on protein complexes to Wikidata. An overview of the Wikidata integration is in Figure <a href="#fig:complexportal">4</a>, presented in an article published in Nucleic Acid Research (re-use of the image and legend possible under the CC-BY license of the article). <span class="citation" data-cites="CQRJ53gu">[<a href="#ref-CQRJ53gu" role="doc-biblioref">35</a>]</span></p>
+I have collaborated with the ComplexPortal curators as part of the Virtual Elixir BioHackathon 2020 (https://github.com/virtual-biohackathons/covid-19-bh20/wiki) and for the following year, to build a Wikidata Bot to integrate information on protein complexes to Wikidata. An overview of the Wikidata integration is in Figure <a href="#fig:complexportal">4</a>, presented in an article published in Nucleic Acid Research (re-use of the image and legend possible under the CC-BY license of the article). <span class="citation" data-cites="CQRJ53gu">[<a href="#ref-CQRJ53gu" role="doc-biblioref">34</a>]</span></p>
 <div id="fig:complexportal" class="fignos">
 <figure>
 <img src="https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/nar/PAP/10.1093_nar_gkab991/2/gkab991fig3.jpeg?Expires=1641821957&amp;Signature=RK-es18S~Qh6vGQE~61i6u4prMuij8kVTbrjN6WUJLfYHOAhUhx9qQorBxROohjLLxbHvZ2YK9e7EwlI9HjVeNoGZ2PJs0Pv78Y31MdZLY8FeLYI2E4azwrqRyv9q0AH8QL3RorWZV1AhOb9bl-44Mr97Q~9MWzeTDnQQbxpCnGLG~YoG49kocD5KE~dmTSQdkXBU7kZnuGM1NPqMHo5ZDUoCRFwmTbLvd4kXoH~6CTyqx4ruQRIO-ks4Q0FUjYnxGX18gCFvoO2LMPZUPrQjTgD35RrVAkLs91Ur6BQHUuZ-ZsE3Iag3mBDu27vT9Jr93bOj0i9wz~surTtEGATgw__&amp;Key-Pair-Id=APKAIE5G5CRDK6RD3PGA" alt="Figure 4: Complex Portal and Wikidata. (A) example of an entry assertion in Wikidata with provenance pointing to Complex Portal (Q104836061). (B) The number of protein complexes in Wikidata per taxon (https://w.wiki/3ggX). (C) Subset of Wikidata connected to the SARS-CoV-2 polymerase complex (https://w.wiki/3eta)." /><figcaption aria-hidden="true"><span>Figure 4:</span> Complex Portal and Wikidata. (A) example of an entry assertion in Wikidata with provenance pointing to Complex Portal (Q104836061). (B) The number of protein complexes in Wikidata per taxon (<a href="https://w.wiki/3ggX" class="uri">https://w.wiki/3ggX</a>). (C) Subset of Wikidata connected to the SARS-CoV-2 polymerase complex (<a href="https://w.wiki/3eta" class="uri">https://w.wiki/3eta</a>).</figcaption>
 </figure>
 </div>
-<p>I have also collaborated with the Cellosaurus database <span class="citation" data-cites="1DguATd9G">[<a href="#ref-1DguATd9G" role="doc-biblioref">36</a>]</span> to revive the CellosaurusBot <span class="citation" data-cites="lMQxhx3q">[<a href="#ref-lMQxhx3q" role="doc-biblioref">37</a>]</span>, responsible for updating the metadata on more than 100,000 cell lines on Wikidata. The bot code, written in Python, was refactored entirely and runs semi-automatically after the Cellosaurus database was released. A write-up of the integration is in progress and is planned for release/submission in the second semester of 2022.</p>
+<p>I have also collaborated with the Cellosaurus database <span class="citation" data-cites="1DguATd9G">[<a href="#ref-1DguATd9G" role="doc-biblioref">35</a>]</span> to revive the CellosaurusBot <span class="citation" data-cites="lMQxhx3q">[<a href="#ref-lMQxhx3q" role="doc-biblioref">36</a>]</span>, responsible for updating the metadata on more than 100,000 cell lines on Wikidata. The bot code, written in Python, was refactored entirely and runs semi-automatically after the Cellosaurus database was released. A write-up of the integration is in progress and is planned for release/submission in the second semester of 2022.</p>
 <h3 id="wisecube---enterprise-biomedical-question-and-answering">WiseCube - enterprise biomedical question and answering</h3>
-<p>During a part of this project, I have worked part-time as a consultant for the Wisecube company, based in Seattle, United States. <span class="citation" data-cites="gdYsBE7d">[<a href="#ref-gdYsBE7d" role="doc-biblioref">38</a>]</span>
-The job was approved by FAPESP and consisted mainly in writing SPARQL queries that probe Wikidata for answers to the questions posed by the BioASQ competition. <span class="citation" data-cites="rkXotO9x">[<a href="#ref-rkXotO9x" role="doc-biblioref">39</a>]</span>
+<p>During a part of this project, I have worked part-time as a consultant for the Wisecube company, based in Seattle, United States. <span class="citation" data-cites="gdYsBE7d">[<a href="#ref-gdYsBE7d" role="doc-biblioref">37</a>]</span>
+The job was approved by FAPESP and consisted mainly in writing SPARQL queries that probe Wikidata for answers to the questions posed by the BioASQ competition. <span class="citation" data-cites="rkXotO9x">[<a href="#ref-rkXotO9x" role="doc-biblioref">38</a>]</span>
 It also entailed on-demand curation of biomedical topics on Wikidata based on requests by pharmaceutical companies as well as the development of dashboards targeted at providing insights to customers.</p>
 <h2 id="awards-and-participation-in-events">Awards and participation in events</h2>
 <ul>
-<li>(Nov - 2021) Managed a project during BioHackathon Europe 2021, in Barcelona, Spain, on the representation of ELIXIR information on Wikidata. <span class="citation" data-cites="14Wi842eZ">[<a href="#ref-14Wi842eZ" role="doc-biblioref">40</a>]</span></li>
+<li>(Nov - 2021) Managed a project during BioHackathon Europe 2021, in Barcelona, Spain, on the representation of ELIXIR information on Wikidata. <span class="citation" data-cites="14Wi842eZ">[<a href="#ref-14Wi842eZ" role="doc-biblioref">39</a>]</span></li>
 <li>(May - 2022) Presented the WikidataBib in a talk the 1st UK Local Biocuration conference, which got awarded as the Runner-Up Best Talk</li>
 </ul>
 <h1 class="page_break_before" id="next-steps">Next steps</h1>
@@ -522,7 +517,7 @@ This robustification will pave the way for the final phase of the project, where
 <h1 id="chronogram">Chronogram</h1>
 <h2 id="awards-and-participation-in-events-1">Awards and participation in events</h2>
 <ul>
-<li>(Nov - 2021) Managed a project during BioHackathon Europe 2021, in Barcelona, Spain, on the representation of ELIXIR information on Wikidata. <span class="citation" data-cites="14Wi842eZ">[<a href="#ref-14Wi842eZ" role="doc-biblioref">40</a>]</span></li>
+<li>(Nov - 2021) Managed a project during BioHackathon Europe 2021, in Barcelona, Spain, on the representation of ELIXIR information on Wikidata. <span class="citation" data-cites="14Wi842eZ">[<a href="#ref-14Wi842eZ" role="doc-biblioref">39</a>]</span></li>
 <li>(May - 2022) Presented the WikidataBib in a talk the 1st UK Local Biocuration conference, which got awarded as the Runner-Up Best Talk</li>
 </ul>
 <h1 class="page_break_before" id="preprints-and-articles">Preprints and articles</h1>
@@ -610,53 +605,50 @@ https://arxiv.org/abs/2204.09673
 <div id="ref-1HBVPtZGp" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">24. </div><div class="csl-right-inline"><strong>Come si fa una tesi di laurea</strong> <a href="https://www.wikidata.org/wiki/Q3684178">https://www.wikidata.org/wiki/Q3684178</a></div>
 </div>
-<div id="ref-15luL9zZC" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">25. </div><div class="csl-right-inline"><strong>Unpaywall</strong> <a href="https://unpaywall.org/">https://unpaywall.org/</a></div>
-</div>
 <div id="ref-13HqB23xH" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">26. </div><div class="csl-right-inline"><strong>Clean Code: A Handbook of Agile Software Craftsmanship</strong> <a href="https://www.wikidata.org/wiki/Q109996684">https://www.wikidata.org/wiki/Q109996684</a></div>
+<div class="csl-left-margin">25. </div><div class="csl-right-inline"><strong>Clean Code: A Handbook of Agile Software Craftsmanship</strong> <a href="https://www.wikidata.org/wiki/Q109996684">https://www.wikidata.org/wiki/Q109996684</a></div>
 </div>
 <div id="ref-hxzL9pmm" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">27. </div><div class="csl-right-inline"><strong>Scholia, Scientometrics and Wikidata</strong> <div class="csl-block">Finn Årup Nielsen, Daniel Mietchen, Egon Willighagen</div> <em>The Semantic Web: ESWC 2017 Satellite Events</em> (2017-10-01) <a href="https://www.wikidata.org/wiki/Q41799194">https://www.wikidata.org/wiki/Q41799194</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1007/978-3-319-70407-4_36">10.1007/978-3-319-70407-4_36</a></div></div>
+<div class="csl-left-margin">26. </div><div class="csl-right-inline"><strong>Scholia, Scientometrics and Wikidata</strong> <div class="csl-block">Finn Årup Nielsen, Daniel Mietchen, Egon Willighagen</div> <em>The Semantic Web: ESWC 2017 Satellite Events</em> (2017-10-01) <a href="https://www.wikidata.org/wiki/Q41799194">https://www.wikidata.org/wiki/Q41799194</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1007/978-3-319-70407-4_36">10.1007/978-3-319-70407-4_36</a></div></div>
 </div>
 <div id="ref-1A9RvszKC" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">28. </div><div class="csl-right-inline"><strong>Wikidata:Tools/Author Disambiguator - Wikidata</strong> <a href="https://www.wikidata.org/wiki/Wikidata:Tools/Author_Disambiguator">https://www.wikidata.org/wiki/Wikidata:Tools/Author_Disambiguator</a></div>
+<div class="csl-left-margin">27. </div><div class="csl-right-inline"><strong>Wikidata:Tools/Author Disambiguator - Wikidata</strong> <a href="https://www.wikidata.org/wiki/Wikidata:Tools/Author_Disambiguator">https://www.wikidata.org/wiki/Wikidata:Tools/Author_Disambiguator</a></div>
 </div>
 <div id="ref-6chnW6cc" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">29. </div><div class="csl-right-inline"><strong>wbib: A helper for building Wikidata-based literature dashboards via SPARQL queries.</strong> <div class="csl-block">Tiago Lubiana</div> <a href="https://github.com/lubianat/wbib">https://github.com/lubianat/wbib</a></div>
+<div class="csl-left-margin">28. </div><div class="csl-right-inline"><strong>wbib: A helper for building Wikidata-based literature dashboards via SPARQL queries.</strong> <div class="csl-block">Tiago Lubiana</div> <a href="https://github.com/lubianat/wbib">https://github.com/lubianat/wbib</a></div>
 </div>
 <div id="ref-2wDsXBwd" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">30. </div><div class="csl-right-inline"><a href="https://query.wikidata.org/">https://query.wikidata.org/</a></div>
+<div class="csl-left-margin">29. </div><div class="csl-right-inline"><a href="https://query.wikidata.org/">https://query.wikidata.org/</a></div>
 </div>
 <div id="ref-1hag8XE6" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">31. </div><div class="csl-right-inline"><strong>HCA Latin America - 2021 Workshop</strong> <a href="https://www.humancellatlas.org/hca-latin-america-2021-workshop/">https://www.humancellatlas.org/hca-latin-america-2021-workshop/</a></div>
+<div class="csl-left-margin">30. </div><div class="csl-right-inline"><strong>HCA Latin America - 2021 Workshop</strong> <a href="https://www.humancellatlas.org/hca-latin-america-2021-workshop/">https://www.humancellatlas.org/hca-latin-america-2021-workshop/</a></div>
 </div>
 <div id="ref-kHL3NVxk" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">32. </div><div class="csl-right-inline"><strong>BioHackathon Europe</strong> <a href="https://biohackathon-europe.org/">https://biohackathon-europe.org/</a></div>
+<div class="csl-left-margin">31. </div><div class="csl-right-inline"><strong>BioHackathon Europe</strong> <a href="https://biohackathon-europe.org/">https://biohackathon-europe.org/</a></div>
 </div>
 <div id="ref-qDI8I4IJ" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">33. </div><div class="csl-right-inline"><strong>GitHub - SuLab/WikidataIntegrator: A Wikidata Python module integrating the MediaWiki API and the Wikidata SPARQL endpoint</strong> <div class="csl-block">GitHub</div> <a href="https://github.com/SuLab/WikidataIntegrator">https://github.com/SuLab/WikidataIntegrator</a></div>
+<div class="csl-left-margin">32. </div><div class="csl-right-inline"><strong>GitHub - SuLab/WikidataIntegrator: A Wikidata Python module integrating the MediaWiki API and the Wikidata SPARQL endpoint</strong> <div class="csl-block">GitHub</div> <a href="https://github.com/SuLab/WikidataIntegrator">https://github.com/SuLab/WikidataIntegrator</a></div>
 </div>
 <div id="ref-MxIeSJYt" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">34. </div><div class="csl-right-inline"><strong>fcoex: FCBF-based Co-Expression Networks for Single Cells</strong> <div class="csl-block">Tiago Lubiana, Helder Nakaya</div> <em>Bioconductor version: Release (3.15)</em> (2022) <a href="https://bioconductor.org/packages/fcoex/">https://bioconductor.org/packages/fcoex/</a></div>
+<div class="csl-left-margin">33. </div><div class="csl-right-inline"><strong>fcoex: FCBF-based Co-Expression Networks for Single Cells</strong> <div class="csl-block">Tiago Lubiana, Helder Nakaya</div> <em>Bioconductor version: Release (3.15)</em> (2022) <a href="https://bioconductor.org/packages/fcoex/">https://bioconductor.org/packages/fcoex/</a></div>
 </div>
 <div id="ref-CQRJ53gu" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">35. </div><div class="csl-right-inline"><strong>Complex Portal 2022: new curation frontiers</strong> <div class="csl-block">Birgit HM Meldal, Livia Perfetto, Colin Combe, Tiago Lubiana, João Vitor Ferreira Cavalcante, Hema Bye-A-Jee, Andra Waagmeester, Noemi del-Toro, Anjali Shrivastava, Elisabeth Barrera, … Sandra Orchard</div> <em>Nucleic Acids Research</em> (2021-10-29) <a href="https://www.wikidata.org/wiki/Q109348309">https://www.wikidata.org/wiki/Q109348309</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1093/nar/gkab991">10.1093/nar/gkab991</a></div></div>
+<div class="csl-left-margin">34. </div><div class="csl-right-inline"><strong>Complex Portal 2022: new curation frontiers</strong> <div class="csl-block">Birgit HM Meldal, Livia Perfetto, Colin Combe, Tiago Lubiana, João Vitor Ferreira Cavalcante, Hema Bye-A-Jee, Andra Waagmeester, Noemi del-Toro, Anjali Shrivastava, Elisabeth Barrera, … Sandra Orchard</div> <em>Nucleic Acids Research</em> (2021-10-29) <a href="https://www.wikidata.org/wiki/Q109348309">https://www.wikidata.org/wiki/Q109348309</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1093/nar/gkab991">10.1093/nar/gkab991</a></div></div>
 </div>
 <div id="ref-1DguATd9G" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">36. </div><div class="csl-right-inline"><strong>The Cellosaurus, a cell-line knowledge resource.</strong> <div class="csl-block">Amos Bairoch</div> <em>Journal of Biomolecular Techniques</em> (2018-05-01) <a href="https://www.wikidata.org/wiki/Q54370168">https://www.wikidata.org/wiki/Q54370168</a> <div class="csl-block">DOI: <a href="https://doi.org/10.7171/jbt.18-2902-002">10.7171/jbt.18-2902-002</a></div></div>
+<div class="csl-left-margin">35. </div><div class="csl-right-inline"><strong>The Cellosaurus, a cell-line knowledge resource.</strong> <div class="csl-block">Amos Bairoch</div> <em>Journal of Biomolecular Techniques</em> (2018-05-01) <a href="https://www.wikidata.org/wiki/Q54370168">https://www.wikidata.org/wiki/Q54370168</a> <div class="csl-block">DOI: <a href="https://doi.org/10.7171/jbt.18-2902-002">10.7171/jbt.18-2902-002</a></div></div>
 </div>
 <div id="ref-lMQxhx3q" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">37. </div><div class="csl-right-inline"><strong>User:CellosaurusBot - Wikidata</strong> <a href="https://www.wikidata.org/wiki/User:CellosaurusBot">https://www.wikidata.org/wiki/User:CellosaurusBot</a></div>
+<div class="csl-left-margin">36. </div><div class="csl-right-inline"><strong>User:CellosaurusBot - Wikidata</strong> <a href="https://www.wikidata.org/wiki/User:CellosaurusBot">https://www.wikidata.org/wiki/User:CellosaurusBot</a></div>
 </div>
 <div id="ref-gdYsBE7d" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">38. </div><div class="csl-right-inline"><strong>Wisecube AI | Knowledge Graph Engine</strong> <a href="https://www.wisecube.ai/">https://www.wisecube.ai/</a></div>
+<div class="csl-left-margin">37. </div><div class="csl-right-inline"><strong>Wisecube AI | Knowledge Graph Engine</strong> <a href="https://www.wisecube.ai/">https://www.wisecube.ai/</a></div>
 </div>
 <div id="ref-rkXotO9x" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">39. </div><div class="csl-right-inline"><strong>An overview of the BIOASQ large-scale biomedical semantic indexing and question answering competition</strong> <div class="csl-block">George Tsatsaronis, Georgios Balikas, Prodromos Malakasiotis, Ioannis Partalas, Matthias Zschunke, Michael R Alvers, Dirk Weissenborn, Anastasia Krithara, Sergios Petridis, Dimitris Polychronopoulos, … Georgios Paliouras</div> <em>BMC Bioinformatics</em> (2015-04-30) <a href="https://www.wikidata.org/wiki/Q28646342">https://www.wikidata.org/wiki/Q28646342</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1186/s12859-015-0564-6">10.1186/s12859-015-0564-6</a></div></div>
+<div class="csl-left-margin">38. </div><div class="csl-right-inline"><strong>An overview of the BIOASQ large-scale biomedical semantic indexing and question answering competition</strong> <div class="csl-block">George Tsatsaronis, Georgios Balikas, Prodromos Malakasiotis, Ioannis Partalas, Matthias Zschunke, Michael R Alvers, Dirk Weissenborn, Anastasia Krithara, Sergios Petridis, Dimitris Polychronopoulos, … Georgios Paliouras</div> <em>BMC Bioinformatics</em> (2015-04-30) <a href="https://www.wikidata.org/wiki/Q28646342">https://www.wikidata.org/wiki/Q28646342</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1186/s12859-015-0564-6">10.1186/s12859-015-0564-6</a></div></div>
 </div>
 <div id="ref-14Wi842eZ" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">40. </div><div class="csl-right-inline"><strong>biohackathon-projects-2021/projects/32 at main · elixir-europe/biohackathon-projects-2021</strong> <div class="csl-block">GitHub</div> <a href="https://github.com/elixir-europe/biohackathon-projects-2021">https://github.com/elixir-europe/biohackathon-projects-2021</a></div>
+<div class="csl-left-margin">39. </div><div class="csl-right-inline"><strong>biohackathon-projects-2021/projects/32 at main · elixir-europe/biohackathon-projects-2021</strong> <div class="csl-block">GitHub</div> <a href="https://github.com/elixir-europe/biohackathon-projects-2021">https://github.com/elixir-europe/biohackathon-projects-2021</a></div>
 </div>
 </div>
 <!-- default theme -->
