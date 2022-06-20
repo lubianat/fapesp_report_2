@@ -5,7 +5,7 @@ keywords:
 - publishing
 - manubot
 lang: en-US
-date-meta: '2022-06-16'
+date-meta: '2022-06-20'
 author-meta:
 - John Doe
 - Jane Roe
@@ -19,8 +19,8 @@ header-includes: |-
   <meta name="citation_title" content="Manuscript Title" />
   <meta property="og:title" content="Manuscript Title" />
   <meta property="twitter:title" content="Manuscript Title" />
-  <meta name="dc.date" content="2022-06-16" />
-  <meta name="citation_publication_date" content="2022-06-16" />
+  <meta name="dc.date" content="2022-06-20" />
+  <meta name="citation_publication_date" content="2022-06-20" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -41,9 +41,9 @@ header-includes: |-
   <meta name="citation_fulltext_html_url" content="https://lubianat.github.io/fapesp_report_2/" />
   <meta name="citation_pdf_url" content="https://lubianat.github.io/fapesp_report_2/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://lubianat.github.io/fapesp_report_2/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://lubianat.github.io/fapesp_report_2/v/77e84f21ca795b243a855763c8a9a2dd336f7717/" />
-  <meta name="manubot_html_url_versioned" content="https://lubianat.github.io/fapesp_report_2/v/77e84f21ca795b243a855763c8a9a2dd336f7717/" />
-  <meta name="manubot_pdf_url_versioned" content="https://lubianat.github.io/fapesp_report_2/v/77e84f21ca795b243a855763c8a9a2dd336f7717/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://lubianat.github.io/fapesp_report_2/v/702304ef9b3847e59e6e50313265c1a8f56af618/" />
+  <meta name="manubot_html_url_versioned" content="https://lubianat.github.io/fapesp_report_2/v/702304ef9b3847e59e6e50313265c1a8f56af618/" />
+  <meta name="manubot_pdf_url_versioned" content="https://lubianat.github.io/fapesp_report_2/v/702304ef9b3847e59e6e50313265c1a8f56af618/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -65,10 +65,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://lubianat.github.io/fapesp_report_2/v/77e84f21ca795b243a855763c8a9a2dd336f7717/))
+([permalink](https://lubianat.github.io/fapesp_report_2/v/702304ef9b3847e59e6e50313265c1a8f56af618/))
 was automatically generated
-from [lubianat/fapesp_report_2@77e84f2](https://github.com/lubianat/fapesp_report_2/tree/77e84f21ca795b243a855763c8a9a2dd336f7717)
-on June 16, 2022.
+from [lubianat/fapesp_report_2@702304e](https://github.com/lubianat/fapesp_report_2/tree/702304ef9b3847e59e6e50313265c1a8f56af618)
+on June 20, 2022.
 </em></small>
 
 ## Authors
@@ -379,18 +379,20 @@ The code for integrating a Google Spreadsheet to Wikidata is available at <https
 
 ![Wikidata Bib was coupled with a biocuration framework for cell types](images/biocuration_of_cells.png){#fig:biocuration_of_cells width="85%"}
 
-<!-- UPDATE THE STATISTICS -->
+<!-- UPDATE THE STATISTICS 
+Jupyter Notebook: https://colab.research.google.com/drive/1GvQXOs51_U8icdGMtKXMeLOXKM8pXWet
+-->
 
-Wikidata contains 2940 subclasses of "cell ([Q7868](https://www.wikidata.org/wiki/Q7868))" as of 8 December 2021. 
+Wikidata contains 4075 subclasses of "cell ([Q7868](https://www.wikidata.org/wiki/Q7868))" as of 16 of June of 2022. 
 From those, 550 cell classes are specific for humans, and 318 are specific for mice.  
-As a comparison, as of 8 December 2021, Wikidata has more cell classes than the Cell Ontology, which lists 2577 classes. 
+Currently Wikidata has more cell classes than the Cell Ontology, which lists 2577 classes. 
 It is worth noticing that classes on the Cell Ontology are added after careful consideration by ontologists and domain experts and should be considered of higher quality than the ones on Wikidata. 
 
-From the 2940 cell classes on Wikidata, 2812 (95.6%) have been edited somehow by User:TiagoLubiana, and 1668 (56.7%) have been created by User:TiagoLubiana. 
-Edits made to the cells were often connecting a dangling term, created automatically from an Wikipedia page to the cell subclass hierarchy, and included adding identifiers, images, markers, and other pieces of information. 
-From the 1668 entities created, approximately 63 species-neutral cell types, 188 human and 188 mouse cell types were added based on PanglaoDB entries (total of 439).
-The remaining 1229 entries were created either via Wikidata's web interface or via the curation workflow described in this chapter. 
-These statistics are a simple demonstration of how the curation system efficiently contributes to the status of cell type information on Wikidata. 
+From the 4075 cell classes on Wikidata, 3946 (96.8%) have been edited somehow by User:TiagoLubiana, and 2737 (67.2%) have been created by User:TiagoLubiana. 
+Edits included adding multilanguage labels, connecting a dangling Wikipedia page to the cell subclass hierarchy, adding identifiers, images, markers, and other pieces of information. 
+Approximatedly 430 hundred terms were added via manual curation based on PanglaoDB entries, while the remaining 2307 entries were created either via Wikidata's web interface or via the curation workflow described in this chapter. 
+These statistics are demonstration of how the curation system efficiently contributes to the status of cell type information on Wikidata.
+
 <!-- UPDATE THE STATISTICS -->
 
 As mentioned by Aviv Regev in the Human Cell Atlas General Meeting 2021, "it's everyone's collective

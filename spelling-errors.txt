@@ -2,6 +2,7 @@ actualpython
 Amyotrophic
 Análises
 analytics
+Approximatedly
 artisanal
 Aviv
 bibliometric
@@ -18,7 +19,7 @@ CIÊNCIAS
 Clatworthy
 Clínicas
 coexpression
-complexportal
+ComplexPortal
 CoV
 CSV
 CTRL
@@ -56,11 +57,12 @@ metascientific
 Mhlanga
 MIRACL
 monocytes
+multilanguage
 Musa
 Muzlifah
 Nakaya
 neighbourhood
-notetaking
+Notetaking
 OBO
 oldid
 ontologies
