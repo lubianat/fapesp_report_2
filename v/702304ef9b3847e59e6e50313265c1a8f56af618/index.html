@@ -1,0 +1,3864 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en-US" xml:lang="en-US">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <meta name="author" content="John Doe" />
+  <meta name="author" content="Jane Roe" />
+  <meta name="dcterms.date" content="2022-06-20" />
+  <meta name="keywords" content="markdown, publishing, manubot" />
+  <title>Manuscript Title</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    span.underline{text-decoration: underline;}
+    div.column{display: inline-block; vertical-align: top; width: 50%;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    ul.task-list{list-style: none;}
+    pre > code.sourceCode { white-space: pre; position: relative; }
+    pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+    pre > code.sourceCode > span:empty { height: 1.2em; }
+    .sourceCode { overflow: visible; }
+    code.sourceCode > span { color: inherit; text-decoration: inherit; }
+    div.sourceCode { margin: 1em 0; }
+    pre.sourceCode { margin: 0; }
+    @media screen {
+    div.sourceCode { overflow: auto; }
+    }
+    @media print {
+    pre > code.sourceCode { white-space: pre-wrap; }
+    pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+    }
+    pre.numberSource code
+      { counter-reset: source-line 0; }
+    pre.numberSource code > span
+      { position: relative; left: -4em; counter-increment: source-line; }
+    pre.numberSource code > span > a:first-child::before
+      { content: counter(source-line);
+        position: relative; left: -1em; text-align: right; vertical-align: baseline;
+        border: none; display: inline-block;
+        -webkit-touch-callout: none; -webkit-user-select: none;
+        -khtml-user-select: none; -moz-user-select: none;
+        -ms-user-select: none; user-select: none;
+        padding: 0 4px; width: 4em;
+        color: #aaaaaa;
+      }
+    pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+    div.sourceCode
+      {   }
+    @media screen {
+    pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+    }
+    code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+    code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+    code span.at { color: #7d9029; } /* Attribute */
+    code span.bn { color: #40a070; } /* BaseN */
+    code span.bu { } /* BuiltIn */
+    code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+    code span.ch { color: #4070a0; } /* Char */
+    code span.cn { color: #880000; } /* Constant */
+    code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+    code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+    code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+    code span.dt { color: #902000; } /* DataType */
+    code span.dv { color: #40a070; } /* DecVal */
+    code span.er { color: #ff0000; font-weight: bold; } /* Error */
+    code span.ex { } /* Extension */
+    code span.fl { color: #40a070; } /* Float */
+    code span.fu { color: #06287e; } /* Function */
+    code span.im { } /* Import */
+    code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+    code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+    code span.op { color: #666666; } /* Operator */
+    code span.ot { color: #007020; } /* Other */
+    code span.pp { color: #bc7a00; } /* Preprocessor */
+    code span.sc { color: #4070a0; } /* SpecialChar */
+    code span.ss { color: #bb6688; } /* SpecialString */
+    code span.st { color: #4070a0; } /* String */
+    code span.va { color: #19177c; } /* Variable */
+    code span.vs { color: #4070a0; } /* VerbatimString */
+    code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+    div.csl-bib-body { }
+    div.csl-entry {
+      clear: both;
+    }
+    .hanging div.csl-entry {
+      margin-left:2em;
+      text-indent:-2em;
+    }
+    div.csl-left-margin {
+      min-width:2em;
+      float:left;
+    }
+    div.csl-right-inline {
+      margin-left:2em;
+      padding-left:1em;
+    }
+    div.csl-indent {
+      margin-left: 2em;
+    }
+  </style>
+  <!--[if lt IE 9]>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
+  <![endif]-->
+  <!--
+  Manubot generated metadata rendered from header-includes-template.html.
+  Suggest improvements at https://github.com/manubot/manubot/blob/main/manubot/process/header-includes-template.html
+  -->
+  <meta name="dc.format" content="text/html" />
+  <meta name="dc.title" content="Manuscript Title" />
+  <meta name="citation_title" content="Manuscript Title" />
+  <meta property="og:title" content="Manuscript Title" />
+  <meta property="twitter:title" content="Manuscript Title" />
+  <meta name="dc.date" content="2022-06-20" />
+  <meta name="citation_publication_date" content="2022-06-20" />
+  <meta name="dc.language" content="en-US" />
+  <meta name="citation_language" content="en-US" />
+  <meta name="dc.relation.ispartof" content="Manubot" />
+  <meta name="dc.publisher" content="Manubot" />
+  <meta name="citation_journal_title" content="Manubot" />
+  <meta name="citation_technical_report_institution" content="Manubot" />
+  <meta name="citation_author" content="John Doe" />
+  <meta name="citation_author_institution" content="Department of Something, University of Whatever" />
+  <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
+  <meta name="twitter:creator" content="@johndoe" />
+  <meta name="citation_author" content="Jane Roe" />
+  <meta name="citation_author_institution" content="Department of Something, University of Whatever" />
+  <meta name="citation_author_institution" content="Department of Whatever, University of Something" />
+  <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
+  <link rel="canonical" href="https://lubianat.github.io/fapesp_report_2/" />
+  <meta property="og:url" content="https://lubianat.github.io/fapesp_report_2/" />
+  <meta property="twitter:url" content="https://lubianat.github.io/fapesp_report_2/" />
+  <meta name="citation_fulltext_html_url" content="https://lubianat.github.io/fapesp_report_2/" />
+  <meta name="citation_pdf_url" content="https://lubianat.github.io/fapesp_report_2/manuscript.pdf" />
+  <link rel="alternate" type="application/pdf" href="https://lubianat.github.io/fapesp_report_2/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://lubianat.github.io/fapesp_report_2/v/702304ef9b3847e59e6e50313265c1a8f56af618/" />
+  <meta name="manubot_html_url_versioned" content="https://lubianat.github.io/fapesp_report_2/v/702304ef9b3847e59e6e50313265c1a8f56af618/" />
+  <meta name="manubot_pdf_url_versioned" content="https://lubianat.github.io/fapesp_report_2/v/702304ef9b3847e59e6e50313265c1a8f56af618/manuscript.pdf" />
+  <meta property="og:type" content="article" />
+  <meta property="twitter:card" content="summary_large_image" />
+  <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
+  <link rel="mask-icon" href="https://manubot.org/safari-pinned-tab.svg" color="#ad1457" />
+  <meta name="theme-color" content="#ad1457" />
+  <!-- end Manubot generated metadata -->
+</head>
+<body>
+<header id="title-block-header">
+<h1 class="title">Manuscript Title</h1>
+</header>
+<p><small><em>
+This manuscript
+(<a href="https://lubianat.github.io/fapesp_report_2/v/702304ef9b3847e59e6e50313265c1a8f56af618/">permalink</a>)
+was automatically generated
+from <a href="https://github.com/lubianat/fapesp_report_2/tree/702304ef9b3847e59e6e50313265c1a8f56af618">lubianat/fapesp_report_2@702304e</a>
+on June 20, 2022.
+</em></small></p>
+<h2 id="authors">Authors</h2>
+<ul>
+<li><p><strong>John Doe</strong><br>
+<img src="images/orcid.svg" class="inline_icon" alt="ORCID icon" />
+<a href="https://orcid.org/XXXX-XXXX-XXXX-XXXX">XXXX-XXXX-XXXX-XXXX</a>
+· <img src="images/github.svg" class="inline_icon" alt="GitHub icon" />
+<a href="https://github.com/johndoe">johndoe</a>
+· <img src="images/twitter.svg" class="inline_icon" alt="Twitter icon" />
+<a href="https://twitter.com/johndoe">johndoe</a><br>
+<small>
+Department of Something, University of Whatever
+· Funded by Grant XXXXXXXX
+</small></p></li>
+<li><p><strong>Jane Roe</strong><br>
+<img src="images/orcid.svg" class="inline_icon" alt="ORCID icon" />
+<a href="https://orcid.org/XXXX-XXXX-XXXX-XXXX">XXXX-XXXX-XXXX-XXXX</a>
+· <img src="images/github.svg" class="inline_icon" alt="GitHub icon" />
+<a href="https://github.com/janeroe">janeroe</a><br>
+<small>
+Department of Something, University of Whatever; Department of Whatever, University of Something
+</small></p></li>
+</ul>
+<p>UNIVERSIDADE DE SÃO PAULO
+FACULDADE DE CIÊNCIAS FARMACÊUTICAS
+Departamento de Análises Clínicas e Toxicológicas</p>
+<p>Doctorate Project - Report 2
+FAPESP process number: #2019/26284-1
+Project term: 01/08/2020 to 31/07/2024
+Period of Scientific report: 10/07/2021 to 10/07/2022</p>
+<p>Scholarship Holder: Tiago Lubiana</p>
+<p>Responsible Researcher: Prof. Dr. Helder Takashi Imoto Nakaya</p>
+<p>São Paulo - SP
+July 2022</p>
+<h1 class="page_break_before" id="project-summary">Project summary</h1>
+<p>The advent of single-cell technologies has deepened the interest of the scientific community in the building blocks of life, the cells <span class="citation" data-cites="pNGap1Du">[<a href="#ref-pNGap1Du" role="doc-biblioref">1</a>]</span>.
+The Human Cell Atlas (HCA) project, has been a major player in the cell knowledge ecosystem, running since 2017 towards the task to characterize every cell type in the human body <span class="citation" data-cites="1GmbExweg">[<a href="#ref-1GmbExweg" role="doc-biblioref">2</a>]</span>. The HCA consortium recruited people from all over the world to tackle different parts of the project. In Brazil, Prof. Helder Nakaya (supervisor of this PhD project) is leading the national effort to contribute to HCA, with a focus on the roles of different cell types in the pathological processes of infectious and inflammatory diseases.</p>
+<p>HCA is set to revolutionize the biomedical sciences, by creating tools and standards for basic research, as well as allowing better characterization of disease, and thus, ultimately, improving diagnostics and therapy.
+Its products (data, information, knowledge and wisdom) need to be FAIR: findable, accessible, interoperable and reusable.
+Data stewardship and data management are growing as core demands of the scientific community, ranging from data management plans <span class="citation" data-cites="1DSEIjFha">[<a href="#ref-1DSEIjFha" role="doc-biblioref">3</a>]</span> to specialized personnel <span class="citation" data-cites="1DSEIjFha">[<a href="#ref-1DSEIjFha" role="doc-biblioref">3</a>]</span>.</p>
+<p>The Human Cell Atlas has a dedicated team for organizing data: the Data Coordination Platform (DCP) <span class="citation" data-cites="zDRzmIGu">[<a href="#ref-zDRzmIGu" role="doc-biblioref">4</a>]</span> <span class="citation" data-cites="kkwRTArg">[<a href="#ref-kkwRTArg" role="doc-biblioref">5</a>]</span>.
+The DCP is responsible for tracing the plan for computational interoperability, from the data generators to the consumers.<span class="citation" data-cites="kkwRTArg">[<a href="#ref-kkwRTArg" role="doc-biblioref">5</a>]</span>.
+The Human Cell Atlas has its portal for data (<a href="https://data.humancellatlas.org/" class="uri">https://data.humancellatlas.org/</a>) which composes the data repository landscape with other resources, like the Broad Institute Single Cell Portal (<a href="https://singlecell.broadinstitute.org/single_cell" class="uri">https://singlecell.broadinstitute.org/single_cell</a>) and the Chan-Zuckerberg Biohub Tabula Sapiens (<a href="https://tabula-sapiens-portal.ds.czbiohub.org/" class="uri">https://tabula-sapiens-portal.ds.czbiohub.org/</a>).
+In addition to its core team, the HCA is poised to grow by community interaction, and states in its opening paper that “As with the Human Genome Project, a robust plan will best emerge from wide-ranging scientific discussions and careful planning”.<span class="citation" data-cites="1GmbExweg">[<a href="#ref-1GmbExweg" role="doc-biblioref">2</a>]</span><br />
+Thus, this project inserts itself among the wide-ranging scientific discussions to improve data - and knowledge - interoperability.</p>
+<p>The large amount of information generated by HCA creates the need for innovative knowledge management approaches.
+For the Human Cell Atlas Project to maximize its benefit for society, its knowledge products will need to be inserted into the main route of automated knowledge discovery .<br />
+The field of Literature Based Discovery dedicates itself to this challenge: making actual discoveries (or at least very strong hypothesis) using as material plainly the existing literature. <span class="citation" data-cites="Fuf8oc85">[<a href="#ref-Fuf8oc85" role="doc-biblioref">6</a>]</span>
+The textbook example of Literature Based Discovery is described by Don Swanson’s so-called ABC model: If A is related do B, and B is related to C, then A and C are indirectly related <span class="citation" data-cites="LNtevqb9">[<a href="#ref-LNtevqb9" role="doc-biblioref">7</a>]</span>
+In a seminal paper, Swanson showed an hypothesis about using fish oil (A) to treat Raynauld’s disease (C), demonstrating that even though the specialized fish-oil (A) literature had shown its association (AB) with a set of blood parameters (B), and the specialized Raynauld’s disease literature had show its association (BC) with the same set of parameters (B), the AC link was never made in the literature, despite its seeming obviousness <span class="citation" data-cites="LNtevqb9">[<a href="#ref-LNtevqb9" role="doc-biblioref">7</a>]</span>.</p>
+<p>Modern advancements of literature-based discovery rely on Natural Language Processing, Machine Learning and Knowledge graphs to make inferences on literature knowledge.
+Word embeddings, for example, are leading inference of properties of compounds based on their shared neighbourhood of words (the words before and after their mentiongs) with known compounds, thus making use of latent knowledge in the body of knowledge. <span class="citation" data-cites="Lbqx9XBK">[<a href="#ref-Lbqx9XBK" role="doc-biblioref">8</a>]</span>
+Other, more explicit approaches, rely on extracted relations embedded in knowledge graphs,fo example, the discovery of new RNA-binding proteins related to Amyotrophic Lateral Sclerosis by analysis of the Watson Drug Discovery gene-disease network. <span class="citation" data-cites="CovO24JR">[<a href="#ref-CovO24JR" role="doc-biblioref">9</a>]</span>
+Knowledge graphs have a set of characteristics that make then useful for Literature Based Discovery: the power of representing multiple relations, the power of making inferences on top of those relations, and provide human understandability at every step, allowing for a dialog between expert humans and computing systems.
+The field of biomedical ontologies explores that direction in depth, and the community is building many solutions, widely applicable for the biomedical sciences.</p>
+<p>An ontology, as used here, is a formal computational representation of reality, which tries to represent each concept (and their relations) as precisely as possible. <span class="citation" data-cites="DLTMbf54">[<a href="#ref-DLTMbf54" role="doc-biblioref">10</a>]</span><br />
+Constructing an ontology is a process of selecting and defining terms and relationships of interest and making statements about reality using terms and relationships.
+The Gene Ontology is probably the most well known biomedical ontology; it describes (among other things) different classes of biological process, related to each_other by “is_a” and “part_of relations. <span class="citation" data-cites="18wkLcGxT">[<a href="#ref-18wkLcGxT" role="doc-biblioref">11</a>]</span> <span class="citation" data-cites="2KmDs8gy">[<a href="#ref-2KmDs8gy" role="doc-biblioref">12</a>]</span>.</p>
+<p>The Gene Ontology is part of a much larger effort to formalize concepts across biology: the Open Biomedical and Biological Ontologies (OBO) Foundry. <span class="citation" data-cites="j3tJyG7J">[<a href="#ref-j3tJyG7J" role="doc-biblioref">13</a>]</span>
+Created in 2007, the OBO Foundry is a hub of biomedical ontologies that sets guidelines for the design and construction of high-quality ontologies.
+The initial OBO Foundry united several independent ontologies, like the Cell Ontology (CL), the Disease Ontology (DO) and the Protein Ontology (PRO) under a common framework, a great progress towards interoperability.
+At the same time, the creation of the Relation Ontology (RO) provided a go-to point for relations in biology that could them be reused by different ontologies.</p>
+<p>Ontologies are powerful, but require a high degree of tecnichal expertise to get started.
+Recently, a new approach for formal knowledge representation arose with the dawn of collaborative knowledge graphs.
+Wikidata, the collaborative knowledge graph of the Wikimedia foundation, allows users to contribute with classes and statements, in the same spirit of Wikipedia and share its “epistemic virtues, like power, speed and availability. <span class="citation" data-cites="qMozvNth">[<a href="#ref-qMozvNth" role="doc-biblioref">14</a>]</span>
+It is powerful because of its large community of contributors. With a community of more than 25,000 active editors (https://www.wikidata.org/wiki/Wikidata:Statistics) and growing, it is able to cover a much wider number of concepts than any user individually.
+It is fast, because one does not need to install any software or ask for permissions to update it: any user can simply do it via a web interface.
+That speed makes it easier for newcomers to join and contribute, in contrast to OBO Foundry ontologies, which require extensive training on semantics and knowledge of Git/GitHub for contributions.
+Finally, the information on Wikidata is available via an user interface, via a SPARQL query service and as large, full-size database dumps, providing full extent reusability.
+The Wikidata model has been so sucessfull that Google decided to migrate its own knowledge base, Freebase, fully into Wikidata.<span class="citation" data-cites="xLpRePoh">[<a href="#ref-xLpRePoh" role="doc-biblioref">15</a>]</span></p>
+<p>Several advances towards biological data integration and biological data analysis in Wikidata have been made before, yielding positive results <span class="citation" data-cites="lmhCFXiz">[<a href="#ref-lmhCFXiz" role="doc-biblioref">16</a>]</span> <span class="citation" data-cites="3GqlN9Dk">[<a href="#ref-3GqlN9Dk" role="doc-biblioref">17</a>]</span> and showcasing its potential for bioinformatics-related analyses, such as drug repurposing and ID conversion <span class="citation" data-cites="HUodcdz1">[<a href="#ref-HUodcdz1" role="doc-biblioref">18</a>]</span>.
+Wikidata has been proposed as a unified base to gather and distribute biomedical knowledge, with more than 50 000 human gene items indexed and hundreds of biomedical-related properties <span class="citation" data-cites="11iU76eUa">[<a href="#ref-11iU76eUa" role="doc-biblioref">19</a>]</span>.</p>
+<p>The aim of this project is to to study current understanding of cell types for development a comprehensive ontological model in Wikidata for cell types.
+We are reviewing the single-cell literature, refining and formalizing concepts for cell type delimitation and exploring their application in the Wikidata database.
+At the same time, we are exploring the use of Natural Language Processing tools, in combination with expert annotations
+tools to automate knowledge extraction from scientific articles in the scope of the Human Cell Atlas.
+The specific goals outlined in the approved project were:</p>
+<ul>
+<li>Build a data model to capture the main properties to describe a human cell. Provide working definitions of cell types and states and their characteristics.</li>
+<li>Extract and add to Wikidata pieces of information regarding Human Cell Atlas publications to build gold standards. Use this information to develop machine learning tools to extract knowledge from publications.</li>
+<li>Create tools to make data from the underlying knowledge graph accessible employing tools from network theory.</li>
+</ul>
+<h1 class="page_break_before" id="achievements">Achievements</h1>
+<p>In the second year of the project, we addressed 2 different facets of the project.</p>
+<p>The first facet was the development of guidelines for describing new cell types in published research in partnership with the Cell Ontology.</p>
+<p>The second facet was the formalization of a biocuration routine to curate new cell types on Wikidata, an effort with 2 main products: the consolidation of Wikidata as a database for cell types and Wikidata Bib, a software and workflow for reading large amounts of scientific literature.</p>
+<p>Additionally, we collaborated in several different projects related to organizing biomedical knowledge on Wikidata, which are also detailed in this session.
+## Biocuration of cell classes with Wikidata Bib {.page_break_before}
+### Introduction</p>
+<p>Reading scientific articles is an integral part of the routine of modern scientists.
+Although several literature-management software are available <span class="citation" data-cites="SdbIYKUa">[<a href="#ref-SdbIYKUa" role="doc-biblioref">20</a>]</span>, the process of reading is mainly artisanal.
+There are no standard guidelines on how to probe the literature organize notes for biomedical researchers.
+Thus, while reading and studying is a core activity, there are few (if any) protocols for the efficient screening of scientific articles.</p>
+<p>Other professional traditions have dealt with similar issues in the past.
+Notetaking is vital to keep track of financial balances and avoid costly problems in accounting.
+Double-entry bookkeeping was developed in the 13th century as a professional solution for notetaking in accounting where “every entry to an account requires a corresponding and opposite entry to a different account.” <span class="citation" data-cites="uYuz0opI">[<a href="#ref-uYuz0opI" role="doc-biblioref">21</a>, =Double-entry_bookkeeping&amp;oldid=1055066428]</span>
+In software development, Test-Driven Development (TDD) is a popular methodology where tests for code snippets are written before the code itself, therefore ensuring that written software passes minimum quality standards.
+The similarities of Double-entry bookkeeping and TDD are diverse <span class="citation" data-cites="KNGv5MPp">[<a href="#ref-KNGv5MPp" role="doc-biblioref">22</a>]</span>, but for our purpose, here suffices to see both as professionalized systems that promote better quality and accountability of works.</p>
+<p>In the humanities, there is a well-established practice of annotations of readings.
+The annotation skills are part of standard academic training in the humanities <span class="citation" data-cites="rPKBwmYh">[<a href="#ref-rPKBwmYh" role="doc-biblioref">23</a>]</span><span class="citation" data-cites="url">[<a href="#ref-url" role="doc-biblioref"><strong>url?</strong></a>]</span>.
+An influential work in presenting methods for academic reading in the humanities is Umberto Eco’s book “How to Write a Thesis” <span class="citation" data-cites="1HBVPtZGp">[<a href="#ref-1HBVPtZGp" role="doc-biblioref">24</a>]</span>, which outlines not only <em>how</em> to annotate the literature that basis an academic thesis, but also <em>why</em> to do so.
+The book, written originally in 1977, is still influential today.
+Still, its theoretical scope (roughly the humanities) and its date preceding the digital era limits the extent to which it applies to the biomedical sciences.</p>
+<p>Notably, the need for an organized reading system for biocuration studies stems from a difference in methodology.
+In humanities, the main (if not sole) research material is the written text, the books and articles from which research stems—<span class="citation" data-cites="url">[<a href="#ref-url" role="doc-biblioref"><strong>url?</strong></a>]</span>.
+In the biomedical sciences, including a large part of bioinformatics, the object of study is the natural world, observed via experimentation.
+Thus, naturally, scientific training focuses on experimentation and data analysis’s theoretical and practical basis.
+With the boom of scientific articles, however, the scientific literature (and accompanying public datasets) already provide a strong material for sculpting scientific projects.
+Thus, developing a methodology for academic reading tailored to the digital environment is a need.</p>
+<p>To address this gap, we are developing Wikidata Bib, a framework for large scale reading of scientific articles.
+It is presented in three parts, each with a technical overview alongside the theoretical foundations.
+First, Wikidata Bib is presented as a reading system for managing references and notes using a GitHub repository and plain text notes.
+Then, we present how the system ensures accountability, allowing users to get personalized analytics on their reading patterns.
+Finally, we demonstrate how Wikidata Bib fits an active curation environment, connecting the framework with the larger goal of this project of curating information about cell types on Wikidata.</p>
+<h2 id="wikidata-bib-as-a-reading-system">Wikidata Bib as a reading system</h2>
+<p>The reading framework of Wikidata bib is built upon a git repository integrated with GitHub, Python 3 scripts and SPARQL queries. The code is packaged into a python module to facilitate usage. It also uses the Click library to implement a professional Command Line Interface for end users (https://github.com/pallets/click).
+It has a standard file structure, summarized as the following:</p>
+<ul>
+<li><code>docs/</code>
+<ul>
+<li><code>index.html</code></li>
+</ul></li>
+<li><code>downloads/</code>
+<ul>
+<li><code>10.7554_ELIFE.52614.pdf</code></li>
+</ul></li>
+<li><code>src/</code>
+<ul>
+<li><code>data/</code>
+<ul>
+<li><code>config.yaml</code></li>
+<li><code>index.yaml</code></li>
+<li><code>read.csv</code></li>
+<li><code>read.ttl</code></li>
+<li><code>toread.yaml</code></li>
+</ul></li>
+<li><code>notes/</code>
+<ul>
+<li><code>Q87830400.md</code></li>
+</ul></li>
+<li><code>wikidata_bib/</code>
+<ul>
+<li><code>get_pdf.py</code></li>
+<li><code>read_paper.py</code></li>
+<li><code>update_dashboard.py</code></li>
+<li>…</li>
+</ul></li>
+</ul></li>
+<li><code>LICENSE</code></li>
+<li><code>pyproject.toml</code></li>
+<li><code>README.md</code></li>
+<li><code>setup.cfg</code></li>
+</ul>
+<p>The <code>docs/</code> directory contains the live dashboard from the readings, which will be discussed in the following sessions.
+The <code>downloads/</code> directory hosts the pdfs of the articles read with the system.
+These are not committed to the repository and are only stored locally.
+The <code>src/</code> directory contains a <code>data/</code> subfolder with the configuration files and the local database of what is read, a <code>notes</code> subfolder with the notes on the read articles and a <code>wikidata_bib</code> directory containing the actualpython code with the system’s mechanics.</p>
+<p>After installing the package using the <code>pip</code> utility (<a href="https://pypi.org/" class="uri">https://pypi.org/</a>), the user is able to use Wikidata Bib from the terminal as any other command line utility.
+The basic commands available are described below:
+- <code>bib read</code> receives a Wikidata QID for an article and opens the article web page on a browser and opens a personalized notes document. It also updates the static files for the analytics dashboard, stored in the <code>docs/</code> directory.
+- <code>bib pop</code>, which “pops” an article from the reading stash at <code>toread.yaml</code> and runs <code>bib read</code> for it
+- <code>bib log</code> updates the git repository and adds, commits and pushes notes and the dashboard to to GitHub</p>
+<p>To customize the system, a new user would need to update 3 <code>yaml</code> files in the <code>src/data</code> folder:
+<code>toread.yaml</code>, <code>index.yaml</code>and <code>config.yaml</code>.
+The <code>toread.yaml</code> stores in a plain text format the QIDs to be read. The file can be edited either manually or via automatic queries (not discussed in this report for conciseness).
+The <code>index.yaml</code> file holds an hierarchy of topics of interest for the researcher, to be used for indexing/tagging the notes in the way required by the topic of research. This file plays the role of Umberto Eco’s “work plan”, with the topics of interest for the academic. <span class="citation" data-cites="1HBVPtZGp">[<a href="#ref-1HBVPtZGp" role="doc-biblioref">24</a>]</span>
+Finally, the <code>config.yaml</code> contains options to customize the system for advanced use. For example, the user can configure shortcuts for different reading lists.
+For example, in my <code>to read.yaml</code> file there are two reading lists, one entitled <code>Cell types</code> header and another entitled <code>Biocuration</code>.
+My <code>config.yaml</code> contains the following snippet:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode yaml"><code class="sourceCode yaml"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">lists</span><span class="kw">:</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co"># - shortcut: Title of header in toread.md  </span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">ct</span><span class="kw">:</span><span class="at"> Cell types</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">bioc</span><span class="kw">:</span><span class="at"> Biocuration</span></span></code></pre></div>
+<p>The <code>config.yaml</code> shortcuts are used as arguments by the <code>bib pop</code> command, where <code>$ bib pop ct</code> retrieves an article from the “Cell types” list, while <code>$ bib pop bioc</code> retrieves an article from the “Biocuration” list.</p>
+<p>The Wikidata bib framework is coupled with a discipline of daily reading.
+The discipline is inspired by Robert Cecil Martin’s description of Test Driven Development in the book “Clean Code”, which includes not only a technical description but a <em>school of thought</em> of how software development might be approached. <span class="citation" data-cites="13HqB23xH">[<a href="#ref-13HqB23xH" role="doc-biblioref">25</a>]</span>
+Every day, I read one article of each list, using the notetaking station displayed in Figure <span class="citation" data-cites="fig">[<a href="#ref-fig" role="doc-biblioref"><strong>fig?</strong></a>]</span>: notetaking.
+The constancy of reading allows steady coverage of the relevant literature.
+While the discipline has worked for this research project, it is not required to use the Wikidata Bib system.</p>
+<p>The notetaking station of Wikidata Bib, opened in Virtual Studio Code, is depicted on Figure <span class="citation" data-cites="fig">[<a href="#ref-fig" role="doc-biblioref"><strong>fig?</strong></a>]</span>: notetaking A.
+The title and publication dates are displayed, and the reading process entails copying snippets from the text to the “Highlights” session.
+Copying the highlights into plain text makes the sections of interest searchable via command line using <code>grep</code> (https://en.wikipedia.org/w/wiki/Grep).
+Comments can be added either in the comment section or inline, alongside the highlights.
+Even though there is no enforcement, our recommendation is to use HTML comment syntax <code>&lt;!-- Comment goes here --&gt;</code> to differentiate from highlights.
+Visual Studio offers a default shortcut (CTRL + /) for adding comments, making the process seamless.</p>
+<p>The Wikidata Bib framework also includes, whenever possible, an improvement of the metadata about the article on Wikidata.
+In <span class="citation" data-cites="fig">[<a href="#ref-fig" role="doc-biblioref"><strong>fig?</strong></a>]</span>: notetaking B are shown the links included in the dashboard.
+A link to a Scholia <span class="citation" data-cites="hxzL9pmm">[<a href="#ref-hxzL9pmm" role="doc-biblioref">26</a>]</span> profile allows identification of related articles from a series of pre-made SPARQL queries probing bibliography data on Wikidata.
+While Scholia provides an overview of a given article, it does not allow direct curation of the metadata.
+For that, two links are provided, one to Wikidata and one to Author Disambiguator <span class="citation" data-cites="1A9RvszKC">[<a href="#ref-1A9RvszKC" role="doc-biblioref">27</a>]</span>.
+By accessing the Wikidata page for the entity, one can add new triples, for example, curating authors and topics of the article, which are then used by Scholia and by Wikidata Bib’s dashboard.
+Author Disambiguator is a wrapper of an Wikimedia API that facilitates disambiguating author names to unique identifiers on Wikidata, thus feeding the public knowledge graph of publication and authors.<br />
+Finally, a link to the article’s DOI or full-text URL is provided and serves as a fallback when the automatic download fails.
+Of note, while the metadata curation has a technical benefit to Wikidata and the dashboard, it also plays a theoretical role.
+By curating metadata on authors, the user of Wikidata Bib can better understand the people they read, and expand their metascientific perspective on their domain of interest.
+Furthermore, by embedding the metascientific curation in the reading process WikidataBib directs the user to get acquainted with the people producing the science they read, thus contributing to a more complete perspective of the research process.</p>
+<div id="fig:notetaking" class="fignos">
+<figure>
+<img src="images/note_taking_station_annotated_with_links.png" alt="Figure 1: Wikidata Bib’s platform for note taking" /><figcaption aria-hidden="true"><span>Figure 1:</span> Wikidata Bib’s platform for note taking</figcaption>
+</figure>
+</div>
+<p>The source code for Wikidata Bib is available at <a href="https://github.com/lubianat/wikidata_bib" class="uri">https://github.com/lubianat/wikidata_bib</a>.</p>
+<h2 id="wikidata-bib-as-a-dashboard">Wikidata Bib as a dashboard</h2>
+<p>The Wikidata Bib system also enables the reader to get statistics on their readings.
+Two simple databases are stored on the GitHub repository:
+* <code>read.ttl</code> - An RDF document recording the dates in which each article was read.
+* <code>read.csv</code> - An simple, human-readable index connecting QIDs with article titles.
+The CSV file is only stored for accountability and as a quick way to glance at the titles read.
+The .ttl file, on the other hand, is processed by the <code>update_dashboard.py</code> script to render 4 different HTML files under the <code>docs/</code> folder:
+- <code>index.html</code>
+- <code>last_day.html</code>
+- <code>past_week.html</code>
+- <code>past_month.html</code>
+All files are displayed in a GitHub pages static website.
+In the case of this work, they are displayed at <a href="https://lubianat.github.io/wikidata_bib/" class="uri">https://lubianat.github.io/wikidata_bib/</a>.</p>
+<p>To organize the code for rendering the dashboard, we created a python package, wbib, and deposited it in PyPi, making it available via <code>pip</code>. <span class="citation" data-cites="6chnW6cc">[<a href="#ref-6chnW6cc" role="doc-biblioref">28</a>]</span>.
+The package implements the logic for rendering complex Wikidata-based academic dashboards and is available in GitHub at <a href="https://github.com/lubianat/wbib" class="uri">https://github.com/lubianat/wbib</a>.
+It allows the user to build dashboards based on Wikidata records of information such as gender of authors, the region of author’s institutions, topics of articles and similar metascientific information.
+The dashboard is composed of SPARQL queries written for the Wikidata Query Service <span class="citation" data-cites="2wDsXBwd">[<a href="#ref-2wDsXBwd" role="doc-biblioref">29</a>]</span>
+It also allows users to feed an arbitrary list of articles and obtain a custom dashboard.
+Wikidata Bib obtains the HTML dashboards after feeding wbib the lists of articles read in total (<code>index.html</code>) or in pre-determined time spans (<code>last_day.html</code>, <code>past_week.html</code> and <code>past_month.html</code> )</p>
+<div id="fig:dashboard" class="fignos">
+<figure>
+<img src="images/wikidata_bib_display.png" style="width:85.0%" alt="Figure 2: Wikidata Bib queries for institutions of authors and most-read venues" /><figcaption aria-hidden="true"><span>Figure 2:</span> Wikidata Bib queries for institutions of authors and most-read venues</figcaption>
+</figure>
+</div>
+<p>The dashboard includes not only a basic list of read articles, but also statistics on most read authors and most-read venues.
+It also displays an interactive map of the institutions of articles read, permitting a glance at geographic biases in activities.
+An example of queries is shown in <a href="#fig:dashboard">2</a>.
+As the queries are rendered live, they evolve in quality with the growth of Wikidata.
+Finally, the clean 5-star-open data format enables users to adapt the queries to include different aspects of Wikidata.
+For example, table <a href="#tbl:articles_read_hca">1</a> showcases 10 articles that (1) I have read in the past year and (2) were authored by a speaker of the 1st Human Cell Atlas Latin America Single Cell RNA-seqData Analysis Workshop <span class="citation" data-cites="1hag8XE6">[<a href="#ref-1hag8XE6" role="doc-biblioref">30</a>]</span>.
+One practical application that the dashboard enables, thus, is to identify people in an event, institution or location that the user has read before, therefore catalyzing the possibility of collaborations.
+Anecdotally, this strategy was tested successfully at Biohackathon Europe 2021 <span class="citation" data-cites="kHL3NVxk">[<a href="#ref-kHL3NVxk" role="doc-biblioref">31</a>]</span>, where we used the system both to identify possible collaborators and as a conversation starter.</p>
+<div id="tbl:articles_read_hca" class="tablenos">
+<table id="tbl:articles_read_hca">
+<caption><span>Table 1:</span> Articles read by Tiago Lubiana before 8 December 2021 in which an author was a speaker at HCA Latin America
+ |</caption>
+<colgroup>
+<col style="width: 56%" />
+<col style="width: 43%" />
+</colgroup>
+<thead>
+<tr class="header">
+<th>workLabel</th>
+<th>authors</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>A promoter-level mammalian expression atlas</td>
+<td>Jay W Shin</td>
+</tr>
+<tr class="even">
+<td>Single-cell RNA-seq reveals new types of human blood dendritic cells, monocytes, and progenitors.</td>
+<td>Muzlifah Haniffa</td>
+</tr>
+<tr class="odd">
+<td>The Human Cell Atlas.</td>
+<td>Musa Mhlanga, Jay W Shin, Muzlifah Haniffa, Menna R Clatworthy, Dana Pe’er</td>
+</tr>
+<tr class="even">
+<td>The Human Cell Atlas: Technical approaches and challenges.</td>
+<td>Jay W Shin</td>
+</tr>
+<tr class="odd">
+<td>Innate Immune Landscape in Early Lung Adenocarcinoma by Paired Single-Cell Analyses.</td>
+<td>Dana Pe’er</td>
+</tr>
+<tr class="even">
+<td>Single cell RNA sequencing of human liver reveals distinct intrahepatic macrophage populations</td>
+<td>Sonya A MacParland</td>
+</tr>
+<tr class="odd">
+<td>Single-cell reconstruction of the early maternal-fetal interface in humans</td>
+<td>Muzlifah Haniffa</td>
+</tr>
+<tr class="even">
+<td>Distinct microbial and immune niches of the human colon</td>
+<td>Rasa Elmentaite, Menna R Clatworthy</td>
+</tr>
+<tr class="odd">
+<td>A cell atlas of human thymic development defines T cell repertoire formation</td>
+<td>Muzlifah Haniffa, Menna R Clatworthy</td>
+</tr>
+<tr class="even">
+<td>Decoding human fetal liver haematopoiesis</td>
+<td>Muzlifah Haniffa</td>
+</tr>
+</tbody>
+</table>
+</div>
+<h2 id="wikidata-bib-for-curation-of-cells-to-wikidata">Wikidata Bib for curation of cells to Wikidata</h2>
+<p>The Wikidata Bib system was devised originally to allow an overview of the fields of cell classification and biocuration.
+However, during the process, it was also repurposed for biocuration of new cell classes in Wikidata.
+By fast-tracking the reading of new articles, Wikidata Bib enables an efficient parsing of the literature and, thus, the identification of previously uncatalogued cell types.</p>
+<p>Articles read with Wikidata Bib were screened to mention cell types absent from Wikidata.
+As discussed in the chapter about the concept of cell type, we considered a “cell type” as any class of cells described by a domain expert with evidence of the reality of its instances.
+When a mention of such a class appears in an article, I first verify Wikidata for the existence of a related class.
+If it is absent from the platform, I enter a class name, alongside a superclass, and a QID in a Google Spreadsheet, as shown in Figure <a href="#fig:biocuration_of_cells">3</a>.</p>
+<p>The information from the spreadsheet is pulled by a python script and processed locally with a series of dictionaries that match common terms to Wikidata IDs.
+In the example shown in Figure <a href="#fig:biocuration_of_cells">3</a>, the string “endothelial cell” was matched against a manually curated dictionary to the Wikidata entry <a href="https://www.wikidata.org/wiki/Q11394395">Q11394395</a>, the representation of that concept on Wikidata.
+After reconciling the data, the script uses the Wikidata Integrator python package <span class="citation" data-cites="qDI8I4IJ">[<a href="#ref-qDI8I4IJ" role="doc-biblioref">32</a>]</span> to insert the new entries on the Wikidata database.
+The code for integrating a Google Spreadsheet to Wikidata is available at <a href="https://github.com/lubianat/wikidata_cell_curation" class="uri">https://github.com/lubianat/wikidata_cell_curation</a>.</p>
+<div id="fig:biocuration_of_cells" class="fignos">
+<figure>
+<img src="images/biocuration_of_cells.png" style="width:85.0%" alt="Figure 3: Wikidata Bib was coupled with a biocuration framework for cell types" /><figcaption aria-hidden="true"><span>Figure 3:</span> Wikidata Bib was coupled with a biocuration framework for cell types</figcaption>
+</figure>
+</div>
+<!-- UPDATE THE STATISTICS 
+Jupyter Notebook: https://colab.research.google.com/drive/1GvQXOs51_U8icdGMtKXMeLOXKM8pXWet
+-->
+<p>Wikidata contains 4075 subclasses of “cell (<a href="https://www.wikidata.org/wiki/Q7868">Q7868</a>)” as of 16 of June of 2022.
+From those, 550 cell classes are specific for humans, and 318 are specific for mice.<br />
+Currently Wikidata has more cell classes than the Cell Ontology, which lists 2577 classes.
+It is worth noticing that classes on the Cell Ontology are added after careful consideration by ontologists and domain experts and should be considered of higher quality than the ones on Wikidata.</p>
+<p>From the 4075 cell classes on Wikidata, 3946 (96.8%) have been edited somehow by User:TiagoLubiana, and 2737 (67.2%) have been created by User:TiagoLubiana.
+Edits included adding multilanguage labels, connecting a dangling Wikipedia page to the cell subclass hierarchy, adding identifiers, images, markers, and other pieces of information.
+Approximatedly 430 hundred terms were added via manual curation based on PanglaoDB entries, while the remaining 2307 entries were created either via Wikidata’s web interface or via the curation workflow described in this chapter.
+These statistics are demonstration of how the curation system efficiently contributes to the status of cell type information on Wikidata.</p>
+<!-- UPDATE THE STATISTICS -->
+<p>As mentioned by Aviv Regev in the Human Cell Atlas General Meeting 2021, “it’s everyone’s collective
+responsibility to participate in the annotation efforts, because that relies on domain expertise. To really tease apart things and give
+them names. Until we have names, people will have really a hard time working with things in biology.”<span class="citation" data-cites="url">[<a href="#ref-url" role="doc-biblioref"><strong>url?</strong></a>]</span>”
+We hope that by developing simplified curation tools we will engage more domain experts into the curation efforts.</p>
+<h2 class="page_break_before" id="guidelines-for-reporting-new-cell-types">Guidelines for reporting new cell types</h2>
+<h1 class="page_break_before" id="additional-work">Additional Work</h1>
+<h2 id="collaborations-and-manuscripts">Collaborations and manuscripts</h2>
+<h3 id="fcoex">fcoex</h3>
+<p>During the initial course of this PhD work, we also completed the development and reporting of <em>fcoex</em>, an R package for investigating cellular phenotypes using co-expression networks. <span class="citation" data-cites="MxIeSJYt">[<a href="#ref-MxIeSJYt" role="doc-biblioref">33</a>]</span> The software was maintained to withstand new releases of dependencies and new R version and was published as a preprint on biorxiv. <span class="citation" data-cites="doi:10.1101/2021.12.07.471603v1">[<a href="#ref-doi:10.1101/2021.12.07.471603v1" role="doc-biblioref"><strong>doi:10.1101/2021.12.07.471603v1?</strong></a>]</span></p>
+<h3 id="wikidata-bots">Wikidata Bots</h3>
+<p>Alongside the editing of cell-type information on Wikidata, I have joined different efforts to improve biological information on Wikidata.
+I have collaborated with the ComplexPortal curators as part of the Virtual Elixir BioHackathon 2020 (https://github.com/virtual-biohackathons/covid-19-bh20/wiki) and for the following year, to build a Wikidata Bot to integrate information on protein complexes to Wikidata. An overview of the Wikidata integration is in Figure <a href="#fig:complexportal">4</a>, presented in an article published in Nucleic Acid Research (re-use of the image and legend possible under the CC-BY license of the article). <span class="citation" data-cites="CQRJ53gu">[<a href="#ref-CQRJ53gu" role="doc-biblioref">34</a>]</span></p>
+<div id="fig:complexportal" class="fignos">
+<figure>
+<img src="https://oup.silverchair-cdn.com/oup/backfile/Content_public/Journal/nar/PAP/10.1093_nar_gkab991/2/gkab991fig3.jpeg?Expires=1641821957&amp;Signature=RK-es18S~Qh6vGQE~61i6u4prMuij8kVTbrjN6WUJLfYHOAhUhx9qQorBxROohjLLxbHvZ2YK9e7EwlI9HjVeNoGZ2PJs0Pv78Y31MdZLY8FeLYI2E4azwrqRyv9q0AH8QL3RorWZV1AhOb9bl-44Mr97Q~9MWzeTDnQQbxpCnGLG~YoG49kocD5KE~dmTSQdkXBU7kZnuGM1NPqMHo5ZDUoCRFwmTbLvd4kXoH~6CTyqx4ruQRIO-ks4Q0FUjYnxGX18gCFvoO2LMPZUPrQjTgD35RrVAkLs91Ur6BQHUuZ-ZsE3Iag3mBDu27vT9Jr93bOj0i9wz~surTtEGATgw__&amp;Key-Pair-Id=APKAIE5G5CRDK6RD3PGA" alt="Figure 4: Complex Portal and Wikidata. (A) example of an entry assertion in Wikidata with provenance pointing to Complex Portal (Q104836061). (B) The number of protein complexes in Wikidata per taxon (https://w.wiki/3ggX). (C) Subset of Wikidata connected to the SARS-CoV-2 polymerase complex (https://w.wiki/3eta)." /><figcaption aria-hidden="true"><span>Figure 4:</span> Complex Portal and Wikidata. (A) example of an entry assertion in Wikidata with provenance pointing to Complex Portal (Q104836061). (B) The number of protein complexes in Wikidata per taxon (<a href="https://w.wiki/3ggX" class="uri">https://w.wiki/3ggX</a>). (C) Subset of Wikidata connected to the SARS-CoV-2 polymerase complex (<a href="https://w.wiki/3eta" class="uri">https://w.wiki/3eta</a>).</figcaption>
+</figure>
+</div>
+<p>I have also collaborated with the Cellosaurus database <span class="citation" data-cites="1DguATd9G">[<a href="#ref-1DguATd9G" role="doc-biblioref">35</a>]</span> to revive the CellosaurusBot <span class="citation" data-cites="lMQxhx3q">[<a href="#ref-lMQxhx3q" role="doc-biblioref">36</a>]</span>, responsible for updating the metadata on more than 100,000 cell lines on Wikidata. The bot code, written in Python, was refactored entirely and runs semi-automatically after the Cellosaurus database was released. A write-up of the integration is in progress and is planned for release/submission in the second semester of 2022.</p>
+<h3 id="wisecube---enterprise-biomedical-question-and-answering">WiseCube - enterprise biomedical question and answering</h3>
+<p>During a part of this project, I have worked part-time as a consultant for the Wisecube company, based in Seattle, United States. <span class="citation" data-cites="gdYsBE7d">[<a href="#ref-gdYsBE7d" role="doc-biblioref">37</a>]</span>
+The job was approved by FAPESP and consisted mainly in writing SPARQL queries that probe Wikidata for answers to the questions posed by the BioASQ competition. <span class="citation" data-cites="rkXotO9x">[<a href="#ref-rkXotO9x" role="doc-biblioref">38</a>]</span>
+It also entailed on-demand curation of biomedical topics on Wikidata based on requests by pharmaceutical companies as well as the development of dashboards targeted at providing insights to customers.</p>
+<h2 id="awards-and-participation-in-events">Awards and participation in events</h2>
+<ul>
+<li>(Nov - 2021) Managed a project during BioHackathon Europe 2021, in Barcelona, Spain, on the representation of ELIXIR information on Wikidata. <span class="citation" data-cites="14Wi842eZ">[<a href="#ref-14Wi842eZ" role="doc-biblioref">39</a>]</span></li>
+<li>(May - 2022) Presented the WikidataBib in a talk the 1st UK Local Biocuration conference, which got awarded as the Runner-Up Best Talk</li>
+</ul>
+<h1 class="page_break_before" id="next-steps">Next steps</h1>
+<p>After this second year of work, the next steps of this PhD project will be geared towards robustifying the systems for biocuration and improving the quality of cell type information on Wikidata.
+This robustification will pave the way for the final phase of the project, where we plan to incorporate the organized information on Wikidata to standar workflows of single-cell RNA-seq data analysis.</p>
+<p>In particular, the next part of the project includes the following steps:</p>
+<ul>
+<li><p>Develop Wikidata Bib into a mature system and deploy it as Open Source Software for the research community</p></li>
+<li><p>Improve the semantic infrastructure on Wikidata for handling knowledge about cell types</p>
+<ul>
+<li>Establish a comprehensive catalog of cell types on Wikidata</li>
+<li>Develop a portal for access and re-use of the Wikidata database, e.g. providing datasets for enrichment analysis of differentially expressed genes</li>
+<li>Complete the mapping between Wikidata and Cell Ontology, as a stepping stone for integrating Wikidata in existing frameworks</li>
+</ul></li>
+<li><p>Improve the quality of bibliometric data on Wikidata, laying the foundations to ensure complete coverage of the Brazilian contributions to the Human Cell Atlas</p></li>
+</ul>
+<h1 id="chronogram">Chronogram</h1>
+<h2 id="awards-and-participation-in-events-1">Awards and participation in events</h2>
+<ul>
+<li>(Nov - 2021) Managed a project during BioHackathon Europe 2021, in Barcelona, Spain, on the representation of ELIXIR information on Wikidata. <span class="citation" data-cites="14Wi842eZ">[<a href="#ref-14Wi842eZ" role="doc-biblioref">39</a>]</span></li>
+<li>(May - 2022) Presented the WikidataBib in a talk the 1st UK Local Biocuration conference, which got awarded as the Runner-Up Best Talk</li>
+</ul>
+<h1 class="page_break_before" id="preprints-and-articles">Preprints and articles</h1>
+<h2 id="pre-prints">Pre-prints</h2>
+<ul>
+<li><p>Using coexpression to explore cell-type diversity with the fcoex package (https://www.biorxiv.org/content/10.1101/2021.12.07.471603v1)</p></li>
+<li><p>Guidelines for reporting cell types: the MIRACL standard
+https://arxiv.org/abs/2204.09673
+## Peer-reviewed articles</p></li>
+<li><p>Complex Portal 2022: new curation frontiers (https://doi.org:: 10.1093/nar/gkab991)</p></li>
+<li></li>
+</ul>
+<h2 class="page_break_before" id="references">References</h2>
+<!-- Explicitly insert bibliography here -->
+<div id="refs" class="references csl-bib-body" role="doc-bibliography">
+<div id="ref-pNGap1Du" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">1. </div><div class="csl-right-inline"><strong>An era of single-cell genomics consortia</strong> <div class="csl-block">Yoshinari Ando, Andrew T Kwon, Jay W Shin</div> <em>Experimental and Molecular Medicine</em> (2020-09-15) <a href="https://www.wikidata.org/wiki/Q99418649">https://www.wikidata.org/wiki/Q99418649</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/s12276-020-0409-x">10.1038/s12276-020-0409-x</a></div></div>
+</div>
+<div id="ref-1GmbExweg" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">2. </div><div class="csl-right-inline"><strong>The Human Cell Atlas.</strong> <div class="csl-block">Aviv Regev, Sarah Teichmann, Eric Lander, Amir Giladi, Christophe Benoist, Ewan Birney, Bernd Bodenmiller, Peter Campbell, Piero Carninci, Menna R Clatworthy, … Human Cell Atlas Meeting Participants</div> <em>eLife</em> (2017-12-05) <a href="https://www.wikidata.org/wiki/Q46368626">https://www.wikidata.org/wiki/Q46368626</a> <div class="csl-block">DOI: <a href="https://doi.org/10.7554/elife.27041">10.7554/elife.27041</a></div></div>
+</div>
+<div id="ref-1DSEIjFha" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">3. </div><div class="csl-right-inline"><strong>Everyone needs a data-management plan</strong> <div class="csl-block">Nature</div> (2018-03-15) <a href="https://www.wikidata.org/wiki/Q56524391">https://www.wikidata.org/wiki/Q56524391</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/d41586-018-03065-z">10.1038/d41586-018-03065-z</a></div></div>
+</div>
+<div id="ref-zDRzmIGu" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">4. </div><div class="csl-right-inline"><strong>About the Data Coordination Platform</strong> <div class="csl-block">HCA Data Portal</div> <a href="https://data.humancellatlas.org/about">https://data.humancellatlas.org/about</a></div>
+</div>
+<div id="ref-kkwRTArg" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">5. </div><div class="csl-right-inline"><strong>The Human Cell Atlas White Paper</strong> <div class="csl-block">Aviv Regev, Sarah Teichmann, Orit Rozenblatt-Rosen, Michael JT Stubbington, Kristin Ardlie, Amir Giladi, Paola Arlotta, Gary D Bader, Christophe Benoist, Moshe Biton, … Human Cell Atlas Organizing Committee</div> (2018-10-11) <a href="https://www.wikidata.org/wiki/Q104450645">https://www.wikidata.org/wiki/Q104450645</a></div>
+</div>
+<div id="ref-Fuf8oc85" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">6. </div><div class="csl-right-inline"><strong>Literature Based Discovery: models, methods, and trends.</strong> <div class="csl-block">MSSam Henry, Bridget McInnes</div> <em>Journal of Biomedical Informatics</em> (2017-08-21) <a href="https://www.wikidata.org/wiki/Q38371706">https://www.wikidata.org/wiki/Q38371706</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1016/j.jbi.2017.08.011">10.1016/j.jbi.2017.08.011</a></div></div>
+</div>
+<div id="ref-LNtevqb9" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">7. </div><div class="csl-right-inline"><strong>Online tools to support literature-based discovery in the life sciences</strong> <div class="csl-block">Marc Weeber, Marc Weeber, Jan A Kors, Jan A Kors, Barend Mons</div> <em>Briefings in Bioinformatics</em> (2005-09-01) <a href="https://www.wikidata.org/wiki/Q36280460">https://www.wikidata.org/wiki/Q36280460</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1093/bib/6.3.277">10.1093/bib/6.3.277</a></div></div>
+</div>
+<div id="ref-Lbqx9XBK" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">8. </div><div class="csl-right-inline"><strong>Unsupervised word embeddings capture latent knowledge from materials science literature</strong> <div class="csl-block">Vahe Tshitoyan, John Dagdelen, Leigh Weston, Alexander Dunn, Ziqin Rong, Olga Kononova, Kristin A Persson, Gerbrand Ceder, Anubhav Jain</div> <em>Nature</em> (2019-07-03) <a href="https://www.wikidata.org/wiki/Q91595456">https://www.wikidata.org/wiki/Q91595456</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/s41586-019-1335-8">10.1038/s41586-019-1335-8</a></div></div>
+</div>
+<div id="ref-CovO24JR" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">9. </div><div class="csl-right-inline"><strong>Artificial intelligence in neurodegenerative disease research: use of IBM Watson to identify additional RNA-binding proteins altered in amyotrophic lateral sclerosis.</strong> <div class="csl-block">Nadine Bakkar, Tina Kovalik, Ileana Lorenzini, Scott Spangler, Alix Lacoste, Kyle Sponaugle, Philip Ferrante, Elenee Argentinis, Rita Sattler, Robert Bowser</div> <em>Acta Neuropathologica</em> (2017-11-13) <a href="https://www.wikidata.org/wiki/Q47406275">https://www.wikidata.org/wiki/Q47406275</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1007/s00401-017-1785-8">10.1007/s00401-017-1785-8</a></div></div>
+</div>
+<div id="ref-DLTMbf54" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">10. </div><div class="csl-right-inline"><strong>Ontologies for the life sciences</strong> <div class="csl-block">Steffen Schulze-Kremer, Barry Smith</div> (2005-11-15) <a href="https://www.wikidata.org/wiki/Q105870680">https://www.wikidata.org/wiki/Q105870680</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1002/047001153x.g408213">10.1002/047001153x.g408213</a></div></div>
+</div>
+<div id="ref-18wkLcGxT" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">11. </div><div class="csl-right-inline"><strong>The Gene Ontology resource: enriching a GOld mine</strong> <div class="csl-block">Gene Ontology Consortium</div> <em>Nucleic Acids Research</em> (2020-12-08) <a href="https://www.wikidata.org/wiki/Q104130127">https://www.wikidata.org/wiki/Q104130127</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1093/nar/gkaa1113">10.1093/nar/gkaa1113</a></div></div>
+</div>
+<div id="ref-2KmDs8gy" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">12. </div><div class="csl-right-inline"><strong>Gene ontology: tool for the unification of biology. The Gene Ontology Consortium</strong> <div class="csl-block">M Ashburner, CA Ball, Judith A Blake, David Botstein, H Butler, JMichael Cherry, AP Davis, K Dolinski, Selina S Dwight, JT Eppig, … Gavin Sherlock</div> <em>Nature Genetics</em> (2000-05-01) <a href="https://www.wikidata.org/wiki/Q23781406">https://www.wikidata.org/wiki/Q23781406</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/75556">10.1038/75556</a></div></div>
+</div>
+<div id="ref-j3tJyG7J" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">13. </div><div class="csl-right-inline"><strong>The OBO Foundry: coordinated evolution of ontologies to support biomedical data integration</strong> <div class="csl-block">Barry Smith, Michael Ashburner, Cornelius Rosse, Jonathan Bard, William Bug, Werner Ceusters, Louis J Goldberg, Karen Eilbeck, Amelia Ireland, Christopher J Mungall, … Suzanna Lewis</div> <em>Nature Biotechnology</em> (2007-11-01) <a href="https://www.wikidata.org/wiki/Q19671692">https://www.wikidata.org/wiki/Q19671692</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/nbt1346">10.1038/nbt1346</a></div></div>
+</div>
+<div id="ref-qMozvNth" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">14. </div><div class="csl-right-inline"><strong>Toward an epistemology of Wikipedia</strong> <div class="csl-block">Don Fallis</div> <em>Journal of the Association for Information Science and Technology</em> (2008-08-01) <a href="https://www.wikidata.org/wiki/Q101955295">https://www.wikidata.org/wiki/Q101955295</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1002/asi.20870">10.1002/asi.20870</a></div></div>
+</div>
+<div id="ref-xLpRePoh" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">15. </div><div class="csl-right-inline"><strong>From Freebase to Wikidata: The Great Migration</strong> <div class="csl-block">Thomas Pellissier Tanon, Denny Vrandečić, Sebastian Schaffert, Thomas Steiner, Lydia Pintscher</div> <em>Proceedings of the 25th International Conference on World Wide Web</em> (2016-01-01) <a href="https://www.wikidata.org/wiki/Q24074986">https://www.wikidata.org/wiki/Q24074986</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1145/2872427.2874809">10.1145/2872427.2874809</a></div></div>
+</div>
+<div id="ref-lmhCFXiz" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">16. </div><div class="csl-right-inline"><strong>Wikidata: A platform for data integration and dissemination for the life sciences and beyond</strong> <div class="csl-block">Elvira Mitraka, Andra Waagmeester, Sebastian Burgstaller-Muehlbacher, Lynn M Schriml, Andrew I Su, Benjamin M Good</div> <em>Bioinformatics</em> (2015-11-16) <a href="https://doi.org/gg9dk4">https://doi.org/gg9dk4</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1101/031971">10.1101/031971</a></div></div>
+</div>
+<div id="ref-3GqlN9Dk" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">17. </div><div class="csl-right-inline"><strong>Wikidata as a knowledge graph for the life sciences</strong> <div class="csl-block">Andra Waagmeester, Gregory Stupp, Sebastian Burgstaller-Muehlbacher, Benjamin M Good, Malachi Griffith, Obi Griffith, Kristina Hanspers, Henning Hermjakob, Toby Hudson, Kevin Hybiske, … Andrew I Su</div> <em>eLife</em> (2020-03-17) <a href="https://www.wikidata.org/wiki/Q87830400">https://www.wikidata.org/wiki/Q87830400</a> <div class="csl-block">DOI: <a href="https://doi.org/10.7554/elife.52614">10.7554/elife.52614</a></div></div>
+</div>
+<div id="ref-HUodcdz1" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">18. </div><div class="csl-right-inline"><strong>Wikidata as a knowledge graph for the life sciences</strong> <div class="csl-block">Andra Waagmeester, Gregory Stupp, Sebastian Burgstaller-Muehlbacher, Benjamin M Good, Malachi Griffith, Obi L Griffith, Kristina Hanspers, Henning Hermjakob, Toby S Hudson, Kevin Hybiske, … Andrew I Su</div> <em>eLife</em> (2020-03-17) <a href="https://doi.org/ggqqc6">https://doi.org/ggqqc6</a> <div class="csl-block">DOI: <a href="https://doi.org/10.7554/elife.52614">10.7554/elife.52614</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/32180547">32180547</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7077981">PMC7077981</a></div></div>
+</div>
+<div id="ref-11iU76eUa" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">19. </div><div class="csl-right-inline"><strong>Wikidata: A large-scale collaborative ontological medical database</strong> <div class="csl-block">Houcemeddine Turki, Thomas Shafee, Mohamed Ali Hadj Taieb, Mohamed Ben Aouicha, Denny Vrandečić, Diptanshu Das, Helmi Hamdi</div> <em>Journal of Biomedical Informatics</em> (2019-11) <a href="https://doi.org/gg9dnt">https://doi.org/gg9dnt</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1016/j.jbi.2019.103292">10.1016/j.jbi.2019.103292</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/31557529">31557529</a></div></div>
+</div>
+<div id="ref-SdbIYKUa" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">20. </div><div class="csl-right-inline"><strong>Comparison of reference management software - Wikipedia</strong> <a href="https://en.wikipedia.org/wiki/Comparison_of_reference_management_software">https://en.wikipedia.org/wiki/Comparison_of_reference_management_software</a></div>
+</div>
+<div id="ref-uYuz0opI" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">21. </div><div class="csl-right-inline"><strong>Wikipedia, the free encyclopedia</strong> <a href="https://en.wikipedia.org/wiki/Main_Page">https://en.wikipedia.org/wiki/Main_Page</a></div>
+</div>
+<div id="ref-KNGv5MPp" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">22. </div><div class="csl-right-inline"><strong>Clean Coder Blog</strong> <a href="https://blog.cleancoder.com/uncle-bob/2017/12/18/Excuses.html">https://blog.cleancoder.com/uncle-bob/2017/12/18/Excuses.html</a></div>
+</div>
+<div id="ref-rPKBwmYh" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">23. </div><div class="csl-right-inline"><strong>Como fazer um fichamento</strong> <div class="csl-block">Priscilla de Carvalho Nunes disse</div> <em>Blog da Biblioteca da ECA-USP</em> (2019-09-30) <a href="https://bibliotecadaeca.wordpress.com/2019/09/30/como-fazer-um-fichamento/">https://bibliotecadaeca.wordpress.com/2019/09/30/como-fazer-um-fichamento/</a></div>
+</div>
+<div id="ref-1HBVPtZGp" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">24. </div><div class="csl-right-inline"><strong>Come si fa una tesi di laurea</strong> <a href="https://www.wikidata.org/wiki/Q3684178">https://www.wikidata.org/wiki/Q3684178</a></div>
+</div>
+<div id="ref-13HqB23xH" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">25. </div><div class="csl-right-inline"><strong>Clean Code: A Handbook of Agile Software Craftsmanship</strong> <a href="https://www.wikidata.org/wiki/Q109996684">https://www.wikidata.org/wiki/Q109996684</a></div>
+</div>
+<div id="ref-hxzL9pmm" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">26. </div><div class="csl-right-inline"><strong>Scholia, Scientometrics and Wikidata</strong> <div class="csl-block">Finn Årup Nielsen, Daniel Mietchen, Egon Willighagen</div> <em>The Semantic Web: ESWC 2017 Satellite Events</em> (2017-10-01) <a href="https://www.wikidata.org/wiki/Q41799194">https://www.wikidata.org/wiki/Q41799194</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1007/978-3-319-70407-4_36">10.1007/978-3-319-70407-4_36</a></div></div>
+</div>
+<div id="ref-1A9RvszKC" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">27. </div><div class="csl-right-inline"><strong>Wikidata:Tools/Author Disambiguator - Wikidata</strong> <a href="https://www.wikidata.org/wiki/Wikidata:Tools/Author_Disambiguator">https://www.wikidata.org/wiki/Wikidata:Tools/Author_Disambiguator</a></div>
+</div>
+<div id="ref-6chnW6cc" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">28. </div><div class="csl-right-inline"><strong>wbib: A helper for building Wikidata-based literature dashboards via SPARQL queries.</strong> <div class="csl-block">Tiago Lubiana</div> <a href="https://github.com/lubianat/wbib">https://github.com/lubianat/wbib</a></div>
+</div>
+<div id="ref-2wDsXBwd" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">29. </div><div class="csl-right-inline"><a href="https://query.wikidata.org/">https://query.wikidata.org/</a></div>
+</div>
+<div id="ref-1hag8XE6" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">30. </div><div class="csl-right-inline"><strong>HCA Latin America - 2021 Workshop</strong> <a href="https://www.humancellatlas.org/hca-latin-america-2021-workshop/">https://www.humancellatlas.org/hca-latin-america-2021-workshop/</a></div>
+</div>
+<div id="ref-kHL3NVxk" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">31. </div><div class="csl-right-inline"><strong>BioHackathon Europe</strong> <a href="https://biohackathon-europe.org/">https://biohackathon-europe.org/</a></div>
+</div>
+<div id="ref-qDI8I4IJ" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">32. </div><div class="csl-right-inline"><strong>GitHub - SuLab/WikidataIntegrator: A Wikidata Python module integrating the MediaWiki API and the Wikidata SPARQL endpoint</strong> <div class="csl-block">GitHub</div> <a href="https://github.com/SuLab/WikidataIntegrator">https://github.com/SuLab/WikidataIntegrator</a></div>
+</div>
+<div id="ref-MxIeSJYt" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">33. </div><div class="csl-right-inline"><strong>fcoex: FCBF-based Co-Expression Networks for Single Cells</strong> <div class="csl-block">Tiago Lubiana, Helder Nakaya</div> <em>Bioconductor version: Release (3.15)</em> (2022) <a href="https://bioconductor.org/packages/fcoex/">https://bioconductor.org/packages/fcoex/</a></div>
+</div>
+<div id="ref-CQRJ53gu" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">34. </div><div class="csl-right-inline"><strong>Complex Portal 2022: new curation frontiers</strong> <div class="csl-block">Birgit HM Meldal, Livia Perfetto, Colin Combe, Tiago Lubiana, João Vitor Ferreira Cavalcante, Hema Bye-A-Jee, Andra Waagmeester, Noemi del-Toro, Anjali Shrivastava, Elisabeth Barrera, … Sandra Orchard</div> <em>Nucleic Acids Research</em> (2021-10-29) <a href="https://www.wikidata.org/wiki/Q109348309">https://www.wikidata.org/wiki/Q109348309</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1093/nar/gkab991">10.1093/nar/gkab991</a></div></div>
+</div>
+<div id="ref-1DguATd9G" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">35. </div><div class="csl-right-inline"><strong>The Cellosaurus, a cell-line knowledge resource.</strong> <div class="csl-block">Amos Bairoch</div> <em>Journal of Biomolecular Techniques</em> (2018-05-01) <a href="https://www.wikidata.org/wiki/Q54370168">https://www.wikidata.org/wiki/Q54370168</a> <div class="csl-block">DOI: <a href="https://doi.org/10.7171/jbt.18-2902-002">10.7171/jbt.18-2902-002</a></div></div>
+</div>
+<div id="ref-lMQxhx3q" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">36. </div><div class="csl-right-inline"><strong>User:CellosaurusBot - Wikidata</strong> <a href="https://www.wikidata.org/wiki/User:CellosaurusBot">https://www.wikidata.org/wiki/User:CellosaurusBot</a></div>
+</div>
+<div id="ref-gdYsBE7d" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">37. </div><div class="csl-right-inline"><strong>Wisecube AI | Knowledge Graph Engine</strong> <a href="https://www.wisecube.ai/">https://www.wisecube.ai/</a></div>
+</div>
+<div id="ref-rkXotO9x" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">38. </div><div class="csl-right-inline"><strong>An overview of the BIOASQ large-scale biomedical semantic indexing and question answering competition</strong> <div class="csl-block">George Tsatsaronis, Georgios Balikas, Prodromos Malakasiotis, Ioannis Partalas, Matthias Zschunke, Michael R Alvers, Dirk Weissenborn, Anastasia Krithara, Sergios Petridis, Dimitris Polychronopoulos, … Georgios Paliouras</div> <em>BMC Bioinformatics</em> (2015-04-30) <a href="https://www.wikidata.org/wiki/Q28646342">https://www.wikidata.org/wiki/Q28646342</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1186/s12859-015-0564-6">10.1186/s12859-015-0564-6</a></div></div>
+</div>
+<div id="ref-14Wi842eZ" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">39. </div><div class="csl-right-inline"><strong>biohackathon-projects-2021/projects/32 at main · elixir-europe/biohackathon-projects-2021</strong> <div class="csl-block">GitHub</div> <a href="https://github.com/elixir-europe/biohackathon-projects-2021">https://github.com/elixir-europe/biohackathon-projects-2021</a></div>
+</div>
+</div>
+<!-- default theme -->
+
+<style>
+  /* import google fonts */
+  @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,600,700");
+  @import url("https://fonts.googleapis.com/css?family=Source+Code+Pro");
+
+  /* -------------------------------------------------- */
+  /* global */
+  /* -------------------------------------------------- */
+
+  /* all elements */
+  * {
+    /* force sans-serif font unless specified otherwise */
+    font-family: "Open Sans", "Helvetica", sans-serif;
+
+    /* prevent text inflation on some mobile browsers */
+    -webkit-text-size-adjust: none !important;
+    -moz-text-size-adjust: none !important;
+    -o-text-size-adjust: none !important;
+    text-size-adjust: none !important;
+  }
+
+  @media only screen {
+    /* "page" element */
+    body {
+      position: relative;
+      box-sizing: border-box;
+      font-size: 12pt;
+      line-height: 1.5;
+      max-width: 8.5in;
+      margin: 20px auto;
+      padding: 40px;
+      border-radius: 5px;
+      border: solid 1px #bdbdbd;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+      background: #ffffff;
+    }
+  }
+
+  /* when on screen < 8.5in wide */
+  @media only screen and (max-width: 8.5in) {
+    /* "page" element */
+    body {
+      padding: 20px;
+      margin: 0;
+      border-radius: 0;
+      border: none;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.05) inset;
+      background: none;
+    }
+  }
+
+  /* -------------------------------------------------- */
+  /* headings */
+  /* -------------------------------------------------- */
+
+  /* all headings */
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6 {
+    margin: 20px 0;
+    padding: 0;
+    font-weight: bold;
+  }
+
+  /* biggest heading */
+  h1 {
+    margin: 40px 0;
+    text-align: center;
+  }
+
+  /* second biggest heading */
+  h2 {
+    margin-top: 30px;
+    padding-bottom: 5px;
+    border-bottom: solid 1px #bdbdbd;
+  }
+
+  /* heading font sizes */
+  h1 {
+    font-size: 2em;
+  }
+  h2 {
+    font-size: 1.5em;
+  }
+  h3 {
+    font-size: 1.35em;
+  }
+  h4 {
+    font-size: 1.25em;
+  }
+  h5 {
+    font-size: 1.15em;
+  }
+  h6 {
+    font-size: 1em;
+  }
+
+  /* -------------------------------------------------- */
+  /* manuscript header */
+  /* -------------------------------------------------- */
+
+  /* manuscript title */
+  header > h1 {
+    margin: 0;
+  }
+
+  /* manuscript title caption text (ie "automatically generated on") */
+  header + p {
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  /* -------------------------------------------------- */
+  /* text elements */
+  /* -------------------------------------------------- */
+
+  /* links */
+  a {
+    color: #2196f3;
+    overflow-wrap: break-word;
+  }
+
+  /* superscripts and subscripts */
+  sub,
+  sup {
+    /* prevent from affecting line height */
+    line-height: 0;
+  }
+
+  /* unordered and ordered lists*/
+  ul,
+  ol {
+    padding-left: 20px;
+  }
+
+  /* class for styling text semibold */
+  .semibold {
+    font-weight: 600;
+  }
+
+  /* class for styling elements horizontally left aligned */
+  .left {
+    display: block;
+    text-align: left;
+    margin-left: auto;
+    margin-right: 0;
+    justify-content: left;
+  }
+
+  /* class for styling elements horizontally centered */
+  .center {
+    display: block;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+  }
+
+  /* class for styling elements horizontally right aligned */
+  .right {
+    display: block;
+    text-align: right;
+    margin-left: 0;
+    margin-right: auto;
+    justify-content: right;
+  }
+
+  /* -------------------------------------------------- */
+  /* section elements */
+  /* -------------------------------------------------- */
+
+  /* horizontal divider line */
+  hr {
+    border: none;
+    height: 1px;
+    background: #bdbdbd;
+  }
+
+  /* paragraphs, horizontal dividers, figures, tables, code */
+  p,
+  hr,
+  figure,
+  table,
+  pre {
+    /* treat all as "paragraphs", with consistent vertical margins */
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  /* -------------------------------------------------- */
+  /* figures */
+  /* -------------------------------------------------- */
+
+  /* figure */
+  figure {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* figure caption */
+  figcaption {
+    padding: 0;
+    padding-top: 10px;
+  }
+
+  /* figure image element */
+  figure > img,
+  figure > svg {
+    max-width: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* figure auto-number */
+  img + figcaption > span:first-of-type,
+  svg + figcaption > span:first-of-type {
+    font-weight: bold;
+    margin-right: 5px;
+  }
+
+  /* -------------------------------------------------- */
+  /* tables */
+  /* -------------------------------------------------- */
+
+  /* table */
+  table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  /* table cells */
+  th,
+  td {
+    border: solid 1px #bdbdbd;
+    padding: 10px;
+    /* squash table if too wide for page by forcing line breaks */
+    overflow-wrap: break-word;
+    word-break: break-word;
+  }
+
+  /* header row and even rows */
+  th,
+  tr:nth-child(2n) {
+    background-color: #fafafa;
+  }
+
+  /* odd rows */
+  tr:nth-child(2n + 1) {
+    background-color: #ffffff;
+  }
+
+  /* table caption */
+  caption {
+    text-align: left;
+    padding: 0;
+    padding-bottom: 10px;
+  }
+
+  /* table auto-number */
+  table > caption > span:first-of-type {
+    font-weight: bold;
+    margin-right: 5px;
+  }
+
+  /* -------------------------------------------------- */
+  /* code */
+  /* -------------------------------------------------- */
+
+  /* multi-line code block */
+  pre {
+    padding: 10px;
+    background-color: #eeeeee;
+    color: #000000;
+    border-radius: 5px;
+    break-inside: avoid;
+    text-align: left;
+  }
+
+  /* inline code, ie code within normal text */
+  :not(pre) > code {
+    padding: 0 4px;
+    background-color: #eeeeee;
+    color: #000000;
+    border-radius: 5px;
+  }
+
+  /* code text */
+  /* apply all children, to reach syntax highlighting sub-elements */
+  code,
+  code * {
+    /* force monospace font */
+    font-family: "Source Code Pro", "Courier New", monospace;
+  }
+
+  /* -------------------------------------------------- */
+  /* quotes */
+  /* -------------------------------------------------- */
+
+  /* quoted text */
+  blockquote {
+    margin: 0;
+    padding: 0;
+    border-left: 4px solid #bdbdbd;
+    padding-left: 16px;
+    break-inside: avoid;
+  }
+
+  /* -------------------------------------------------- */
+  /* banners */
+  /* -------------------------------------------------- */
+
+  /* info banners */
+  .banner {
+    box-sizing: border-box;
+    display: block;
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    padding: 20px;
+    text-align: center;
+  }
+
+  /* paragraph in banner */
+  .banner > p {
+    margin: 0;
+  }
+
+  /* -------------------------------------------------- */
+  /* highlight colors */
+  /* -------------------------------------------------- */
+
+  .white {
+    background: #ffffff;
+  }
+  .lightgrey {
+    background: #eeeeee;
+  }
+  .grey {
+    background: #757575;
+  }
+  .darkgrey {
+    background: #424242;
+  }
+  .black {
+    background: #000000;
+  }
+  .lightred {
+    background: #ffcdd2;
+  }
+  .lightyellow {
+    background: #ffecb3;
+  }
+  .lightgreen {
+    background: #dcedc8;
+  }
+  .lightblue {
+    background: #e3f2fd;
+  }
+  .lightpurple {
+    background: #f3e5f5;
+  }
+  .red {
+    background: #f44336;
+  }
+  .orange {
+    background: #ff9800;
+  }
+  .yellow {
+    background: #ffeb3b;
+  }
+  .green {
+    background: #4caf50;
+  }
+  .blue {
+    background: #2196f3;
+  }
+  .purple {
+    background: #9c27b0;
+  }
+  .white,
+  .lightgrey,
+  .lightred,
+  .lightyellow,
+  .lightgreen,
+  .lightblue,
+  .lightpurple,
+  .orange,
+  .yellow,
+  .white a,
+  .lightgrey a,
+  .lightred a,
+  .lightyellow a,
+  .lightgreen a,
+  .lightblue a,
+  .lightpurple a,
+  .orange a,
+  .yellow a {
+    color: #000000;
+  }
+  .grey,
+  .darkgrey,
+  .black,
+  .red,
+  .green,
+  .blue,
+  .purple,
+  .grey a,
+  .darkgrey a,
+  .black a,
+  .red a,
+  .green a,
+  .blue a,
+  .purple a {
+    color: #ffffff;
+  }
+
+  /* -------------------------------------------------- */
+  /* buttons */
+  /* -------------------------------------------------- */
+
+  /* class for styling links like buttons */
+  .button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    padding: 10px 20px;
+    font-size: 0.75em;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1px;
+    background: none;
+    color: #2196f3;
+    border: solid 1px #bdbdbd;
+    border-radius: 5px;
+  }
+
+  /* buttons when hovered */
+  .button:hover:not([disabled]),
+  .icon_button:hover:not([disabled]) {
+    cursor: pointer;
+    background: #f5f5f5;
+  }
+
+  /* buttons when disabled */
+  .button[disabled],
+  .icon_button[disabled] {
+    opacity: 0.35;
+    pointer-events: none;
+  }
+
+  /* class for styling buttons containg only single icon */
+  .icon_button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    background: none;
+    border-radius: 5px;
+    border: none;
+    width: 20px;
+    height: 20px;
+    min-width: 20px;
+    min-height: 20px;
+  }
+
+  /* icon button inner svg image */
+  .icon_button > svg {
+    height: 16px;
+  }
+
+  /* -------------------------------------------------- */
+  /* icons */
+  /* -------------------------------------------------- */
+
+  /* class for styling icons inline with text */
+  .inline_icon {
+    height: 1em;
+    position: relative;
+    top: 0.125em;
+  }
+
+  /* -------------------------------------------------- */
+  /* references */
+  /* -------------------------------------------------- */
+
+  .csl-entry {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+
+  /* -------------------------------------------------- */
+  /* print control */
+  /* -------------------------------------------------- */
+
+  @media print {
+    @page {
+      /* suggested printing margin */
+      margin: 0.5in;
+    }
+
+    /* document and "page" elements */
+    html,
+    body {
+      margin: 0;
+      padding: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    /* "page" element */
+    body {
+      font-size: 11pt !important;
+      line-height: 1.35;
+    }
+
+    /* all headings */
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      margin: 15px 0;
+    }
+
+    /* figures and tables */
+    figure,
+    table {
+      font-size: 0.85em;
+    }
+
+    /* table cells */
+    th,
+    td {
+      padding: 5px;
+    }
+
+    /* shrink font awesome icons */
+    i.fas,
+    i.fab,
+    i.far,
+    i.fal {
+      transform: scale(0.85);
+    }
+
+    /* decrease banner margins */
+    .banner {
+      margin-top: 15px;
+      margin-bottom: 15px;
+      padding: 15px;
+    }
+
+    /* class for centering an element vertically on its own page */
+    .page_center {
+      margin: auto;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      align-items: center;
+      vertical-align: middle;
+      break-before: page;
+      break-after: page;
+    }
+
+    /* always insert a page break before the element */
+    .page_break_before {
+      break-before: page;
+    }
+
+    /* always insert a page break after the element */
+    .page_break_after {
+      break-after: page;
+    }
+
+    /* avoid page break before the element */
+    .page_break_before_avoid {
+      break-before: avoid;
+    }
+
+    /* avoid page break after the element */
+    .page_break_after_avoid {
+      break-after: avoid;
+    }
+
+    /* avoid page break inside the element */
+    .page_break_inside_avoid {
+      break-inside: avoid;
+    }
+  }
+
+  /* -------------------------------------------------- */
+  /* override pandoc css quirks */
+  /* -------------------------------------------------- */
+
+  .sourceCode {
+    /* prevent unsightly overflow in wide code blocks */
+    overflow: auto !important;
+  }
+
+  div.sourceCode {
+    /* prevent background fill on top-most code block  container */
+    background: none !important;
+  }
+
+  .sourceCode * {
+    /* force consistent line spacing */
+    line-height: 1.5 !important;
+  }
+
+  div.sourceCode {
+    /* style code block margins same as <pre> element */
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+
+  /* -------------------------------------------------- */
+  /* tablenos */
+  /* -------------------------------------------------- */
+
+  /* tablenos wrapper */
+  .tablenos {
+    width: 100%;
+    margin: 20px 0;
+  }
+
+  .tablenos > table {
+    /* move margins from table to table_wrapper to allow margin collapsing */
+    margin: 0;
+  }
+
+  @media only screen {
+    /* tablenos wrapper */
+    .tablenos {
+      /* show scrollbar on tables if necessary to prevent overflow */
+      overflow-x: auto !important;
+    }
+
+    .tablenos th,
+    .tablenos td {
+      overflow-wrap: unset !important;
+      word-break: unset !important;
+    }
+
+    /* table in wrapper */
+    .tablenos table,
+    .tablenos table * {
+      /* don't break table words */
+      overflow-wrap: normal !important;
+    }
+  }
+</style>
+<!-- 
+    Plugin Core
+
+    Functions needed for and shared across all first-party plugins.
+-->
+
+<script>
+  // get element that is target of hash (from link element or url)
+  function getHashTarget(link) {
+    const hash = link ? link.hash : window.location.hash;
+    const id = hash.slice(1);
+    let target = document.querySelector(`[id="${id}"]`);
+    if (!target) return;
+
+    // if figure or table, modify target to get expected element
+    if (id.indexOf("fig:") === 0) target = target.querySelector("figure");
+    if (id.indexOf("tbl:") === 0) target = target.querySelector("table");
+
+    return target;
+  }
+
+  // get position/dimensions of element or viewport
+  function getRectInView(element) {
+    let rect = {};
+    rect.left = 0;
+    rect.top = 0;
+    rect.right = document.documentElement.clientWidth;
+    rect.bottom = document.documentElement.clientHeight;
+    let style = {};
+
+    if (element instanceof HTMLElement) {
+      rect = element.getBoundingClientRect();
+      style = window.getComputedStyle(element);
+    }
+
+    const margin = {};
+    margin.left = parseFloat(style.marginLeftWidth) || 0;
+    margin.top = parseFloat(style.marginTopWidth) || 0;
+    margin.right = parseFloat(style.marginRightWidth) || 0;
+    margin.bottom = parseFloat(style.marginBottomWidth) || 0;
+
+    const border = {};
+    border.left = parseFloat(style.borderLeftWidth) || 0;
+    border.top = parseFloat(style.borderTopWidth) || 0;
+    border.right = parseFloat(style.borderRightWidth) || 0;
+    border.bottom = parseFloat(style.borderBottomWidth) || 0;
+
+    const newRect = {};
+    newRect.left = rect.left + margin.left + border.left;
+    newRect.top = rect.top + margin.top + border.top;
+    newRect.right = rect.right + margin.right + border.right;
+    newRect.bottom = rect.bottom + margin.bottom + border.bottom;
+    newRect.width = newRect.right - newRect.left;
+    newRect.height = newRect.bottom - newRect.top;
+
+    return newRect;
+  }
+
+  // get position of element relative to page
+  function getRectInPage(element) {
+    const rect = getRectInView(element);
+    const body = getRectInView(document.body);
+
+    const newRect = {};
+    newRect.left = rect.left - body.left;
+    newRect.top = rect.top - body.top;
+    newRect.right = rect.right - body.left;
+    newRect.bottom = rect.bottom - body.top;
+    newRect.width = rect.width;
+    newRect.height = rect.height;
+
+    return newRect;
+  }
+
+  // get closest element before specified element that matches query
+  function firstBefore(element, query) {
+    while (element && element !== document.body && !element.matches(query))
+      element = element.previousElementSibling || element.parentNode;
+
+    return element;
+  }
+
+  // check if element is part of collapsed heading
+  function isCollapsed(element) {
+    while (element && element !== document.body) {
+      if (element.dataset.collapsed === "true") return true;
+      element = element.parentNode;
+    }
+    return false;
+  }
+
+  // expand any collapsed parent containers of element if necessary
+  function expandElement(element) {
+    if (isCollapsed(element)) {
+      // accordion plugin
+      const heading = firstBefore(element, "h2");
+      if (heading) heading.click();
+      // details/summary HTML element
+      const summary = firstBefore(element, "summary");
+      if (summary) summary.click();
+    }
+  }
+
+  // scroll to and focus element
+  function goToElement(element, offset) {
+    // expand accordion section if collapsed
+    expandElement(element);
+    const y =
+      getRectInView(element).top -
+      getRectInView(document.documentElement).top -
+      (offset || 0);
+
+    // trigger any function listening for "onscroll" event
+    window.dispatchEvent(new Event("scroll"));
+    window.scrollTo(0, y);
+    document.activeElement.blur();
+    element.focus();
+  }
+
+  // get list of elements after a start element up to element matching query
+  function nextUntil(element, query, exclude) {
+    const elements = [];
+    while (((element = element.nextElementSibling), element)) {
+      if (element.matches(query)) break;
+      if (!element.matches(exclude)) elements.push(element);
+    }
+    return elements;
+  }
+</script>
+<!--
+  Accordion Plugin
+
+  Allows sections of content under h2 headings to be collapsible.
+-->
+
+<script type="module">
+  // whether to always start expanded ('false'), always start collapsed
+  // ('true'), or start collapsed when screen small ('auto')
+  const startCollapsed = "auto";
+
+  // start script
+  function start() {
+    // run through each <h2> heading
+    const headings = document.querySelectorAll("h2");
+    for (const heading of headings) {
+      addArrow(heading);
+
+      // start expanded/collapsed based on option
+      if (
+        startCollapsed === "true" ||
+        (startCollapsed === "auto" && isSmallScreen())
+      )
+        collapseHeading(heading);
+      else expandElement(heading);
+    }
+
+    // attach hash change listener to window
+    window.addEventListener("hashchange", onHashChange);
+  }
+
+  // when hash (eg manuscript.html#introduction) changes
+  function onHashChange() {
+    const target = getHashTarget();
+    if (target) goToElement(target);
+  }
+
+  // add arrow to heading
+  function addArrow(heading) {
+    // add arrow button
+    const arrow = document.createElement("button");
+    arrow.innerHTML = document.querySelector(".icon_angle_down").innerHTML;
+    arrow.classList.add("icon_button", "accordion_arrow");
+    heading.insertBefore(arrow, heading.firstChild);
+
+    // attach click listener to heading and button
+    heading.addEventListener("click", onHeadingClick);
+    arrow.addEventListener("click", onArrowClick);
+  }
+
+  // determine if on mobile-like device with small screen
+  function isSmallScreen() {
+    return Math.min(window.innerWidth, window.innerHeight) < 480;
+  }
+
+  // when <h2> heading is clicked
+  function onHeadingClick(event) {
+    // only collapse if <h2> itself is target of click (eg, user did
+    // not click on anchor within <h2>)
+    if (event.target === this) toggleCollapse(this);
+  }
+
+  // when arrow button is clicked
+  function onArrowClick() {
+    toggleCollapse(this.parentNode);
+  }
+
+  // collapse section if expanded, expand if collapsed
+  function toggleCollapse(heading) {
+    if (heading.dataset.collapsed === "false") collapseHeading(heading);
+    else expandElement(heading);
+  }
+
+  // elements to exclude from collapse, such as table of contents panel,
+  // hypothesis panel, etc
+  const exclude = "#toc_panel, div.annotator-frame, #lightbox_overlay";
+
+  // collapse section
+  function collapseHeading(heading) {
+    heading.setAttribute("data-collapsed", "true");
+    const children = getChildren(heading);
+    for (const child of children) child.setAttribute("data-collapsed", "true");
+  }
+
+  // expand section
+  function expandElement(heading) {
+    heading.setAttribute("data-collapsed", "false");
+    const children = getChildren(heading);
+    for (const child of children) child.setAttribute("data-collapsed", "false");
+  }
+
+  // get list of elements between this <h2> and next <h2> or <h1>
+  // ("children" of the <h2> section)
+  function getChildren(heading) {
+    return nextUntil(heading, "h2, h1", exclude);
+  }
+
+  // start script when document is finished loading
+  window.addEventListener("load", start);
+</script>
+
+<!-- angle down icon -->
+
+<template class="icon_angle_down">
+  <!-- modified from: https://fontawesome.com/icons/angle-down -->
+  <svg width="16" height="16" viewBox="0 0 448 512">
+    <path
+      fill="currentColor"
+      d="M207.029 381.476L12.686 187.132c-9.373-9.373-9.373-24.569 0-33.941l22.667-22.667c9.357-9.357 24.522-9.375 33.901-.04L224 284.505l154.745-154.021c9.379-9.335 24.544-9.317 33.901.04l22.667 22.667c9.373 9.373 9.373 24.569 0 33.941L240.971 381.476c-9.373 9.372-24.569 9.372-33.942 0z"
+    ></path>
+  </svg>
+</template>
+
+<style>
+  @media only screen {
+    /* accordion arrow button */
+    .accordion_arrow {
+      margin-right: 10px;
+    }
+
+    /* arrow icon when <h2> data-collapsed attribute true */
+    h2[data-collapsed="true"] > .accordion_arrow > svg {
+      transform: rotate(-90deg);
+    }
+
+    /* all elements (except <h2>'s) when data-collapsed attribute true */
+    *:not(h2)[data-collapsed="true"] {
+      display: none;
+    }
+
+    /* accordion arrow button when hovered and <h2>'s when hovered */
+    .accordion_arrow:hover,
+    h2[data-collapsed="true"]:hover,
+    h2[data-collapsed="false"]:hover {
+      cursor: pointer;
+    }
+  }
+
+  /* always hide accordion arrow button on print */
+  @media only print {
+    .accordion_arrow {
+      display: none;
+    }
+  }
+</style>
+<!--
+  Anchors Plugin
+
+  Adds an anchor next to each of a certain type of element that provides a
+  human-readable url to that specific item/position in the document (e.g.
+  "manuscript.html#abstract"). It also makes it such that scrolling out of view
+  of a target removes its identifier from the url.
+-->
+
+<script type="module">
+  // which types of elements to add anchors next to, in "document.querySelector"
+  // format
+  const typesQuery =
+    'h1, h2, h3, div[id^="fig:"], div[id^="tbl:"], span[id^="eq:"]';
+
+  // start script
+  function start() {
+    // add anchor to each element of specified types
+    const elements = document.querySelectorAll(typesQuery);
+    for (const element of elements) addAnchor(element);
+
+    // attach scroll listener to window
+    window.addEventListener("scroll", onScroll);
+  }
+
+  // when window is scrolled
+  function onScroll() {
+    // if url has hash and user has scrolled out of view of hash
+    // target, remove hash from url
+    const tolerance = 100;
+    const target = getHashTarget();
+    if (target) {
+      if (
+        target.getBoundingClientRect().top > window.innerHeight + tolerance ||
+        target.getBoundingClientRect().bottom < 0 - tolerance
+      )
+        history.pushState(null, null, " ");
+    }
+  }
+
+  // add anchor to element
+  function addAnchor(element) {
+    let addTo; // element to add anchor button to
+
+    // if figure or table, modify withId and addTo to get expected
+    // elements
+    if (element.id.indexOf("fig:") === 0) {
+      addTo = element.querySelector("figcaption");
+    } else if (element.id.indexOf("tbl:") === 0) {
+      addTo = element.querySelector("caption");
+    } else if (element.id.indexOf("eq:") === 0) {
+      addTo = element.querySelector(".eqnos-number");
+    }
+
+    addTo = addTo || element;
+    const id = element.id || null;
+
+    // do not add anchor if element doesn't have assigned id.
+    // id is generated by pandoc and is assumed to be unique and
+    // human-readable
+    if (!id) return;
+
+    // create anchor button
+    const anchor = document.createElement("a");
+    anchor.innerHTML = document.querySelector(".icon_link").innerHTML;
+    anchor.title = "Link to this part of the document";
+    anchor.classList.add("icon_button", "anchor");
+    anchor.dataset.ignore = "true";
+    anchor.href = "#" + id;
+    addTo.appendChild(anchor);
+  }
+
+  // start script when document is finished loading
+  window.addEventListener("load", start);
+</script>
+
+<!-- link icon -->
+
+<template class="icon_link">
+  <!-- modified from: https://fontawesome.com/icons/link -->
+  <svg width="16" height="16" viewBox="0 0 512 512">
+    <path
+      fill="currentColor"
+      d="M326.612 185.391c59.747 59.809 58.927 155.698.36 214.59-.11.12-.24.25-.36.37l-67.2 67.2c-59.27 59.27-155.699 59.262-214.96 0-59.27-59.26-59.27-155.7 0-214.96l37.106-37.106c9.84-9.84 26.786-3.3 27.294 10.606.648 17.722 3.826 35.527 9.69 52.721 1.986 5.822.567 12.262-3.783 16.612l-13.087 13.087c-28.026 28.026-28.905 73.66-1.155 101.96 28.024 28.579 74.086 28.749 102.325.51l67.2-67.19c28.191-28.191 28.073-73.757 0-101.83-3.701-3.694-7.429-6.564-10.341-8.569a16.037 16.037 0 0 1-6.947-12.606c-.396-10.567 3.348-21.456 11.698-29.806l21.054-21.055c5.521-5.521 14.182-6.199 20.584-1.731a152.482 152.482 0 0 1 20.522 17.197zM467.547 44.449c-59.261-59.262-155.69-59.27-214.96 0l-67.2 67.2c-.12.12-.25.25-.36.37-58.566 58.892-59.387 154.781.36 214.59a152.454 152.454 0 0 0 20.521 17.196c6.402 4.468 15.064 3.789 20.584-1.731l21.054-21.055c8.35-8.35 12.094-19.239 11.698-29.806a16.037 16.037 0 0 0-6.947-12.606c-2.912-2.005-6.64-4.875-10.341-8.569-28.073-28.073-28.191-73.639 0-101.83l67.2-67.19c28.239-28.239 74.3-28.069 102.325.51 27.75 28.3 26.872 73.934-1.155 101.96l-13.087 13.087c-4.35 4.35-5.769 10.79-3.783 16.612 5.864 17.194 9.042 34.999 9.69 52.721.509 13.906 17.454 20.446 27.294 10.606l37.106-37.106c59.271-59.259 59.271-155.699.001-214.959z"
+    ></path>
+  </svg>
+</template>
+
+<style>
+  @media only screen {
+    /* anchor button */
+    .anchor {
+      opacity: 0;
+      margin-left: 5px;
+    }
+
+    /* anchor buttons within <h2>'s */
+    h2 .anchor {
+      margin-left: 10px;
+    }
+
+    /* anchor buttons when hovered/focused and anything containing an anchor button when hovered */
+    *:hover > .anchor,
+    .anchor:hover,
+    .anchor:focus {
+      opacity: 1;
+    }
+
+    /* anchor button when hovered */
+    .anchor:hover {
+      cursor: pointer;
+    }
+  }
+
+  /* always show anchor button on devices with no mouse/hover ability */
+  @media (hover: none) {
+    .anchor {
+      opacity: 1;
+    }
+  }
+
+  /* always hide anchor button on print */
+  @media only print {
+    .anchor {
+      display: none;
+    }
+  }
+</style>
+<!-- 
+    Attributes Plugin
+
+    Allows arbitrary HTML attributes to be attached to (almost) any element.
+    Place an HTML comment inside or next to the desired element with the content:
+    $attribute="value"
+-->
+
+<script type="module">
+  // start script
+  function start() {
+    // get list of comments in document
+    const comments = findComments();
+
+    for (const comment of comments)
+      if (comment.parentElement)
+        addAttributes(comment.parentElement, comment.nodeValue.trim());
+  }
+
+  // add html attributes to specified element based on string of
+  // html attributes and values
+  function addAttributes(element, text) {
+    // regex's for finding attribute/value pairs in the format of
+    // attribute="value" or attribute='value
+    const regex2 = /\$([a-zA-Z\-]+)?=\"(.+?)\"/;
+    const regex1 = /\$([a-zA-Z\-]+)?=\'(.+?)\'/;
+
+    // loop through attribute/value pairs
+    let match;
+    while ((match = text.match(regex2) || text.match(regex1))) {
+      // get attribute and value from regex capture groups
+      let attribute = match[1];
+      let value = match[2];
+
+      // remove from string
+      text = text.substring(match.index + match[0].length);
+
+      if (!attribute || !value) break;
+
+      // set attribute of parent element
+      try {
+        element.setAttribute(attribute, value);
+      } catch (error) {
+        console.log(error);
+      }
+
+      // special case for colspan
+      if (attribute === "colspan") removeTableCells(element, value);
+    }
+  }
+
+  // get list of comment elements in document
+  function findComments() {
+    const comments = [];
+
+    // iterate over comment nodes in document
+    function acceptNode(node) {
+      return NodeFilter.FILTER_ACCEPT;
+    }
+    const iterator = document.createNodeIterator(
+      document.body,
+      NodeFilter.SHOW_COMMENT,
+      acceptNode
+    );
+    let node;
+    while ((node = iterator.nextNode())) comments.push(node);
+
+    return comments;
+  }
+
+  // remove certain number of cells after specified cell
+  function removeTableCells(cell, number) {
+    number = parseInt(number);
+    if (!number) return;
+
+    // remove elements
+    for (; number > 1; number--) {
+      if (cell.nextElementSibling) cell.nextElementSibling.remove();
+    }
+  }
+
+  // start script when document is finished loading
+  window.addEventListener("load", start);
+</script>
+<!--
+  Jump to First Plugin
+
+  Adds a button next to each reference entry, figure, and table that jumps the
+  page to the first occurrence of a link to that item in the manuscript.
+-->
+
+<script type="module">
+  // whether to add buttons next to reference entries
+  const references = "true";
+  // whether to add buttons next to figures
+  const figures = "true";
+  // whether to add buttons next to tables
+  const tables = "true";
+
+  // start script
+  function start() {
+    if (references !== "false")
+      makeButtons(`div[id^="ref-"]`, ".csl-left-margin", "reference");
+    if (figures !== "false")
+      makeButtons(`div[id^="fig:"]`, "figcaption", "figure");
+    if (tables !== "false") makeButtons(`div[id^="tbl:"]`, "caption", "table");
+  }
+
+  // when jump button clicked
+  function onButtonClick() {
+    const first = getFirstOccurrence(this.dataset.id);
+    if (!first) return;
+
+    // update url hash so navigating "back" in history will return user to button
+    window.location.hash = this.dataset.id;
+    // scroll to link
+    const timeout = function () {
+      goToElement(first, window.innerHeight * 0.5);
+    };
+    window.setTimeout(timeout, 0);
+  }
+
+  // get first occurrence of link to item in document
+  function getFirstOccurrence(id) {
+    let query = "a";
+    query += '[href="#' + id + '"]';
+    // exclude buttons, anchor links, toc links, etc
+    query += ":not(.button):not(.icon_button):not(.anchor):not(.toc_link)";
+    return document.querySelector(query);
+  }
+
+  // add button next to each reference entry, figure, or table
+  function makeButtons(query, containerQuery, subject) {
+    const elements = document.querySelectorAll(query);
+    for (const element of elements) {
+      const id = element.id;
+      const buttonContainer = element.querySelector(containerQuery);
+      const first = getFirstOccurrence(id);
+
+      // if can't find link to reference or place to put button, ignore
+      if (!first || !buttonContainer) continue;
+
+      // make jump button
+      let button = document.createElement("button");
+      button.classList.add("icon_button", "jump_arrow");
+      button.title = `Jump to the first occurrence of this ${subject} in the document`;
+      const icon = document.querySelector(".icon_angle_double_up");
+      button.innerHTML = icon.innerHTML;
+      button.dataset.id = id;
+      button.dataset.ignore = "true";
+      button.addEventListener("click", onButtonClick);
+      buttonContainer.prepend(button);
+    }
+  }
+
+  // start script when document is finished loading
+  window.addEventListener("load", start);
+</script>
+
+<!-- angle double up icon -->
+
+<template class="icon_angle_double_up">
+  <!-- modified from: https://fontawesome.com/icons/angle-double-up -->
+  <svg width="16" height="16" viewBox="0 0 320 512">
+    <path
+      fill="currentColor"
+      d="M177 255.7l136 136c9.4 9.4 9.4 24.6 0 33.9l-22.6 22.6c-9.4 9.4-24.6 9.4-33.9 0L160 351.9l-96.4 96.4c-9.4 9.4-24.6 9.4-33.9 0L7 425.7c-9.4-9.4-9.4-24.6 0-33.9l136-136c9.4-9.5 24.6-9.5 34-.1zm-34-192L7 199.7c-9.4 9.4-9.4 24.6 0 33.9l22.6 22.6c9.4 9.4 24.6 9.4 33.9 0l96.4-96.4 96.4 96.4c9.4 9.4 24.6 9.4 33.9 0l22.6-22.6c9.4-9.4 9.4-24.6 0-33.9l-136-136c-9.2-9.4-24.4-9.4-33.8 0z"
+    ></path>
+  </svg>
+</template>
+
+<style>
+  @media only screen {
+    /* jump button */
+    .jump_arrow {
+      position: relative;
+      top: 0.125em;
+      margin-right: 5px;
+    }
+  }
+
+  /* always hide jump button on print */
+  @media only print {
+    .jump_arrow {
+      display: none;
+    }
+  }
+</style>
+<!-- 
+    Lightbox Plugin
+
+    Makes it such that when a user clicks on an image, the image fills the
+    screen and the user can pan/drag/zoom the image and navigate between other
+    images in the document.
+-->
+
+<script type="module">
+  // list of possible zoom/scale factors
+  const zooms =
+    "0.1, 0.25, 0.333333, 0.5, 0.666666, 0.75, 1, 1.25, 1.5, 1.75, 2, 2.5, 3, 3.5, 4, 5, 6, 7, 8";
+  // whether to fit image to view ('fit'), display at 100% and shrink if
+  // necessary ('shrink'), or always display at 100% ('100')
+  const defaultZoom = "fit";
+  // whether to zoom in/out toward center of view ('true') or mouse ('false')
+  const centerZoom = "false";
+
+  // start script
+  function start() {
+    // run through each <img> element
+    const imgs = document.querySelectorAll("figure > img");
+    let count = 1;
+    for (const img of imgs) {
+      img.classList.add("lightbox_document_img");
+      img.dataset.number = count;
+      img.dataset.total = imgs.length;
+      img.addEventListener("click", openLightbox);
+      count++;
+    }
+
+    // attach mouse and key listeners to window
+    window.addEventListener("mousemove", onWindowMouseMove);
+    window.addEventListener("keyup", onKeyUp);
+  }
+
+  // when mouse is moved anywhere in window
+  function onWindowMouseMove(event) {
+    window.mouseX = event.clientX;
+    window.mouseY = event.clientY;
+  }
+
+  // when key pressed
+  function onKeyUp(event) {
+    if (!event || !event.key) return;
+
+    switch (event.key) {
+      // trigger click of prev button
+      case "ArrowLeft":
+        const prevButton = document.getElementById("lightbox_prev_button");
+        if (prevButton) prevButton.click();
+        break;
+      // trigger click of next button
+      case "ArrowRight":
+        const nextButton = document.getElementById("lightbox_next_button");
+        if (nextButton) nextButton.click();
+        break;
+      // close on esc
+      case "Escape":
+        closeLightbox();
+        break;
+    }
+  }
+
+  // open lightbox
+  function openLightbox() {
+    const lightbox = makeLightbox(this);
+    if (!lightbox) return;
+
+    blurBody(lightbox);
+    document.body.appendChild(lightbox);
+  }
+
+  // make lightbox
+  function makeLightbox(img) {
+    // delete lightbox if it exists, start fresh
+    closeLightbox();
+
+    // create screen overlay containing lightbox
+    const overlay = document.createElement("div");
+    overlay.id = "lightbox_overlay";
+
+    // create image info boxes
+    const numberInfo = document.createElement("div");
+    const zoomInfo = document.createElement("div");
+    numberInfo.id = "lightbox_number_info";
+    zoomInfo.id = "lightbox_zoom_info";
+
+    // create container for image
+    const imageContainer = document.createElement("div");
+    imageContainer.id = "lightbox_image_container";
+    const lightboxImg = makeLightboxImg(
+      img,
+      imageContainer,
+      numberInfo,
+      zoomInfo
+    );
+    imageContainer.appendChild(lightboxImg);
+
+    // create bottom container for caption and navigation buttons
+    const bottomContainer = document.createElement("div");
+    bottomContainer.id = "lightbox_bottom_container";
+    const caption = makeCaption(img);
+    const prevButton = makePrevButton(img);
+    const nextButton = makeNextButton(img);
+    bottomContainer.appendChild(prevButton);
+    bottomContainer.appendChild(caption);
+    bottomContainer.appendChild(nextButton);
+
+    // attach top middle and bottom to overlay
+    overlay.appendChild(numberInfo);
+    overlay.appendChild(zoomInfo);
+    overlay.appendChild(imageContainer);
+    overlay.appendChild(bottomContainer);
+
+    return overlay;
+  }
+
+  // make <img> object that is intuitively draggable and zoomable
+  function makeLightboxImg(sourceImg, container, numberInfoBox, zoomInfoBox) {
+    // create copy of source <img>
+    const img = sourceImg.cloneNode(true);
+    img.classList.remove("lightbox_document_img");
+    img.removeAttribute("id");
+    img.removeAttribute("width");
+    img.removeAttribute("height");
+    img.style.position = "unset";
+    img.style.margin = "0";
+    img.style.padding = "0";
+    img.style.width = "";
+    img.style.height = "";
+    img.style.minWidth = "";
+    img.style.minHeight = "";
+    img.style.maxWidth = "";
+    img.style.maxHeight = "";
+    img.id = "lightbox_img";
+
+    // build sorted list of zoomSteps
+    const zoomSteps = zooms.split(/[^0-9.]/).map((step) => parseFloat(step));
+    zoomSteps.sort((a, b) => a - b);
+
+    // <img> object property variables
+    let zoom = 1;
+    let translateX = 0;
+    let translateY = 0;
+    let clickMouseX = undefined;
+    let clickMouseY = undefined;
+    let clickTranslateX = undefined;
+    let clickTranslateY = undefined;
+
+    updateNumberInfo();
+
+    // update image numbers displayed in info box
+    function updateNumberInfo() {
+      numberInfoBox.innerHTML =
+        sourceImg.dataset.number + " of " + sourceImg.dataset.total;
+    }
+
+    // update zoom displayed in info box
+    function updateZoomInfo() {
+      let zoomInfo = zoom * 100;
+      if (!Number.isInteger(zoomInfo)) zoomInfo = zoomInfo.toFixed(2);
+      zoomInfoBox.innerHTML = zoomInfo + "%";
+    }
+
+    // move to closest zoom step above current zoom
+    const zoomIn = function () {
+      for (const zoomStep of zoomSteps) {
+        if (zoomStep > zoom) {
+          zoom = zoomStep;
+          break;
+        }
+      }
+      updateTransform();
+    };
+
+    // move to closest zoom step above current zoom
+    const zoomOut = function () {
+      zoomSteps.reverse();
+      for (const zoomStep of zoomSteps) {
+        if (zoomStep < zoom) {
+          zoom = zoomStep;
+          break;
+        }
+      }
+      zoomSteps.reverse();
+
+      updateTransform();
+    };
+
+    // update display of <img> based on scale/translate properties
+    const updateTransform = function () {
+      // set transform
+      img.style.transform =
+        "translate(" +
+        (translateX || 0) +
+        "px," +
+        (translateY || 0) +
+        "px) scale(" +
+        (zoom || 1) +
+        ")";
+
+      // get new width/height after scale
+      const rect = img.getBoundingClientRect();
+      // limit translate
+      translateX = Math.max(translateX, -rect.width / 2);
+      translateX = Math.min(translateX, rect.width / 2);
+      translateY = Math.max(translateY, -rect.height / 2);
+      translateY = Math.min(translateY, rect.height / 2);
+
+      // set transform
+      img.style.transform =
+        "translate(" +
+        (translateX || 0) +
+        "px," +
+        (translateY || 0) +
+        "px) scale(" +
+        (zoom || 1) +
+        ")";
+
+      updateZoomInfo();
+    };
+
+    // fit <img> to container
+    const fit = function () {
+      // no x/y offset, 100% zoom by default
+      translateX = 0;
+      translateY = 0;
+      zoom = 1;
+
+      // widths of <img> and container
+      const imgWidth = img.naturalWidth;
+      const imgHeight = img.naturalHeight;
+      const containerWidth = parseFloat(
+        window.getComputedStyle(container).width
+      );
+      const containerHeight = parseFloat(
+        window.getComputedStyle(container).height
+      );
+
+      // how much zooming is needed to fit <img> to container
+      const xRatio = imgWidth / containerWidth;
+      const yRatio = imgHeight / containerHeight;
+      const maxRatio = Math.max(xRatio, yRatio);
+      const newZoom = 1 / maxRatio;
+
+      // fit <img> to container according to option
+      if (defaultZoom === "shrink") {
+        if (maxRatio > 1) zoom = newZoom;
+      } else if (defaultZoom === "fit") zoom = newZoom;
+
+      updateTransform();
+    };
+
+    // when mouse wheel is rolled anywhere in container
+    const onContainerWheel = function (event) {
+      if (!event) return;
+
+      // let ctrl + mouse wheel to zoom behave as normal
+      if (event.ctrlKey) return;
+
+      // prevent normal scroll behavior
+      event.preventDefault();
+      event.stopPropagation();
+
+      // point around which to scale img
+      const viewRect = container.getBoundingClientRect();
+      const viewX = (viewRect.left + viewRect.right) / 2;
+      const viewY = (viewRect.top + viewRect.bottom) / 2;
+      const originX = centerZoom === "true" ? viewX : mouseX;
+      const originY = centerZoom === "true" ? viewY : mouseY;
+
+      // get point on image under origin
+      const oldRect = img.getBoundingClientRect();
+      const oldPercentX = (originX - oldRect.left) / oldRect.width;
+      const oldPercentY = (originY - oldRect.top) / oldRect.height;
+
+      // increment/decrement zoom
+      if (event.deltaY < 0) zoomIn();
+      if (event.deltaY > 0) zoomOut();
+
+      // get offset between previous image point and origin
+      const newRect = img.getBoundingClientRect();
+      const offsetX = originX - (newRect.left + newRect.width * oldPercentX);
+      const offsetY = originY - (newRect.top + newRect.height * oldPercentY);
+
+      // translate image to keep image point under origin
+      translateX += offsetX;
+      translateY += offsetY;
+
+      // perform translate
+      updateTransform();
+    };
+
+    // when container is clicked
+    function onContainerClick(event) {
+      // if container itself is target of click, and not other
+      // element above it
+      if (event.target === this) closeLightbox();
+    }
+
+    // when mouse button is pressed on image
+    const onImageMouseDown = function (event) {
+      // store original mouse position relative to image
+      clickMouseX = window.mouseX;
+      clickMouseY = window.mouseY;
+      clickTranslateX = translateX;
+      clickTranslateY = translateY;
+      event.stopPropagation();
+      event.preventDefault();
+    };
+
+    // when mouse button is released anywhere in window
+    const onWindowMouseUp = function (event) {
+      // reset original mouse position
+      clickMouseX = undefined;
+      clickMouseY = undefined;
+      clickTranslateX = undefined;
+      clickTranslateY = undefined;
+
+      // remove global listener if lightbox removed from document
+      if (!document.body.contains(container))
+        window.removeEventListener("mouseup", onWindowMouseUp);
+    };
+
+    // when mouse is moved anywhere in window
+    const onWindowMouseMove = function (event) {
+      if (
+        clickMouseX === undefined ||
+        clickMouseY === undefined ||
+        clickTranslateX === undefined ||
+        clickTranslateY === undefined
+      )
+        return;
+
+      // offset image based on original and current mouse position
+      translateX = clickTranslateX + window.mouseX - clickMouseX;
+      translateY = clickTranslateY + window.mouseY - clickMouseY;
+      updateTransform();
+      event.preventDefault();
+
+      // remove global listener if lightbox removed from document
+      if (!document.body.contains(container))
+        window.removeEventListener("mousemove", onWindowMouseMove);
+    };
+
+    // when window is resized
+    const onWindowResize = function (event) {
+      fit();
+
+      // remove global listener if lightbox removed from document
+      if (!document.body.contains(container))
+        window.removeEventListener("resize", onWindowResize);
+    };
+
+    // attach the necessary event listeners
+    img.addEventListener("dblclick", fit);
+    img.addEventListener("mousedown", onImageMouseDown);
+    container.addEventListener("wheel", onContainerWheel);
+    container.addEventListener("mousedown", onContainerClick);
+    container.addEventListener("touchstart", onContainerClick);
+    window.addEventListener("mouseup", onWindowMouseUp);
+    window.addEventListener("mousemove", onWindowMouseMove);
+    window.addEventListener("resize", onWindowResize);
+
+    // run fit() after lightbox atttached to document and <img> Loaded
+    // so needed container and img dimensions available
+    img.addEventListener("load", fit);
+
+    return img;
+  }
+
+  // make caption
+  function makeCaption(img) {
+    const caption = document.createElement("div");
+    caption.id = "lightbox_caption";
+    const captionSource = img.nextElementSibling;
+    if (captionSource.tagName.toLowerCase() === "figcaption") {
+      const captionCopy = makeCopy(captionSource);
+      caption.innerHTML = captionCopy.innerHTML;
+    }
+
+    caption.addEventListener("touchstart", function (event) {
+      event.stopPropagation();
+    });
+
+    return caption;
+  }
+
+  // make carbon copy of html dom element
+  function makeCopy(source) {
+    const sourceCopy = source.cloneNode(true);
+
+    // delete elements marked with ignore (eg anchor and jump buttons)
+    const deleteFromCopy = sourceCopy.querySelectorAll('[data-ignore="true"]');
+    for (const element of deleteFromCopy) element.remove();
+
+    // delete certain element attributes
+    const attributes = [
+      "id",
+      "data-collapsed",
+      "data-selected",
+      "data-highlighted",
+      "data-glow",
+    ];
+    for (const attribute of attributes) {
+      sourceCopy.removeAttribute(attribute);
+      const elements = sourceCopy.querySelectorAll("[" + attribute + "]");
+      for (const element of elements) element.removeAttribute(attribute);
+    }
+
+    return sourceCopy;
+  }
+
+  // make button to jump to previous image in document
+  function makePrevButton(img) {
+    const prevButton = document.createElement("button");
+    prevButton.id = "lightbox_prev_button";
+    prevButton.title = "Jump to the previous image in the document [←]";
+    prevButton.classList.add("icon_button", "lightbox_button");
+    prevButton.innerHTML = document.querySelector(".icon_caret_left").innerHTML;
+
+    // attach click listeners to button
+    prevButton.addEventListener("click", function () {
+      getPrevImg(img).click();
+    });
+
+    return prevButton;
+  }
+
+  // make button to jump to next image in document
+  function makeNextButton(img) {
+    const nextButton = document.createElement("button");
+    nextButton.id = "lightbox_next_button";
+    nextButton.title = "Jump to the next image in the document [→]";
+    nextButton.classList.add("icon_button", "lightbox_button");
+    nextButton.innerHTML = document.querySelector(
+      ".icon_caret_right"
+    ).innerHTML;
+
+    // attach click listeners to button
+    nextButton.addEventListener("click", function () {
+      getNextImg(img).click();
+    });
+
+    return nextButton;
+  }
+
+  // get previous image in document
+  function getPrevImg(img) {
+    const imgs = document.querySelectorAll(".lightbox_document_img");
+
+    // find index of provided img
+    let index;
+    for (index = 0; index < imgs.length; index++) {
+      if (imgs[index] === img) break;
+    }
+
+    // wrap index to other side if < 1
+    if (index - 1 >= 0) index--;
+    else index = imgs.length - 1;
+    return imgs[index];
+  }
+
+  // get next image in document
+  function getNextImg(img) {
+    const imgs = document.querySelectorAll(".lightbox_document_img");
+
+    // find index of provided img
+    let index;
+    for (index = 0; index < imgs.length; index++) {
+      if (imgs[index] === img) break;
+    }
+
+    // wrap index to other side if > total
+    if (index + 1 <= imgs.length - 1) index++;
+    else index = 0;
+    return imgs[index];
+  }
+
+  // close lightbox
+  function closeLightbox() {
+    focusBody();
+
+    const lightbox = document.getElementById("lightbox_overlay");
+    if (lightbox) lightbox.remove();
+  }
+
+  // make all elements behind lightbox non-focusable
+  function blurBody(overlay) {
+    const all = document.querySelectorAll("*");
+    for (const element of all) element.tabIndex = -1;
+    document.body.classList.add("body_no_scroll");
+  }
+
+  // make all elements focusable again
+  function focusBody() {
+    const all = document.querySelectorAll("*");
+    for (const element of all) element.removeAttribute("tabIndex");
+    document.body.classList.remove("body_no_scroll");
+  }
+
+  // start script when document is finished loading
+  window.addEventListener("load", start);
+</script>
+
+<!-- caret left icon -->
+
+<template class="icon_caret_left">
+  <!-- modified from: https://fontawesome.com/icons/caret-left -->
+  <svg width="16" height="16" viewBox="0 0 192 512">
+    <path
+      fill="currentColor"
+      d="M192 127.338v257.324c0 17.818-21.543 26.741-34.142 14.142L29.196 270.142c-7.81-7.81-7.81-20.474 0-28.284l128.662-128.662c12.599-12.6 34.142-3.676 34.142 14.142z"
+    ></path>
+  </svg>
+</template>
+
+<!-- caret right icon -->
+
+<template class="icon_caret_right">
+  <!-- modified from: https://fontawesome.com/icons/caret-right -->
+  <svg width="16" height="16" viewBox="0 0 192 512">
+    <path
+      fill="currentColor"
+      d="M0 384.662V127.338c0-17.818 21.543-26.741 34.142-14.142l128.662 128.662c7.81 7.81 7.81 20.474 0 28.284L34.142 398.804C21.543 411.404 0 402.48 0 384.662z"
+    ></path>
+  </svg>
+</template>
+
+<style>
+  @media only screen {
+    /* regular <img> in document when hovered */
+    img.lightbox_document_img:hover {
+      cursor: pointer;
+    }
+
+    .body_no_scroll {
+      overflow: hidden !important;
+    }
+
+    /* screen overlay */
+    #lightbox_overlay {
+      display: flex;
+      flex-direction: column;
+      position: fixed;
+      left: 0;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0, 0, 0, 0.75);
+      z-index: 3;
+    }
+
+    /* middle area containing lightbox image */
+    #lightbox_image_container {
+      flex-grow: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+      position: relative;
+      padding: 20px;
+    }
+
+    /* bottom area containing caption */
+    #lightbox_bottom_container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100px;
+      min-height: 100px;
+      max-height: 100px;
+      background: rgba(0, 0, 0, 0.5);
+    }
+
+    /* image number info text box */
+    #lightbox_number_info {
+      position: absolute;
+      color: #ffffff;
+      font-weight: 600;
+      left: 2px;
+      top: 0;
+      z-index: 4;
+    }
+
+    /* zoom info text box */
+    #lightbox_zoom_info {
+      position: absolute;
+      color: #ffffff;
+      font-weight: 600;
+      right: 2px;
+      top: 0;
+      z-index: 4;
+    }
+
+    /* copy of image caption */
+    #lightbox_caption {
+      box-sizing: border-box;
+      display: inline-block;
+      width: 100%;
+      max-height: 100%;
+      padding: 10px 0;
+      text-align: center;
+      overflow-y: auto;
+      color: #ffffff;
+    }
+
+    /* navigation previous/next button */
+    .lightbox_button {
+      width: 100px;
+      height: 100%;
+      min-width: 100px;
+      min-height: 100%;
+      color: #ffffff;
+    }
+
+    /* navigation previous/next button when hovered */
+    .lightbox_button:hover {
+      background: none !important;
+    }
+
+    /* navigation button icon */
+    .lightbox_button > svg {
+      height: 25px;
+    }
+
+    /* figure auto-number */
+    #lightbox_caption > span:first-of-type {
+      font-weight: bold;
+      margin-right: 5px;
+    }
+
+    /* lightbox image when hovered */
+    #lightbox_img:hover {
+      cursor: grab;
+    }
+
+    /* lightbox image when grabbed */
+    #lightbox_img:active {
+      cursor: grabbing;
+    }
+  }
+
+  /* when on screen < 480px wide */
+  @media only screen and (max-width: 480px) {
+    /* make navigation buttons skinnier on small screens to make more room for caption text */
+    .lightbox_button {
+      width: 50px;
+      min-width: 50px;
+    }
+  }
+
+  /* always hide lightbox on print */
+  @media only print {
+    #lightbox_overlay {
+      display: none;
+    }
+  }
+</style>
+<!-- 
+  Link Highlight Plugin
+
+  Makes it such that when a user hovers or focuses a link, other links that have
+  the same target will be highlighted. It also makes it such that when clicking
+  a link, the target of the link (eg reference, figure, table) is briefly
+  highlighted.
+-->
+
+<script type="module">
+  // whether to also highlight links that go to external urls
+  const externalLinks = "false";
+  // whether user must click off to unhighlight instead of just
+  // un-hovering
+  const clickUnhighlight = "false";
+  // whether to also highlight links that are unique
+  const highlightUnique = "true";
+
+  // start script
+  function start() {
+    const links = getLinks();
+    for (const link of links) {
+      // attach mouse and focus listeners to link
+      link.addEventListener("mouseenter", onLinkFocus);
+      link.addEventListener("focus", onLinkFocus);
+      link.addEventListener("mouseleave", onLinkUnhover);
+    }
+
+    // attach click and hash change listeners to window
+    window.addEventListener("click", onClick);
+    window.addEventListener("touchstart", onClick);
+    window.addEventListener("hashchange", onHashChange);
+
+    // run hash change on window load in case user has navigated
+    // directly to hash
+    onHashChange();
+  }
+
+  // when link is focused (tabbed to) or hovered
+  function onLinkFocus() {
+    highlight(this);
+  }
+
+  // when link is unhovered
+  function onLinkUnhover() {
+    if (clickUnhighlight !== "true") unhighlightAll();
+  }
+
+  // when the mouse is clicked anywhere in window
+  function onClick(event) {
+    unhighlightAll();
+  }
+
+  // when hash (eg manuscript.html#introduction) changes
+  function onHashChange() {
+    const target = getHashTarget();
+    if (target) glowElement(target);
+  }
+
+  // start glow sequence on an element
+  function glowElement(element) {
+    const startGlow = function () {
+      onGlowEnd();
+      element.dataset.glow = "true";
+      element.addEventListener("animationend", onGlowEnd);
+    };
+    const onGlowEnd = function () {
+      element.removeAttribute("data-glow");
+      element.removeEventListener("animationend", onGlowEnd);
+    };
+    startGlow();
+  }
+
+  // highlight link and all others with same target
+  function highlight(link) {
+    // force unhighlight all to start fresh
+    unhighlightAll();
+
+    // get links with same target
+    if (!link) return;
+    const sameLinks = getSameLinks(link);
+
+    // if link unique and option is off, exit and don't highlight
+    if (sameLinks.length <= 1 && highlightUnique !== "true") return;
+
+    // highlight all same links, and "select" (special highlight) this
+    // one
+    for (const sameLink of sameLinks) {
+      if (sameLink === link) sameLink.setAttribute("data-selected", "true");
+      else sameLink.setAttribute("data-highlighted", "true");
+    }
+  }
+
+  // unhighlight all links
+  function unhighlightAll() {
+    const links = getLinks();
+    for (const link of links) {
+      link.setAttribute("data-selected", "false");
+      link.setAttribute("data-highlighted", "false");
+    }
+  }
+
+  // get links with same target
+  function getSameLinks(link) {
+    const results = [];
+    const links = getLinks();
+    for (const otherLink of links) {
+      if (otherLink.getAttribute("href") === link.getAttribute("href"))
+        results.push(otherLink);
+    }
+    return results;
+  }
+
+  // get all links of types we wish to handle
+  function getLinks() {
+    let query = "a";
+    if (externalLinks !== "true") query += '[href^="#"]';
+    // exclude buttons, anchor links, toc links, etc
+    query += ":not(.button):not(.icon_button):not(.anchor):not(.toc_link)";
+    return document.querySelectorAll(query);
+  }
+
+  // start script when document is finished loading
+  window.addEventListener("load", start);
+</script>
+
+<style>
+  @media only screen {
+    /* anything with data-highlighted attribute true */
+    [data-highlighted="true"] {
+      background: #ffeb3b;
+    }
+
+    /* anything with data-selected attribute true */
+    [data-selected="true"] {
+      background: #ff8a65 !important;
+    }
+
+    /* animation definition for glow */
+    @keyframes highlight_glow {
+      0% {
+        background: none;
+      }
+      10% {
+        background: #bbdefb;
+      }
+      100% {
+        background: none;
+      }
+    }
+
+    /* anything with data-glow attribute true */
+    [data-glow="true"] {
+      animation: highlight_glow 2s;
+    }
+  }
+</style>
+<!--
+  Table of Contents Plugin
+
+  Provides a "table of contents" (toc) panel on the side of the document that
+  allows the user to conveniently navigate between sections of the document.
+-->
+
+<script type="module">
+  // which types of elements to add links for, in "document.querySelector" format
+  const typesQuery = "h1, h2, h3";
+  // whether toc starts open. use 'true' or 'false', or 'auto' to
+  // use 'true' behavior when screen wide enough and 'false' when not
+  const startOpen = "false";
+  // whether toc closes when clicking on toc link. use 'true' or
+  // 'false', or 'auto' to use 'false' behavior when screen wide
+  // enough and 'true' when not
+  const clickClose = "auto";
+  // if list item is more than this many characters, text will be
+  // truncated
+  const charLimit = "50";
+  // whether or not to show bullets next to each toc item
+  const bullets = "false";
+
+  // start script
+  function start() {
+    // make toc panel and populate with entries (links to document
+    // sections)
+    const panel = makePanel();
+    if (!panel) return;
+    makeEntries(panel);
+    // attach panel to document after making entries, so 'toc' heading
+    // in panel isn't included in toc
+    document.body.insertBefore(panel, document.body.firstChild);
+
+    // initial panel state
+    if (startOpen === "true" || (startOpen === "auto" && !isSmallScreen()))
+      openPanel();
+    else closePanel();
+
+    // attach click, scroll, and hash change listeners to window
+    window.addEventListener("click", onClick);
+    window.addEventListener("scroll", onScroll);
+    window.addEventListener("hashchange", onScroll);
+    window.addEventListener("keyup", onKeyUp);
+    onScroll();
+
+    // add class to push document body down out of way of toc button
+    document.body.classList.add("toc_body_nudge");
+  }
+
+  // determine if screen wide enough to fit toc panel
+  function isSmallScreen() {
+    // in default theme:
+    // 816px = 8.5in = width of "page" (<body>) element
+    // 260px = min width of toc panel (*2 for both sides of <body>)
+    return window.innerWidth < 816 + 260 * 2;
+  }
+
+  // when mouse is clicked anywhere in window
+  function onClick() {
+    if (isSmallScreen()) closePanel();
+  }
+
+  // when window is scrolled or hash changed
+  function onScroll() {
+    highlightViewed();
+  }
+
+  // when key pressed
+  function onKeyUp(event) {
+    if (!event || !event.key) return;
+
+    // close on esc
+    if (event.key === "Escape") closePanel();
+  }
+
+  // find entry of currently viewed document section in toc and highlight
+  function highlightViewed() {
+    const firstId = getFirstInView(typesQuery);
+
+    // get toc entries (links), unhighlight all, then highlight viewed
+    const list = document.getElementById("toc_list");
+    if (!firstId || !list) return;
+    const links = list.querySelectorAll("a");
+    for (const link of links) link.dataset.viewing = "false";
+    const link = list.querySelector('a[href="#' + firstId + '"]');
+    if (!link) return;
+    link.dataset.viewing = "true";
+  }
+
+  // get first or previous toc listed element in top half of view
+  function getFirstInView(query) {
+    // get all elements matching query and with id
+    const elements = document.querySelectorAll(query);
+    const elementsWithIds = [];
+    for (const element of elements) {
+      if (element.id) elementsWithIds.push(element);
+    }
+
+    // get first or previous element in top half of view
+    for (let i = 0; i < elementsWithIds.length; i++) {
+      const element = elementsWithIds[i];
+      const prevElement = elementsWithIds[Math.max(0, i - 1)];
+      if (element.getBoundingClientRect().top >= 0) {
+        if (element.getBoundingClientRect().top < window.innerHeight / 2)
+          return element.id;
+        else return prevElement.id;
+      }
+    }
+  }
+
+  // make panel
+  function makePanel() {
+    // create panel
+    const panel = document.createElement("div");
+    panel.id = "toc_panel";
+    if (bullets === "true") panel.dataset.bullets = "true";
+
+    // create header
+    const header = document.createElement("div");
+    header.id = "toc_header";
+
+    // create toc button
+    const button = document.createElement("button");
+    button.id = "toc_button";
+    button.innerHTML = document.querySelector(".icon_th_list").innerHTML;
+    button.title = "Table of Contents";
+    button.classList.add("icon_button");
+
+    // create header text
+    const text = document.createElement("h4");
+    text.innerHTML = "Table of Contents";
+
+    // create container for toc list
+    const list = document.createElement("div");
+    list.id = "toc_list";
+
+    // attach click listeners
+    panel.addEventListener("click", onPanelClick);
+    header.addEventListener("click", onHeaderClick);
+    button.addEventListener("click", onButtonClick);
+
+    // attach elements
+    header.appendChild(button);
+    header.appendChild(text);
+    panel.appendChild(header);
+    panel.appendChild(list);
+
+    return panel;
+  }
+
+  // create toc entries (links) to each element of the specified types
+  function makeEntries(panel) {
+    const elements = document.querySelectorAll(typesQuery);
+    for (const element of elements) {
+      // do not add link if element doesn't have assigned id
+      if (!element.id) continue;
+
+      // create link/list item
+      const link = document.createElement("a");
+      link.classList.add("toc_link");
+      switch (element.tagName.toLowerCase()) {
+        case "h1":
+          link.dataset.level = "1";
+          break;
+        case "h2":
+          link.dataset.level = "2";
+          break;
+        case "h3":
+          link.dataset.level = "3";
+          break;
+        case "h4":
+          link.dataset.level = "4";
+          break;
+      }
+      link.title = element.innerText;
+      let text = element.innerText;
+      if (text.length > charLimit) text = text.slice(0, charLimit) + "...";
+      link.innerHTML = text;
+      link.href = "#" + element.id;
+      link.addEventListener("click", onLinkClick);
+
+      // attach link
+      panel.querySelector("#toc_list").appendChild(link);
+    }
+  }
+
+  // when panel is clicked
+  function onPanelClick(event) {
+    // stop click from propagating to window/document and closing panel
+    event.stopPropagation();
+  }
+
+  // when header itself is clicked
+  function onHeaderClick(event) {
+    togglePanel();
+  }
+
+  // when button is clicked
+  function onButtonClick(event) {
+    togglePanel();
+    // stop header underneath button from also being clicked
+    event.stopPropagation();
+  }
+
+  // when link is clicked
+  function onLinkClick(event) {
+    if (clickClose === "true" || (clickClose === "auto" && isSmallScreen()))
+      closePanel();
+    else openPanel();
+  }
+
+  // open panel if closed, close if opened
+  function togglePanel() {
+    const panel = document.getElementById("toc_panel");
+    if (!panel) return;
+
+    if (panel.dataset.open === "true") closePanel();
+    else openPanel();
+  }
+
+  // open panel
+  function openPanel() {
+    const panel = document.getElementById("toc_panel");
+    if (panel) panel.dataset.open = "true";
+  }
+
+  // close panel
+  function closePanel() {
+    const panel = document.getElementById("toc_panel");
+    if (panel) panel.dataset.open = "false";
+  }
+
+  // start script when document is finished loading
+  window.addEventListener("load", start);
+</script>
+
+<!-- th list icon -->
+
+<template class="icon_th_list">
+  <!-- modified from: https://fontawesome.com/icons/th-list -->
+  <svg width="16" height="16" viewBox="0 0 512 512" tabindex="-1">
+    <path
+      fill="currentColor"
+      d="M96 96c0 26.51-21.49 48-48 48S0 122.51 0 96s21.49-48 48-48 48 21.49 48 48zM48 208c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm0 160c-26.51 0-48 21.49-48 48s21.49 48 48 48 48-21.49 48-48-21.49-48-48-48zm96-236h352c8.837 0 16-7.163 16-16V76c0-8.837-7.163-16-16-16H144c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h352c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H144c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16zm0 160h352c8.837 0 16-7.163 16-16v-40c0-8.837-7.163-16-16-16H144c-8.837 0-16 7.163-16 16v40c0 8.837 7.163 16 16 16z"
+      tabindex="-1"
+    ></path>
+  </svg>
+</template>
+
+<style>
+  @media only screen {
+    /* toc panel */
+    #toc_panel {
+      box-sizing: border-box;
+      position: fixed;
+      top: 0;
+      left: 0;
+      background: #ffffff;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+      z-index: 2;
+    }
+
+    /* toc panel when closed */
+    #toc_panel[data-open="false"] {
+      min-width: 60px;
+      width: 60px;
+      height: 60px;
+      border-right: solid 1px #bdbdbd;
+      border-bottom: solid 1px #bdbdbd;
+    }
+
+    /* toc panel when open */
+    #toc_panel[data-open="true"] {
+      min-width: 260px;
+      max-width: 480px;
+      /* keep panel edge consistent distance away from "page" edge */
+      width: calc(((100vw - 8.5in) / 2) - 30px - 40px);
+      bottom: 0;
+      border-right: solid 1px #bdbdbd;
+    }
+
+    /* toc panel header */
+    #toc_header {
+      box-sizing: border-box;
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      height: 60px;
+      margin: 0;
+      padding: 20px;
+    }
+
+    /* toc panel header when hovered */
+    #toc_header:hover {
+      cursor: pointer;
+    }
+
+    /* toc panel header when panel open */
+    #toc_panel[data-open="true"] > #toc_header {
+      border-bottom: solid 1px #bdbdbd;
+    }
+
+    /* toc open/close header button */
+    #toc_button {
+      margin-right: 20px;
+    }
+
+    /* hide toc list and header text when closed */
+    #toc_panel[data-open="false"] > #toc_header > *:not(#toc_button),
+    #toc_panel[data-open="false"] > #toc_list {
+      display: none;
+    }
+
+    /* toc list of entries */
+    #toc_list {
+      box-sizing: border-box;
+      width: 100%;
+      padding: 20px;
+      position: absolute;
+      top: calc(60px + 1px);
+      bottom: 0;
+      overflow: auto;
+    }
+
+    /* toc entry, link to section in document */
+    .toc_link {
+      display: block;
+      padding: 5px;
+      position: relative;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    /* toc entry when hovered or when "viewed" */
+    .toc_link:hover,
+    .toc_link[data-viewing="true"] {
+      background: #f5f5f5;
+    }
+
+    /* toc entry, level 1 indentation */
+    .toc_link[data-level="1"] {
+      margin-left: 0;
+    }
+
+    /* toc entry, level 2 indentation */
+    .toc_link[data-level="2"] {
+      margin-left: 20px;
+    }
+
+    /* toc entry, level 3 indentation */
+    .toc_link[data-level="3"] {
+      margin-left: 40px;
+    }
+
+    /* toc entry, level 4 indentation */
+    .toc_link[data-level="4"] {
+      margin-left: 60px;
+    }
+
+    /* toc entry bullets */
+    #toc_panel[data-bullets="true"] .toc_link[data-level]:before {
+      position: absolute;
+      left: -15px;
+      top: -1px;
+      font-size: 1.5em;
+    }
+
+    /* toc entry, level 2 bullet */
+    #toc_panel[data-bullets="true"] .toc_link[data-level="2"]:before {
+      content: "\2022";
+    }
+
+    /* toc entry, level 3 bullet */
+    #toc_panel[data-bullets="true"] .toc_link[data-level="3"]:before {
+      content: "\25AB";
+    }
+
+    /* toc entry, level 4 bullet */
+    #toc_panel[data-bullets="true"] .toc_link[data-level="4"]:before {
+      content: "-";
+    }
+  }
+
+  /* when on screen < 8.5in wide */
+  @media only screen and (max-width: 8.5in) {
+    /* push <body> ("page") element down to make room for toc icon */
+    .toc_body_nudge {
+      padding-top: 60px;
+    }
+
+    /* toc icon when panel closed and not hovered */
+    #toc_panel[data-open="false"]:not(:hover) {
+      background: rgba(255, 255, 255, 0.75);
+    }
+  }
+
+  /* always hide toc panel on print */
+  @media only print {
+    #toc_panel {
+      display: none;
+    }
+  }
+</style>
+<!-- 
+  Tooltips Plugin
+
+  Makes it such that when the user hovers or focuses a link to a citation or
+  figure, a tooltip appears with a preview of the reference content, along with
+  arrows to navigate between instances of the same reference in the document.
+-->
+
+<script type="module">
+  // whether user must click off to close tooltip instead of just un-hovering
+  const clickClose = "false";
+  // delay (in ms) between opening and closing tooltip
+  const delay = "100";
+
+  // start script
+  function start() {
+    const links = getLinks();
+    for (const link of links) {
+      // attach hover and focus listeners to link
+      link.addEventListener("mouseover", onLinkHover);
+      link.addEventListener("mouseleave", onLinkUnhover);
+      link.addEventListener("focus", onLinkFocus);
+      link.addEventListener("touchend", onLinkTouch);
+    }
+
+    // attach mouse, key, and resize listeners to window
+    window.addEventListener("mousedown", onClick);
+    window.addEventListener("touchstart", onClick);
+    window.addEventListener("keyup", onKeyUp);
+    window.addEventListener("resize", onResize);
+  }
+
+  // when link is hovered
+  function onLinkHover() {
+    // function to open tooltip
+    const delayOpenTooltip = function () {
+      openTooltip(this);
+    }.bind(this);
+
+    // run open function after delay
+    this.openTooltipTimer = window.setTimeout(delayOpenTooltip, delay);
+  }
+
+  // when mouse leaves link
+  function onLinkUnhover() {
+    // cancel opening tooltip
+    window.clearTimeout(this.openTooltipTimer);
+
+    // don't close on unhover if option specifies
+    if (clickClose === "true") return;
+
+    // function to close tooltip
+    const delayCloseTooltip = function () {
+      // if tooltip open and if mouse isn't over tooltip, close
+      const tooltip = document.getElementById("tooltip");
+      if (tooltip && !tooltip.matches(":hover")) closeTooltip();
+    };
+
+    // run close function after delay
+    this.closeTooltipTimer = window.setTimeout(delayCloseTooltip, delay);
+  }
+
+  // when link is focused (tabbed to)
+  function onLinkFocus(event) {
+    openTooltip(this);
+  }
+
+  // when link is touched on touch screen
+  function onLinkTouch(event) {
+    // attempt to force hover state on first tap always, and trigger
+    // regular link click (and navigation) on second tap
+    if (event.target === document.activeElement) event.target.click();
+    else {
+      document.activeElement.blur();
+      event.target.focus();
+    }
+    if (event.cancelable) event.preventDefault();
+    event.stopPropagation();
+    return false;
+  }
+
+  // when mouse is clicked anywhere in window
+  function onClick(event) {
+    closeTooltip();
+  }
+
+  // when key pressed
+  function onKeyUp(event) {
+    if (!event || !event.key) return;
+
+    switch (event.key) {
+      // trigger click of prev button
+      case "ArrowLeft":
+        const prevButton = document.getElementById("tooltip_prev_button");
+        if (prevButton) prevButton.click();
+        break;
+      // trigger click of next button
+      case "ArrowRight":
+        const nextButton = document.getElementById("tooltip_next_button");
+        if (nextButton) nextButton.click();
+        break;
+      // close on esc
+      case "Escape":
+        closeTooltip();
+        break;
+    }
+  }
+
+  // when window is resized or zoomed
+  function onResize() {
+    closeTooltip();
+  }
+
+  // get all links of types we wish to handle
+  function getLinks() {
+    const queries = [];
+    // exclude buttons, anchor links, toc links, etc
+    const exclude =
+      ":not(.button):not(.icon_button):not(.anchor):not(.toc_link)";
+    queries.push('a[href^="#ref-"]' + exclude); // citation links
+    queries.push('a[href^="#fig:"]' + exclude); // figure links
+    const query = queries.join(", ");
+    return document.querySelectorAll(query);
+  }
+
+  // get links with same target, get index of link in set, get total
+  // same links
+  function getSameLinks(link) {
+    const sameLinks = [];
+    const links = getLinks();
+    for (const otherLink of links) {
+      if (otherLink.getAttribute("href") === link.getAttribute("href"))
+        sameLinks.push(otherLink);
+    }
+
+    return {
+      elements: sameLinks,
+      index: sameLinks.indexOf(link),
+      total: sameLinks.length,
+    };
+  }
+
+  // open tooltip
+  function openTooltip(link) {
+    // delete tooltip if it exists, start fresh
+    closeTooltip();
+
+    // make tooltip element
+    const tooltip = makeTooltip(link);
+
+    // if source couldn't be found and tooltip not made, exit
+    if (!tooltip) return;
+
+    // make navbar elements
+    const navBar = makeNavBar(link);
+    if (navBar) tooltip.firstElementChild.appendChild(navBar);
+
+    // attach tooltip to page
+    document.body.appendChild(tooltip);
+
+    // position tooltip
+    const position = function () {
+      positionTooltip(link);
+    };
+    position();
+
+    // if tooltip contains images, position again after they've loaded
+    const imgs = tooltip.querySelectorAll("img");
+    for (const img of imgs) img.addEventListener("load", position);
+  }
+
+  // close (delete) tooltip
+  function closeTooltip() {
+    const tooltip = document.getElementById("tooltip");
+    if (tooltip) tooltip.remove();
+  }
+
+  // make tooltip
+  function makeTooltip(link) {
+    // get target element that link points to
+    const source = getSource(link);
+
+    // if source can't be found, exit
+    if (!source) return;
+
+    // create new tooltip
+    const tooltip = document.createElement("div");
+    tooltip.id = "tooltip";
+    const tooltipContent = document.createElement("div");
+    tooltipContent.id = "tooltip_content";
+    tooltip.appendChild(tooltipContent);
+
+    // make copy of source node and put in tooltip
+    const sourceCopy = makeCopy(source);
+    tooltipContent.appendChild(sourceCopy);
+
+    // attach mouse event listeners
+    tooltip.addEventListener("click", onTooltipClick);
+    tooltip.addEventListener("mousedown", onTooltipClick);
+    tooltip.addEventListener("touchstart", onTooltipClick);
+    tooltip.addEventListener("mouseleave", onTooltipUnhover);
+
+    // (for interaction with lightbox plugin)
+    // transfer click on tooltip copied img to original img
+    const sourceImg = source.querySelector("img");
+    const sourceCopyImg = sourceCopy.querySelector("img");
+    if (sourceImg && sourceCopyImg) {
+      const clickImg = function () {
+        sourceImg.click();
+        closeTooltip();
+      };
+      sourceCopyImg.addEventListener("click", clickImg);
+    }
+
+    return tooltip;
+  }
+
+  // make carbon copy of html dom element
+  function makeCopy(source) {
+    const sourceCopy = source.cloneNode(true);
+
+    // delete elements marked with ignore (eg anchor and jump buttons)
+    const deleteFromCopy = sourceCopy.querySelectorAll('[data-ignore="true"]');
+    for (const element of deleteFromCopy) element.remove();
+
+    // delete certain element attributes
+    const attributes = [
+      "id",
+      "data-collapsed",
+      "data-selected",
+      "data-highlighted",
+      "data-glow",
+      "class",
+    ];
+    for (const attribute of attributes) {
+      sourceCopy.removeAttribute(attribute);
+      const elements = sourceCopy.querySelectorAll("[" + attribute + "]");
+      for (const element of elements) element.removeAttribute(attribute);
+    }
+
+    return sourceCopy;
+  }
+
+  // when tooltip is clicked
+  function onTooltipClick(event) {
+    // when user clicks on tooltip, stop click from transferring
+    // outside of tooltip (eg, click off to close tooltip, or eg click
+    // off to unhighlight same refs)
+    event.stopPropagation();
+  }
+
+  // when tooltip is unhovered
+  function onTooltipUnhover(event) {
+    if (clickClose === "true") return;
+
+    // make sure new mouse/touch/focus no longer over tooltip or any
+    // element within it
+    const tooltip = document.getElementById("tooltip");
+    if (!tooltip) return;
+    if (this.contains(event.relatedTarget)) return;
+
+    closeTooltip();
+  }
+
+  // make nav bar to go betwen prev/next instances of same reference
+  function makeNavBar(link) {
+    // find other links to the same source
+    const sameLinks = getSameLinks(link);
+
+    // don't show nav bar when singular reference
+    if (sameLinks.total <= 1) return;
+
+    // find prev/next links with same target
+    const prevLink = getPrevLink(link, sameLinks);
+    const nextLink = getNextLink(link, sameLinks);
+
+    // create nav bar
+    const navBar = document.createElement("div");
+    navBar.id = "tooltip_nav_bar";
+    const text = sameLinks.index + 1 + " of " + sameLinks.total;
+
+    // create nav bar prev/next buttons
+    const prevButton = document.createElement("button");
+    const nextButton = document.createElement("button");
+    prevButton.id = "tooltip_prev_button";
+    nextButton.id = "tooltip_next_button";
+    prevButton.title =
+      "Jump to the previous occurence of this item in the document [←]";
+    nextButton.title =
+      "Jump to the next occurence of this item in the document [→]";
+    prevButton.classList.add("icon_button");
+    nextButton.classList.add("icon_button");
+    prevButton.innerHTML = document.querySelector(".icon_caret_left").innerHTML;
+    nextButton.innerHTML =
+      document.querySelector(".icon_caret_right").innerHTML;
+    navBar.appendChild(prevButton);
+    navBar.appendChild(document.createTextNode(text));
+    navBar.appendChild(nextButton);
+
+    // attach click listeners to buttons
+    prevButton.addEventListener("click", function () {
+      onPrevNextClick(link, prevLink);
+    });
+    nextButton.addEventListener("click", function () {
+      onPrevNextClick(link, nextLink);
+    });
+
+    return navBar;
+  }
+
+  // get previous link with same target
+  function getPrevLink(link, sameLinks) {
+    if (!sameLinks) sameLinks = getSameLinks(link);
+    // wrap index to other side if < 1
+    let index;
+    if (sameLinks.index - 1 >= 0) index = sameLinks.index - 1;
+    else index = sameLinks.total - 1;
+    return sameLinks.elements[index];
+  }
+
+  // get next link with same target
+  function getNextLink(link, sameLinks) {
+    if (!sameLinks) sameLinks = getSameLinks(link);
+    // wrap index to other side if > total
+    let index;
+    if (sameLinks.index + 1 <= sameLinks.total - 1) index = sameLinks.index + 1;
+    else index = 0;
+    return sameLinks.elements[index];
+  }
+
+  // get element that is target of link or url hash
+  function getSource(link) {
+    const hash = link ? link.hash : window.location.hash;
+    const id = hash.slice(1);
+    let target = document.querySelector('[id="' + id + '"]');
+    if (!target) return;
+
+    // if ref or figure, modify target to get expected element
+    if (id.indexOf("ref-") === 0) target = target.querySelector(":nth-child(2)");
+    else if (id.indexOf("fig:") === 0) target = target.querySelector("figure");
+
+    return target;
+  }
+
+  // when prev/next arrow button is clicked
+  function onPrevNextClick(link, prevNextLink) {
+    if (link && prevNextLink)
+      goToElement(prevNextLink, window.innerHeight * 0.5);
+  }
+
+  // scroll to and focus element
+  function goToElement(element, offset) {
+    // expand accordion section if collapsed
+    expandElement(element);
+    const y =
+      getRectInView(element).top -
+      getRectInView(document.documentElement).top -
+      (offset || 0);
+    // trigger any function listening for "onscroll" event
+    window.dispatchEvent(new Event("scroll"));
+    window.scrollTo(0, y);
+    document.activeElement.blur();
+    element.focus();
+  }
+
+  // determine position to place tooltip based on link position in
+  // viewport and tooltip size
+  function positionTooltip(link, left, top) {
+    const tooltipElement = document.getElementById("tooltip");
+    if (!tooltipElement) return;
+
+    // get convenient vars for position/dimensions of
+    // link/tooltip/page/view
+    link = getRectInPage(link);
+    const tooltip = getRectInPage(tooltipElement);
+    const view = getRectInPage();
+
+    // horizontal positioning
+    if (left)
+      // use explicit value
+      left = left;
+    else if (link.left + tooltip.width < view.right)
+      // fit tooltip to right of link
+      left = link.left;
+    else if (link.right - tooltip.width > view.left)
+      // fit tooltip to left of link
+      left = link.right - tooltip.width;
+    // center tooltip in view
+    else left = (view.right - view.left) / 2 - tooltip.width / 2;
+
+    // vertical positioning
+    if (top)
+      // use explicit value
+      top = top;
+    else if (link.top - tooltip.height > view.top)
+      // fit tooltip above link
+      top = link.top - tooltip.height;
+    else if (link.bottom + tooltip.height < view.bottom)
+      // fit tooltip below link
+      top = link.bottom;
+    else {
+      // center tooltip in view
+      top = view.top + view.height / 2 - tooltip.height / 2;
+      // nudge off of link to left/right if possible
+      if (link.right + tooltip.width < view.right) left = link.right;
+      else if (link.left - tooltip.width > view.left)
+        left = link.left - tooltip.width;
+    }
+
+    tooltipElement.style.left = left + "px";
+    tooltipElement.style.top = top + "px";
+  }
+
+  // start script when document is finished loading
+  window.addEventListener("load", start);
+</script>
+
+<!-- caret left icon -->
+
+<template class="icon_caret_left">
+  <!-- modified from: https://fontawesome.com/icons/caret-left -->
+  <svg width="16" height="16" viewBox="0 0 192 512">
+    <path
+      fill="currentColor"
+      d="M192 127.338v257.324c0 17.818-21.543 26.741-34.142 14.142L29.196 270.142c-7.81-7.81-7.81-20.474 0-28.284l128.662-128.662c12.599-12.6 34.142-3.676 34.142 14.142z"
+    ></path>
+  </svg>
+</template>
+
+<!-- caret right icon -->
+
+<template class="icon_caret_right">
+  <!-- modified from: https://fontawesome.com/icons/caret-right -->
+  <svg width="16" height="16" viewBox="0 0 192 512">
+    <path
+      fill="currentColor"
+      d="M0 384.662V127.338c0-17.818 21.543-26.741 34.142-14.142l128.662 128.662c7.81 7.81 7.81 20.474 0 28.284L34.142 398.804C21.543 411.404 0 402.48 0 384.662z"
+    ></path>
+  </svg>
+</template>
+
+<style>
+  @media only screen {
+    /* tooltip container */
+    #tooltip {
+      position: absolute;
+      width: 50%;
+      min-width: 240px;
+      max-width: 75%;
+      z-index: 1;
+    }
+
+    /* tooltip content */
+    #tooltip_content {
+      margin-bottom: 5px;
+      padding: 20px;
+      border-radius: 5px;
+      border: solid 1px #bdbdbd;
+      box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+      background: #ffffff;
+      overflow-wrap: break-word;
+    }
+
+    /* tooltip copy of paragraphs and figures */
+    #tooltip_content > p,
+    #tooltip_content > figure {
+      margin: 0;
+      max-height: 320px;
+      overflow-y: auto;
+    }
+
+    /* tooltip copy of <img> */
+    #tooltip_content > figure > img,
+    #tooltip_content > figure > svg {
+      max-height: 260px;
+    }
+
+    /* navigation bar */
+    #tooltip_nav_bar {
+      margin-top: 10px;
+      text-align: center;
+    }
+
+    /* navigation bar previous/next buton */
+    #tooltip_nav_bar > .icon_button {
+      position: relative;
+      top: 3px;
+    }
+
+    /* navigation bar previous button */
+    #tooltip_nav_bar > .icon_button:first-of-type {
+      margin-right: 5px;
+    }
+
+    /* navigation bar next button */
+    #tooltip_nav_bar > .icon_button:last-of-type {
+      margin-left: 5px;
+    }
+  }
+
+  /* always hide tooltip on print */
+  @media only print {
+    #tooltip {
+      display: none;
+    }
+  }
+</style>
+<!--
+  Analytics Plugin (third-party) 
+  
+  Copy and paste code from Google Analytics or similar service here.
+-->
+<!-- 
+  Annotations Plugin
+
+  Allows public annotation of the  manuscript. See https://web.hypothes.is/.
+-->
+
+<script>
+  // configuration
+  window.hypothesisConfig = function () {
+    return {
+      branding: {
+        accentColor: "#2196f3",
+        appBackgroundColor: "#f8f8f8",
+        ctaBackgroundColor: "#f8f8f8",
+        ctaTextColor: "#000000",
+        selectionFontFamily: "Open Sans, Helvetica, sans serif",
+        annotationFontFamily: "Open Sans, Helvetica, sans serif",
+      },
+    };
+  };
+
+  // hypothesis client script
+  const embed = "https://hypothes.is/embed.js";
+  // hypothesis annotation count query url
+  const query = "https://api.hypothes.is/api/search?limit=0&url=";
+
+  // start script
+  function start() {
+    const button = makeButton();
+    document.body.insertBefore(button, document.body.firstChild);
+    insertCount(button);
+  }
+
+  // make button
+  function makeButton() {
+    // create button
+    const button = document.createElement("button");
+    button.id = "hypothesis_button";
+    button.innerHTML = document.querySelector(".icon_hypothesis").innerHTML;
+    button.title = "Hypothesis annotations";
+    button.classList.add("icon_button");
+
+    function onClick(event) {
+      onButtonClick(event, button);
+    }
+
+    // attach click listeners
+    button.addEventListener("click", onClick);
+
+    return button;
+  }
+
+  // insert annotations count
+  async function insertCount(button) {
+    // get annotation count from Hypothesis based on url
+    let count = "-";
+    try {
+      const canonical = document.querySelector('link[rel="canonical"]');
+      const location = window.location;
+      const url = encodeURIComponent((canonical || location).href);
+      const response = await fetch(query + url);
+      const json = await response.json();
+      count = json.total || "-";
+    } catch (error) {
+      console.log(error);
+    }
+
+    // put count into button
+    const counter = document.createElement("span");
+    counter.id = "hypothesis_count";
+    counter.innerHTML = count;
+    button.title = "View " + count + " Hypothesis annotations";
+    button.append(counter);
+  }
+
+  // when button is clicked
+  function onButtonClick(event, button) {
+    const script = document.createElement("script");
+    script.src = embed;
+    document.body.append(script);
+    button.remove();
+  }
+
+  // start script when document is finished loading
+  window.addEventListener("load", start);
+</script>
+
+<!-- hypothesis icon -->
+
+<template class="icon_hypothesis">
+  <!-- modified from: https://simpleicons.org/icons/hypothesis.svg / https://git.io/Jf1VB -->
+  <svg width="16" height="16" viewBox="0 0 24 24" tabindex="-1">
+    <path
+      fill="currentColor"
+      d="M3.43 0C2.5 0 1.72 .768 1.72 1.72V18.86C1.72 19.8 2.5 20.57 3.43 20.57H9.38L12 24L14.62 20.57H20.57C21.5 20.57 22.29 19.8 22.29 18.86V1.72C22.29 .77 21.5 0 20.57 0H3.43M5.14 3.43H7.72V9.43S8.58 7.72 10.28 7.72C12 7.72 13.74 8.57 13.74 11.24V17.14H11.16V12C11.16 10.61 10.28 10.07 9.43 10.29C8.57 10.5 7.72 11.41 7.72 13.29V17.14H5.14V3.43M18 13.72C18.95 13.72 19.72 14.5 19.72 15.42A1.71 1.71 0 0 1 18 17.13A1.71 1.71 0 0 1 16.29 15.42C16.29 14.5 17.05 13.71 18 13.71Z"
+      tabindex="-1"
+    ></path>
+  </svg>
+</template>
+
+<style>
+  /* hypothesis activation button */
+  #hypothesis_button {
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    background: #ffffff;
+    border-radius: 0;
+    border-left: solid 1px #bdbdbd;
+    border-bottom: solid 1px #bdbdbd;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.05);
+    z-index: 2;
+  }
+
+  /* hypothesis button svg */
+  #hypothesis_button > svg {
+    position: relative;
+    top: -4px;
+  }
+
+  /* hypothesis annotation count */
+  #hypothesis_count {
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 5px;
+  }
+
+  /* side panel */
+  .annotator-frame {
+    width: 280px !important;
+  }
+
+  /* match highlight color to rest of theme */
+  .annotator-highlights-always-on .annotator-hl {
+    background-color: #ffeb3b !important;
+  }
+
+  /* match focused color to rest of theme */
+  .annotator-hl.annotator-hl-focused {
+    background-color: #ff8a65 !important;
+  }
+
+  /* match bucket bar color to rest of theme */
+  .annotator-bucket-bar {
+    background: #f5f5f5 !important;
+  }
+
+  /* always hide button, toolbar, and tooltip on print */
+  @media only print {
+    #hypothesis_button {
+      display: none;
+    }
+
+    .annotator-frame {
+      display: none !important;
+    }
+
+    hypothesis-adder {
+      display: none !important;
+    }
+  }
+</style>
+<!-- 
+  Mathjax Plugin (third-party) 
+
+  Allows the proper rendering of math/equations written in LaTeX.
+  See https://www.mathjax.org/.
+-->
+
+<script type="text/x-mathjax-config">
+  // configuration
+  MathJax.Hub.Config({
+    "CommonHTML": { linebreaks: { automatic: true } },
+    "HTML-CSS": { linebreaks: { automatic: true } },
+    "SVG": { linebreaks: { automatic: true } },
+    "fast-preview": { disabled: true }
+  });
+</script>
+
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML"
+  integrity="sha512-0doc9hKxR3PYwso42RD1p5ySZpzzuDiOwMrdCEh2WdJZCjcmFKc/wEnL+z8fBQrnHoiNWbo+3fiGkOYXBdQp4A=="
+  crossorigin="anonymous"
+></script>
+
+<style>
+  /* mathjax containers */
+  .math.display > span:not(.MathJax_Preview) {
+    /* turn inline element (no dimensions) into block (allows fixed width and thus scrolling) */
+    display: flex !important;
+    overflow-x: auto !important;
+    overflow-y: hidden !important;
+    justify-content: center;
+    align-items: center;
+    margin: 0 !important;
+  }
+
+  /* right click menu */
+  .MathJax_Menu {
+    border-radius: 5px !important;
+    border: solid 1px #bdbdbd !important;
+    box-shadow: none !important;
+  }
+
+  /* equation auto-number */
+  span[id^="eq:"] > span.math.display + span {
+    font-weight: 600;
+  }
+
+  /* equation */
+  span[id^="eq:"] > span.math.display > span {
+    /* nudge to make room for equation auto-number and anchor */
+    margin-right: 60px !important;
+  }
+</style>
+</body>
+</html>
